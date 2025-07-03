@@ -1,9 +1,99 @@
-studio-4980275041:~/studio{master}$ curl -X POST \
->   http://localhost:9002/api/huddles \
->   -H 'Content-Type: application/json' \
->   -d '{
->     "userId": "test-user-001",
->     "contextName": "Outline",
->     "initialPrompt": "Tell me about the future of AI in education."
-> }'
-<!DOCTYPE html><html><head><style data-next-hide-fouc="true">body{display:none}</style><noscript data-next-hide-fouc="true"><style>body{display:block}</style></noscript><meta charSet="utf-8" data-next-head=""/><meta name="viewport" content="width=device-width" data-next-head=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/node_modules_next_dist_build_polyfills_polyfill-nomodule.js"></script><script src="/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js" defer=""></script><script src="/_next/static/chunks/node_modules_react_b2385d85._.js" defer=""></script><script src="/_next/static/chunks/node_modules_react-dom_cjs_react-dom_development_ab7e073c.js" defer=""></script><script src="/_next/static/chunks/node_modules_react-dom_f14d0471._.js" defer=""></script><script src="/_next/static/chunks/node_modules_3bfdc6a4._.js" defer=""></script><script src="/_next/static/chunks/%5Broot-of-the-server%5D__f5f356b3._.js" defer=""></script><script src="/_next/static/chunks/src_pages__app_5771e187._.js" defer=""></script><script src="/_next/static/chunks/src_pages__app_987028c6._.js" defer=""></script><script src="/_next/static/chunks/%5Broot-of-the-server%5D__8df7605f._.js" defer=""></script><script src="/_next/static/chunks/%5Broot-of-the-server%5D__ca38f087._.js" defer=""></script><script src="/_next/static/chunks/src_pages__error_5771e187._.js" defer=""></script><script src="/_next/static/chunks/src_pages__error_daedc69c._.js" defer=""></script><script src="/_next/static/development/_ssgManifest.js" defer=""></script><script src="/_next/static/development/_buildManifest.js" defer=""></script><noscript id="__next_css__DO_NOT_USE__"></noscript></head><body><div id="__next"></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":500,"hostname":"0.0.0.0"}},"page":"/_error","query":{},"buildId":"development","isFallback":false,"err":{"name":"Error","source":"server","message":"The default Firebase app does not exist. Make sure you call initializeApp() before using any of the Firebase services.","stack":"Error: The default Firebase app does not exist. Make sure you call initializeApp() before using any of the Firebase services.\n    at AppStore.getApp (/home/user/studio/node_modules/firebase-admin/lib/app/lifecycle.js:69:19)\n    at FirebaseNamespaceInternals.app (/home/user/studio/node_modules/firebase-admin/lib/app/firebase-namespace.js:54:35)\n    at FirebaseNamespace.app (/home/user/studio/node_modules/firebase-admin/lib/app/firebase-namespace.js:256:30)\n    at FirebaseNamespace.ensureApp (/home/user/studio/node_modules/firebase-admin/lib/app/firebase-namespace.js:266:24)\n    at fn (/home/user/studio/node_modules/firebase-admin/lib/app/firebase-namespace.js:136:25)\n    at [project]/src/lib/firebaseAdmin.ts [api] (ecmascript) \u003clocals\u003e (/home/user/studio/.next/server/chunks/[root-of-the-server]__69c15dae._.js:70:153)\n    at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)\n    at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)\n    at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)\n    at [project]/src/lib/firebaseAdmin.ts [api] (ecmascript) \u003cmodule evaluation\u003e (/home/user/studio/.next/server/chunks/[root-of-the-server]__69c15dae._.js:81:162)\n    at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)\n    at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)\n    at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)\n    at /home/user/studio/.next/server/chunks/[root-of-the-server]__69c15dae._.js:1552:174\n    at asyncModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:299:5)\n    at [project]/src/pages/api/huddles/index.ts [api] (ecmascript) (/home/user/studio/.next/server/chunks/[root-of-the-server]__69c15dae._.js:1546:1)\n    at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)\n    at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)\n    at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)\n    at /home/user/studio/.next/server/chunks/[root-of-the-server]__69c15dae._.js:1867:158\n    at asyncModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:299:5)\n    at [project]/node_modules/next/dist/esm/build/templates/pages-api.js { INNER_PAGE =\u003e \"[project]/src/pages/api/huddles/index.ts [api] (ecmascript)\" } [api] (ecmascript) (/home/user/studio/.next/server/chunks/[root-of-the-server]__69c15dae._.js:1857:1)\n    at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)\n    at instantiateRuntimeModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:661:12)\n    at Object.getOrInstantiateRuntimeModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:677:12)\n    at Object.\u003canonymous\u003e (/home/user/studio/.next/server/pages/api/huddles.js:4:9)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at mod.require (/home/user/studio/node_modules/next/dist/server/require-hook.js:65:28)\n    at require (node:internal/modules/helpers:182:18)\n    at NodeModuleLoader.load (/home/user/studio/node_modules/next/dist/server/lib/module-loader/node-module-loader.js:15:84)\n    at RouteModuleLoader.load (/home/user/studio/node_modules/next/dist/server/lib/module-loader/route-module-loader.js:14:37)\n    at DevServer.runApi (/home/user/studio/node_modules/next/dist/server/next-server.js:671:67)\n    at DevServer.handleApiRequest (/home/user/studio/node_modules/next/dist/server/next-server.js:875:21)\n    at NextNodeServer.handleCatchallRenderRequest (/home/user/studio/node_modules/next/dist/server/next-server.js:302:48)\n    at async DevServer.handleRequestImpl (/home/user/studio/node_modules/next/dist/server/base-server.js:900:17)\n    at async /home/user/studio/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n    at async Span.traceAsyncFn (/home/user/studio/node_modules/next/dist/trace/trace.js:157:20)\n    at async DevServer.handleRequest (/home/user/studio/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n    at async invokeRender (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:237:21)\n    at async handleRequest (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:428:24)\n    at async requestHandlerImpl (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:452:13)\n    at async Server.requestListener (/home/user/studio/node_modules/next/dist/server/lib/start-server.js:158:13)"},"gip":true,"scriptLoader":[]}</script></body></html>
+2025-07-03T20:45:56Z [web] <Firebase Studio> Starting preview...
+2025-07-03T20:45:56Z [web] Waiting for your web server to start serving
+2025-07-03T20:45:57Z [web] 
+2025-07-03T20:45:57Z [web] > nextn@0.1.0 dev
+2025-07-03T20:45:57Z [web] > next dev --turbopack -p 9002 --port 9002 --hostname 0.0.0.0
+2025-07-03T20:45:57Z [web] 
+2025-07-03T20:45:59Z [web] <Firebase Studio> Starting preview...
+2025-07-03T20:45:59Z [web] Waiting for your web server to start serving
+2025-07-03T20:45:59Z [web] 
+2025-07-03T20:45:59Z [web] > nextn@0.1.0 dev
+2025-07-03T20:45:59Z [web] > next dev --turbopack -p 9002 --port 9002 --hostname 0.0.0.0
+2025-07-03T20:45:59Z [web] 
+2025-07-03T20:46:00Z [web] [?25h
+2025-07-03T20:46:03Z [web] <Firebase Studio> ▶️ Preview running
+2025-07-03T20:46:03Z [web]    ▲ Next.js 15.3.3 (Turbopack)
+2025-07-03T20:46:03Z [web]    - Local:        http://localhost:9002
+2025-07-03T20:46:03Z [web]    - Network:      http://0.0.0.0:9002
+2025-07-03T20:46:03Z [web]    - Environments: .env.local, .env
+2025-07-03T20:46:03Z [web] 
+2025-07-03T20:46:03Z [web]  ✓ Starting...
+2025-07-03T20:46:06Z [web]  ✓ Ready in 3.6s
+2025-07-03T20:46:07Z [web]  ○ Compiling / ...
+2025-07-03T20:46:34Z [web]  ✓ Compiled / in 27.2s
+2025-07-03T20:46:34Z [web]  GET / 200 in 28132ms
+2025-07-03T20:46:34Z [web]  GET /?monospaceUid=0 200 in 13472ms
+2025-07-03T20:46:34Z [web]  GET /?monospaceUid=811382 200 in 13230ms
+2025-07-03T20:46:35Z [web] Error:  ⚠ Cross origin request detected from 9000-firebase-studio-1751489770040.cluster-pgviq6mvsncnqxx6kr7pbz65v6.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+2025-07-03T20:46:35Z [web] Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+2025-07-03T20:46:35Z [web] 
+2025-07-03T20:47:46Z [web]  ✓ Compiled /api/huddles in 422ms
+2025-07-03T20:47:46Z [web] Attempting to initialize Firebase Admin SDK...
+2025-07-03T20:47:46Z [web] Service account path found: ./.secure/huddle-ai-development.firebase-service-account-key.json
+2025-07-03T20:47:46Z [web] Error: Firebase Admin SDK initialization error:
+2025-07-03T20:47:46Z [web] 
+2025-07-03T20:47:46Z [web] Error: Message: Cannot read properties of undefined (reading 'INTERNAL')
+2025-07-03T20:47:46Z [web] 
+2025-07-03T20:47:46Z [web] Error: Stack: TypeError: Cannot read properties of undefined (reading 'INTERNAL')
+2025-07-03T20:47:46Z [web]     at initializeApp (/home/user/studio/node_modules/firebase-admin/lib/app/firebase-namespace.js:246:21)
+2025-07-03T20:47:46Z [web]     at [project]/src/lib/firebaseAdmin.ts [api] (ecmascript) <locals> (/home/user/studio/.next/server/chunks/[root-of-the-server]__69c15dae._.js:53:158)
+2025-07-03T20:47:46Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
+2025-07-03T20:47:46Z [web]     at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)
+2025-07-03T20:47:46Z [web]     at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)
+2025-07-03T20:47:46Z [web]     at [project]/src/lib/firebaseAdmin.ts [api] (ecmascript) <module evaluation> (/home/user/studio/.next/server/chunks/[root-of-the-server]__69c15dae._.js:107:162)
+2025-07-03T20:47:46Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
+2025-07-03T20:47:46Z [web]     at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)
+2025-07-03T20:47:46Z [web]     at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)
+2025-07-03T20:47:46Z [web]     at /home/user/studio/.next/server/chunks/[root-of-the-server]__69c15dae._.js:1578:174
+2025-07-03T20:47:46Z [web]     at asyncModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:299:5)
+2025-07-03T20:47:46Z [web]     at [project]/src/pages/api/huddles/index.ts [api] (ecmascript) (/home/user/studio/.next/server/chunks/[root-of-the-server]__69c15dae._.js:1572:1)
+2025-07-03T20:47:46Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
+2025-07-03T20:47:46Z [web]     at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)
+2025-07-03T20:47:46Z [web]     at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)
+2025-07-03T20:47:46Z [web]     at /home/user/studio/.next/server/chunks/[root-of-the-server]__69c15dae._.js:1893:158
+2025-07-03T20:47:46Z [web]     at asyncModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:299:5)
+2025-07-03T20:47:46Z [web]     at [project]/node_modules/next/dist/esm/build/templates/pages-api.js { INNER_PAGE => "[project]/src/pages/api/huddles/index.ts [api] (ecmascript)" } [api] (ecmascript) (/home/user/studio/.next/server/chunks/[root-of-the-server]__69c15dae._.js:1883:1)
+2025-07-03T20:47:46Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
+2025-07-03T20:47:46Z [web]     at instantiateRuntimeModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:661:12)
+2025-07-03T20:47:46Z [web]     at Object.getOrInstantiateRuntimeModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:677:12)
+2025-07-03T20:47:46Z [web]     at Object.<anonymous> (/home/user/studio/.next/server/pages/api/huddles.js:4:9)
+2025-07-03T20:47:46Z [web]     at Module._compile (node:internal/modules/cjs/loader:1529:14)
+2025-07-03T20:47:46Z [web]     at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+2025-07-03T20:47:46Z [web]     at Module.load (node:internal/modules/cjs/loader:1275:32)
+2025-07-03T20:47:46Z [web]     at Module._load (node:internal/modules/cjs/loader:1096:12)
+2025-07-03T20:47:46Z [web]     at Module.require (node:internal/modules/cjs/loader:1298:19)
+2025-07-03T20:47:46Z [web]     at mod.require (/home/user/studio/node_modules/next/dist/server/require-hook.js:65:28)
+2025-07-03T20:47:46Z [web]     at require (node:internal/modules/helpers:182:18)
+2025-07-03T20:47:46Z [web]     at NodeModuleLoader.load (/home/user/studio/node_modules/next/dist/server/lib/module-loader/node-module-loader.js:15:84)
+2025-07-03T20:47:46Z [web]     at RouteModuleLoader.load (/home/user/studio/node_modules/next/dist/server/lib/module-loader/route-module-loader.js:14:37)
+2025-07-03T20:47:46Z [web]     at DevServer.runApi (/home/user/studio/node_modules/next/dist/server/next-server.js:671:67)
+2025-07-03T20:47:46Z [web]     at DevServer.handleApiRequest (/home/user/studio/node_modules/next/dist/server/next-server.js:875:21)
+2025-07-03T20:47:46Z [web]     at NextNodeServer.handleCatchallRenderRequest (/home/user/studio/node_modules/next/dist/server/next-server.js:302:48)
+2025-07-03T20:47:46Z [web]     at async DevServer.handleRequestImpl (/home/user/studio/node_modules/next/dist/server/base-server.js:900:17)
+2025-07-03T20:47:46Z [web]     at async /home/user/studio/node_modules/next/dist/server/dev/next-dev-server.js:371:20
+2025-07-03T20:47:46Z [web]     at async Span.traceAsyncFn (/home/user/studio/node_modules/next/dist/trace/trace.js:157:20)
+2025-07-03T20:47:46Z [web]     at async DevServer.handleRequest (/home/user/studio/node_modules/next/dist/server/dev/next-dev-server.js:368:24)
+2025-07-03T20:47:46Z [web]     at async invokeRender (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:237:21)
+2025-07-03T20:47:46Z [web]     at async handleRequest (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:428:24)
+2025-07-03T20:47:46Z [web]     at async requestHandlerImpl (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:452:13)
+2025-07-03T20:47:46Z [web]     at async Server.requestListener (/home/user/studio/node_modules/next/dist/server/lib/start-server.js:158:13)
+2025-07-03T20:47:46Z [web] Make sure the GOOGLE_APPLICATION_CREDENTIALS environment variable is set correctly and points to a valid service account key JSON file.
+2025-07-03T20:47:46Z [web] No Firebase app initialized. Firestore and Auth services will be unavailable.
+2025-07-03T20:47:46Z [web] 
+2025-07-03T20:47:46Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
+2025-07-03T20:47:46Z [web] 
+2025-07-03T20:47:46Z [web] Error: Warning: Environment variable DEEPSEEK_API_KEY is not set.
+2025-07-03T20:47:46Z [web] 
+2025-07-03T20:47:46Z [web] Error: Warning: Environment variable QWEN_API_KEY is not set.
+2025-07-03T20:47:46Z [web] 
+2025-07-03T20:47:46Z [web] Error: Warning: Environment variable NEBIUS_API_KEY is not set.
+2025-07-03T20:47:46Z [web] Warning: Environment variable KIMI_API_KEY is not set.
+2025-07-03T20:47:46Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
+2025-07-03T20:47:46Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
+2025-07-03T20:47:46Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
+2025-07-03T20:47:46Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
+2025-07-03T20:47:46Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
+2025-07-03T20:47:46Z [web] 
+2025-07-03T20:47:47Z [web] Error: Error parsing JSON from huddle config file /home/user/studio/src/huddle-configs/outline.default.json: Expected double-quoted property name in JSON at position 3105
+2025-07-03T20:47:47Z [web] 
+2025-07-03T20:47:47Z [web]  POST /api/huddles 404 in 756ms
