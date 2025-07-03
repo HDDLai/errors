@@ -1,110 +1,133 @@
-2025-07-03T22:10:10Z [web] <Firebase Studio> Starting preview...
-2025-07-03T22:10:10Z [web] Waiting for your web server to start serving
-2025-07-03T22:10:10Z [web] 
-2025-07-03T22:10:10Z [web] > nextn@0.1.0 dev
-2025-07-03T22:10:10Z [web] > next dev --turbopack -p 9002 --port 9002 --hostname 0.0.0.0
-2025-07-03T22:10:10Z [web] 
-2025-07-03T22:10:12Z [web] <Firebase Studio> ▶️ Preview running
-2025-07-03T22:10:12Z [web]    ▲ Next.js 15.3.3 (Turbopack)
-2025-07-03T22:10:12Z [web]    - Local:        http://localhost:9002
-2025-07-03T22:10:12Z [web]    - Network:      http://0.0.0.0:9002
-2025-07-03T22:10:12Z [web]    - Environments: .env.local, .env
-2025-07-03T22:10:12Z [web] 
-2025-07-03T22:10:12Z [web]  ✓ Starting...
-2025-07-03T22:10:13Z [web]  ✓ Ready in 1659ms
-2025-07-03T22:10:14Z [web]  ○ Compiling / ...
-2025-07-03T22:10:23Z [web]  ✓ Compiled / in 9.9s
-2025-07-03T22:10:24Z [web]  GET /?monospaceUid=213463 200 in 10640ms
-2025-07-03T22:10:25Z [web] Error:  ⚠ Cross origin request detected from 9000-firebase-studio-1751489770040.cluster-pgviq6mvsncnqxx6kr7pbz65v6.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-2025-07-03T22:10:25Z [web] Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-2025-07-03T22:10:25Z [web] 
-2025-07-03T22:10:46Z [web]  ✓ Compiled /api/huddles in 375ms
-2025-07-03T22:10:46Z [web] Attempting to initialize Firebase Admin SDK as no apps exist...
-2025-07-03T22:10:46Z [web] Attempting to read service account key from resolved absolute path: /home/user/studio/.secure/huddle-ai-development.firebase-service-account-key.json
-2025-07-03T22:10:46Z [web] Service account key file read and parsed successfully.
-2025-07-03T22:10:46Z [web] Initializing Firebase Admin with parsed service account object for project: huddle-ai-development
-2025-07-03T22:10:46Z [web] Error: CRITICAL: Firebase Admin SDK initialization FAILED during or after file processing:
-2025-07-03T22:10:46Z [web] 
-2025-07-03T22:10:46Z [web] Error: Message: Cannot read properties of undefined (reading 'INTERNAL')
-2025-07-03T22:10:46Z [web] Full Stack: TypeError: Cannot read properties of undefined (reading 'INTERNAL')
-2025-07-03T22:10:46Z [web]     at initializeApp (/home/user/studio/node_modules/firebase-admin/lib/app/firebase-namespace.js:246:21)
-2025-07-03T22:10:46Z [web]     at [project]/src/lib/firebaseAdmin.ts [api] (ecmascript) <locals> (/home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:89:160)
-2025-07-03T22:10:46Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
-2025-07-03T22:10:46Z [web]     at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)
-2025-07-03T22:10:46Z [web]     at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)
-2025-07-03T22:10:46Z [web]     at [project]/src/lib/firebaseAdmin.ts [api] (ecmascript) <module evaluation> (/home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:132:162)
-2025-07-03T22:10:46Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
-2025-07-03T22:10:46Z [web]     at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)
-2025-07-03T22:10:46Z [web]     at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)
-2025-07-03T22:10:46Z [web]     at /home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:1595:174
-2025-07-03T22:10:46Z [web]     at asyncModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:299:5)
-2025-07-03T22:10:46Z [web]     at [project]/src/pages/api/huddles/index.ts [api] (ecmascript) (/home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:1589:1)
-2025-07-03T22:10:46Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
-2025-07-03T22:10:46Z [web]     at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)
-2025-07-03T22:10:46Z [web]     at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)
-2025-07-03T22:10:46Z [web]     at /home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:1910:158
-2025-07-03T22:10:46Z [web]     at asyncModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:299:5)
-2025-07-03T22:10:46Z [web]     at [project]/node_modules/next/dist/esm/build/templates/pages-api.js { INNER_PAGE => "[project]/src/pages/api/huddles/index.ts [api] (ecmascript)" } [api] (ecmascript) (/home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:1900:1)
-2025-07-03T22:10:46Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
-2025-07-03T22:10:46Z [web]     at instantiateRuntimeModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:661:12)
-2025-07-03T22:10:46Z [web]     at Object.getOrInstantiateRuntimeModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:677:12)
-2025-07-03T22:10:46Z [web]     at Object.<anonymous> (/home/user/studio/.next/server/pages/api/huddles.js:4:9)
-2025-07-03T22:10:46Z [web]     at Module._compile (node:internal/modules/cjs/loader:1529:14)
-2025-07-03T22:10:46Z [web]     at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
-2025-07-03T22:10:46Z [web]     at Module.load (node:internal/modules/cjs/loader:1275:32)
-2025-07-03T22:10:46Z [web]     at Module._load (node:internal/modules/cjs/loader:1096:12)
-2025-07-03T22:10:46Z [web]     at Module.require (node:internal/modules/cjs/loader:1298:19)
-2025-07-03T22:10:46Z [web]     at mod.require (/home/user/studio/node_modules/next/dist/server/require-hook.js:65:28)
-2025-07-03T22:10:46Z [web]     at require (node:internal/modules/helpers:182:18)
-2025-07-03T22:10:46Z [web]     at NodeModuleLoader.load (/home/user/studio/node_modules/next/dist/server/lib/module-loader/node-module-loader.js:15:84)
-2025-07-03T22:10:46Z [web]     at RouteModuleLoader.load (/home/user/studio/node_modules/next/dist/server/lib/module-loader/route-module-loader.js:14:37)
-2025-07-03T22:10:46Z [web]     at DevServer.runApi (/home/user/studio/node_modules/next/dist/server/next-server.js:671:67)
-2025-07-03T22:10:46Z [web]     at DevServer.handleApiRequest (/home/user/studio/node_modules/next/dist/server/next-server.js:875:21)
-2025-07-03T22:10:46Z [web]     at NextNodeServer.handleCatchallRenderRequest (/home/user/studio/node_modules/next/dist/server/next-server.js:302:48)
-2025-07-03T22:10:46Z [web]     at async DevServer.handleRequestImpl (/home/user/studio/node_modules/next/dist/server/base-server.js:900:17)
-2025-07-03T22:10:46Z [web]     at async /home/user/studio/node_modules/next/dist/server/dev/next-dev-server.js:371:20
-2025-07-03T22:10:46Z [web]     at async Span.traceAsyncFn (/home/user/studio/node_modules/next/dist/trace/trace.js:157:20)
-2025-07-03T22:10:46Z [web]     at async DevServer.handleRequest (/home/user/studio/node_modules/next/dist/server/dev/next-dev-server.js:368:24)
-2025-07-03T22:10:46Z [web]     at async invokeRender (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:237:21)
-2025-07-03T22:10:46Z [web]     at async handleRequest (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:428:24)
-2025-07-03T22:10:46Z [web]     at async requestHandlerImpl (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:452:13)
-2025-07-03T22:10:46Z [web]     at async Server.requestListener (/home/user/studio/node_modules/next/dist/server/lib/start-server.js:158:13)
-2025-07-03T22:10:46Z [web] Please ensure:
-2025-07-03T22:10:46Z [web]   1. GOOGLE_APPLICATION_CREDENTIALS in your .env.local file is a CORRECT RELATIVE PATH from your project root (e.g., ./.secure/your-key.json) to your service account key JSON file.
-2025-07-03T22:10:46Z [web]   2. The service account key JSON file exists at that resolved path and is valid JSON.
-2025-07-03T22:10:46Z [web]   3. The file has appropriate read permissions for the Node.js process.
-2025-07-03T22:10:46Z [web] Firebase app is not available (initialization likely failed). Firestore and Auth services will be undefined.
-2025-07-03T22:10:46Z [web] 
-2025-07-03T22:10:46Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
-2025-07-03T22:10:46Z [web] Warning: Environment variable DEEPSEEK_API_KEY is not set.
-2025-07-03T22:10:46Z [web] Warning: Environment variable QWEN_API_KEY is not set.
-2025-07-03T22:10:46Z [web] Warning: Environment variable NEBIUS_API_KEY is not set.
-2025-07-03T22:10:46Z [web] Warning: Environment variable KIMI_API_KEY is not set.
-2025-07-03T22:10:46Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
-2025-07-03T22:10:46Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
-2025-07-03T22:10:46Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
-2025-07-03T22:10:46Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
-2025-07-03T22:10:46Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
-2025-07-03T22:10:46Z [web] 
-2025-07-03T22:10:46Z [web] Huddle configuration for context 'Outline' loaded successfully from outline.default.json
-2025-07-03T22:10:46Z [web] Error: Error initiating huddle session: TypeError: Cannot read properties of undefined (reading 'collection')
-2025-07-03T22:10:46Z [web]     at handler (src/pages/api/huddles/index.ts:126:13)
-2025-07-03T22:10:46Z [web]   124 |
-2025-07-03T22:10:46Z [web]   125 |     // 5. Firestore Interaction (1st Write): Save initial session
-2025-07-03T22:10:46Z [web] > 126 |     await db.collection('huddleSessions').doc(sessionId).set(huddleSession);
-2025-07-03T22:10:46Z [web]       |             ^
-2025-07-03T22:10:46Z [web]   127 |     console.log(`Initial HuddleSession ${sessionId} created in Firestore.`);
-2025-07-03T22:10:46Z [web]   128 |
-2025-07-03T22:10:46Z [web]   129 |     // 6. Invoke Moderator AI for Prompt Rewrite
-2025-07-03T22:10:46Z [web] 
-2025-07-03T22:10:47Z [web] Error: Failed to update session 44b3aea9-9553-4c80-82dd-e5c403cd3825 to failed status: TypeError: Cannot read properties of undefined (reading 'collection')
-2025-07-03T22:10:47Z [web]     at handler (src/pages/api/huddles/index.ts:217:21)
-2025-07-03T22:10:47Z [web]   215 |     if (sessionId) {
-2025-07-03T22:10:47Z [web]   216 |         try {
-2025-07-03T22:10:47Z [web] > 217 |             await db.collection('huddleSessions').doc(sessionId).update({
-2025-07-03T22:10:47Z [web]       |                     ^
-2025-07-03T22:10:47Z [web]   218 |                 status: 'failed',
-2025-07-03T22:10:47Z [web]   219 |                 errorDetails: { message: error.message || 'Unknown error', phase: 'initialization', timestamp: Date.now() },
-2025-07-03T22:10:47Z [web]   220 |                 updatedAt: Date.now(),
-2025-07-03T22:10:47Z [web] 
-2025-07-03T22:10:47Z [web]  POST /api/huddles 500 in 1030ms
+2025-07-03T22:57:25Z [web] <Firebase Studio> Starting preview...
+2025-07-03T22:57:25Z [web] Waiting for your web server to start serving
+2025-07-03T22:57:25Z [web] 
+2025-07-03T22:57:25Z [web] > nextn@0.1.0 dev
+2025-07-03T22:57:25Z [web] > next dev --turbopack -p 9002 --port 9002 --hostname 0.0.0.0
+2025-07-03T22:57:25Z [web] 
+2025-07-03T22:57:27Z [web] <Firebase Studio> ▶️ Preview running
+2025-07-03T22:57:27Z [web]    ▲ Next.js 15.3.3 (Turbopack)
+2025-07-03T22:57:27Z [web]    - Local:        http://localhost:9002
+2025-07-03T22:57:27Z [web]    - Network:      http://0.0.0.0:9002
+2025-07-03T22:57:27Z [web]    - Environments: .env.local, .env
+2025-07-03T22:57:27Z [web] 
+2025-07-03T22:57:27Z [web]  ✓ Starting...
+2025-07-03T22:57:28Z [web]  ✓ Ready in 1672ms
+2025-07-03T22:57:29Z [web]  ○ Compiling / ...
+2025-07-03T22:57:38Z [web]  ✓ Compiled / in 9.7s
+2025-07-03T22:57:39Z [web]  GET /?monospaceUid=165818 200 in 10344ms
+2025-07-03T22:57:39Z [web] Error:  ⚠ Cross origin request detected from 9000-firebase-studio-1751489770040.cluster-pgviq6mvsncnqxx6kr7pbz65v6.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+2025-07-03T22:57:39Z [web] Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+2025-07-03T22:57:39Z [web] 
+2025-07-03T22:58:06Z [web]  ✓ Compiled /api/huddles in 362ms
+2025-07-03T22:58:06Z [web] Attempting to initialize Firebase Admin SDK as no apps exist...
+2025-07-03T22:58:06Z [web] Attempting to read service account key from resolved absolute path: /home/user/studio/.secure/huddle-ai-development.firebase-service-account-key-2.json
+2025-07-03T22:58:06Z [web] Service account key file read and parsed successfully.
+2025-07-03T22:58:06Z [web] Initializing Firebase Admin with parsed service account object for project: huddle-ai-development
+2025-07-03T22:58:06Z [web] Error: CRITICAL: Firebase Admin SDK initialization FAILED during or after file processing:
+2025-07-03T22:58:06Z [web] 
+2025-07-03T22:58:06Z [web] Error: Message: Cannot read properties of undefined (reading 'INTERNAL')
+2025-07-03T22:58:06Z [web] 
+2025-07-03T22:58:06Z [web] Error: Full Stack: TypeError: Cannot read properties of undefined (reading 'INTERNAL')
+2025-07-03T22:58:06Z [web]     at initializeApp (/home/user/studio/node_modules/firebase-admin/lib/app/firebase-namespace.js:246:21)
+2025-07-03T22:58:06Z [web]     at [project]/src/lib/firebaseAdmin.ts [api] (ecmascript) <locals> (/home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:89:160)
+2025-07-03T22:58:06Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
+2025-07-03T22:58:06Z [web]     at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)
+2025-07-03T22:58:06Z [web]     at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)
+2025-07-03T22:58:06Z [web]     at [project]/src/lib/firebaseAdmin.ts [api] (ecmascript) <module evaluation> (/home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:132:162)
+2025-07-03T22:58:06Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
+2025-07-03T22:58:06Z [web]     at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)
+2025-07-03T22:58:06Z [web]     at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)
+2025-07-03T22:58:06Z [web]     at /home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:1595:174
+2025-07-03T22:58:06Z [web]     at asyncModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:299:5)
+2025-07-03T22:58:06Z [web]     at [project]/src/pages/api/huddles/index.ts [api] (ecmascript) (/home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:1589:1)
+2025-07-03T22:58:06Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
+2025-07-03T22:58:06Z [web]     at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)
+2025-07-03T22:58:06Z [web]     at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)
+2025-07-03T22:58:06Z [web]     at /home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:1910:158
+2025-07-03T22:58:06Z [web]     at asyncModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:299:5)
+2025-07-03T22:58:06Z [web]     at [project]/node_modules/next/dist/esm/build/templates/pages-api.js { INNER_PAGE => "[project]/src/pages/api/huddles/index.ts [api] (ecmascript)" } [api] (ecmascript) (/home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:1900:1)
+2025-07-03T22:58:06Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
+2025-07-03T22:58:06Z [web]     at instantiateRuntimeModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:661:12)
+2025-07-03T22:58:06Z [web]     at Object.getOrInstantiateRuntimeModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:677:12)
+2025-07-03T22:58:06Z [web]     at Object.<anonymous> (/home/user/studio/.next/server/pages/api/huddles.js:4:9)
+2025-07-03T22:58:06Z [web]     at Module._compile (node:internal/modules/cjs/loader:1529:14)
+2025-07-03T22:58:06Z [web]     at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+2025-07-03T22:58:06Z [web]     at Module.load (node:internal/modules/cjs/loader:1275:32)
+2025-07-03T22:58:06Z [web]     at Module._load (node:internal/modules/cjs/loader:1096:12)
+2025-07-03T22:58:06Z [web]     at Module.require (node:internal/modules/cjs/loader:1298:19)
+2025-07-03T22:58:06Z [web]     at mod.require (/home/user/studio/node_modules/next/dist/server/require-hook.js:65:28)
+2025-07-03T22:58:06Z [web]     at require (node:internal/modules/helpers:182:18)
+2025-07-03T22:58:06Z [web]     at NodeModuleLoader.load (/home/user/studio/node_modules/next/dist/server/lib/module-loader/node-module-loader.js:15:84)
+2025-07-03T22:58:06Z [web]     at RouteModuleLoader.load (/home/user/studio/node_modules/next/dist/server/lib/module-loader/route-module-loader.js:14:37)
+2025-07-03T22:58:06Z [web]     at DevServer.runApi (/home/user/studio/node_modules/next/dist/server/next-server.js:671:67)
+2025-07-03T22:58:06Z [web]     at DevServer.handleApiRequest (/home/user/studio/node_modules/next/dist/server/next-server.js:875:21)
+2025-07-03T22:58:06Z [web]     at NextNodeServer.handleCatchallRenderRequest (/home/user/studio/node_modules/next/dist/server/next-server.js:302:48)
+2025-07-03T22:58:06Z [web]     at async DevServer.handleRequestImpl (/home/user/studio/node_modules/next/dist/server/base-server.js:900:17)
+2025-07-03T22:58:06Z [web]     at async /home/user/studio/node_modules/next/dist/server/dev/next-dev-server.js:371:20
+2025-07-03T22:58:06Z [web]     at async Span.traceAsyncFn (/home/user/studio/node_modules/next/dist/trace/trace.js:157:20)
+2025-07-03T22:58:06Z [web]     at async DevServer.handleRequest (/home/user/studio/node_modules/next/dist/server/dev/next-dev-server.js:368:24)
+2025-07-03T22:58:06Z [web]     at async invokeRender (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:237:21)
+2025-07-03T22:58:06Z [web]     at async handleRequest (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:428:24)
+2025-07-03T22:58:06Z [web]     at async requestHandlerImpl (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:452:13)
+2025-07-03T22:58:06Z [web]     at async Server.requestListener (/home/user/studio/node_modules/next/dist/server/lib/start-server.js:158:13)
+2025-07-03T22:58:06Z [web] Please ensure:
+2025-07-03T22:58:06Z [web]   1. GOOGLE_APPLICATION_CREDENTIALS in your .env.local file is a CORRECT RELATIVE PATH from your project root (e.g., ./.secure/your-key.json) to your service account key JSON file.
+2025-07-03T22:58:06Z [web]   2. The service account key JSON file exists at that resolved path and is valid JSON.
+2025-07-03T22:58:06Z [web]   3. The file has appropriate read permissions for the Node.js process.
+2025-07-03T22:58:06Z [web] Firebase app is not available (initialization likely failed). Firestore and Auth services will be undefined.
+2025-07-03T22:58:06Z [web] 
+2025-07-03T22:58:06Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
+2025-07-03T22:58:06Z [web] Warning: Environment variable DEEPSEEK_API_KEY is not set.
+2025-07-03T22:58:06Z [web] Warning: Environment variable QWEN_API_KEY is not set.
+2025-07-03T22:58:06Z [web] Warning: Environment variable NEBIUS_API_KEY is not set.
+2025-07-03T22:58:06Z [web] Warning: Environment variable KIMI_API_KEY is not set.
+2025-07-03T22:58:06Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
+2025-07-03T22:58:06Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
+2025-07-03T22:58:06Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
+2025-07-03T22:58:06Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
+2025-07-03T22:58:06Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
+2025-07-03T22:58:06Z [web] 
+2025-07-03T22:58:06Z [web] Huddle configuration for context 'Outline' loaded successfully from outline.default.json
+2025-07-03T22:58:07Z [web] Error: Error initiating huddle session: TypeError: Cannot read properties of undefined (reading 'collection')
+2025-07-03T22:58:07Z [web]     at handler (src/pages/api/huddles/index.ts:126:13)
+2025-07-03T22:58:07Z [web]   124 |
+2025-07-03T22:58:07Z [web]   125 |     // 5. Firestore Interaction (1st Write): Save initial session
+2025-07-03T22:58:07Z [web] > 126 |     await db.collection('huddleSessions').doc(sessionId).set(huddleSession);
+2025-07-03T22:58:07Z [web]       |             ^
+2025-07-03T22:58:07Z [web]   127 |     console.log(`Initial HuddleSession ${sessionId} created in Firestore.`);
+2025-07-03T22:58:07Z [web]   128 |
+2025-07-03T22:58:07Z [web]   129 |     // 6. Invoke Moderator AI for Prompt Rewrite
+2025-07-03T22:58:07Z [web] 
+2025-07-03T22:58:07Z [web] Error: Failed to update session 426e7967-18e5-4d47-94cf-de5123f965e1 to failed status: TypeError: Cannot read properties of undefined (reading 'collection')
+2025-07-03T22:58:07Z [web]     at handler (src/pages/api/huddles/index.ts:217:21)
+2025-07-03T22:58:07Z [web]   215 |     if (sessionId) {
+2025-07-03T22:58:07Z [web]   216 |         try {
+2025-07-03T22:58:07Z [web] > 217 |             await db.collection('huddleSessions').doc(sessionId).update({
+2025-07-03T22:58:07Z [web]       |                     ^
+2025-07-03T22:58:07Z [web]   218 |                 status: 'failed',
+2025-07-03T22:58:07Z [web]   219 |                 errorDetails: { message: error.message || 'Unknown error', phase: 'initialization', timestamp: Date.now() },
+2025-07-03T22:58:07Z [web]   220 |                 updatedAt: Date.now(),
+2025-07-03T22:58:07Z [web] 
+2025-07-03T22:58:07Z [web]  POST /api/huddles 500 in 900ms
+2025-07-03T22:59:55Z [web] Huddle configuration for context 'Outline' loaded successfully from outline.default.json
+2025-07-03T22:59:55Z [web] Error: Error initiating huddle session: TypeError: Cannot read properties of undefined (reading 'collection')
+2025-07-03T22:59:55Z [web]     at handler (src/pages/api/huddles/index.ts:126:13)
+2025-07-03T22:59:55Z [web]   124 |
+2025-07-03T22:59:55Z [web]   125 |     // 5. Firestore Interaction (1st Write): Save initial session
+2025-07-03T22:59:55Z [web] > 126 |     await db.collection('huddleSessions').doc(sessionId).set(huddleSession);
+2025-07-03T22:59:55Z [web]       |             ^
+2025-07-03T22:59:55Z [web]   127 |     console.log(`Initial HuddleSession ${sessionId} created in Firestore.`);
+2025-07-03T22:59:55Z [web]   128 |
+2025-07-03T22:59:55Z [web]   129 |     // 6. Invoke Moderator AI for Prompt Rewrite
+2025-07-03T22:59:55Z [web] 
+2025-07-03T22:59:55Z [web] Error: Failed to update session 70530893-470d-4006-bc43-05c07ffb2ee5 to failed status: TypeError: Cannot read properties of undefined (reading 'collection')
+2025-07-03T22:59:55Z [web]     at handler (src/pages/api/huddles/index.ts:217:21)
+2025-07-03T22:59:55Z [web]   215 |     if (sessionId) {
+2025-07-03T22:59:55Z [web]   216 |         try {
+2025-07-03T22:59:55Z [web] > 217 |             await db.collection('huddleSessions').doc(sessionId).update({
+2025-07-03T22:59:55Z [web]       |                     ^
+2025-07-03T22:59:55Z [web]   218 |                 status: 'failed',
+2025-07-03T22:59:55Z [web]   219 |                 errorDetails: { message: error.message || 'Unknown error', phase: 'initialization', timestamp: Date.now() },
+2025-07-03T22:59:55Z [web]   220 |                 updatedAt: Date.now(),
+2025-07-03T22:59:55Z [web] 
+2025-07-03T22:59:55Z [web]  POST /api/huddles 500 in 234ms
