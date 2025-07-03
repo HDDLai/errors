@@ -1,15 +1,20 @@
-studio-4980275041:~/studio{master}$ npm run dev
-
-> nextn@0.1.0 dev
-> next dev --turbopack -p 9002
-
- ⨯ Failed to start server
-Error: listen EADDRINUSE: address already in use :::9002
-    at <unknown> (Error: listen EADDRINUSE: address already in use :::9002)
-    at new Promise (<anonymous>) {
-  code: 'EADDRINUSE',
-  errno: -98,
-  syscall: 'listen',
-  address: '::',
-  port: 9002
-}
+2025-07-03T20:14:03Z [web] <Firebase Studio> Starting preview...
+2025-07-03T20:14:03Z [web] Waiting for your web server to start serving
+2025-07-03T20:14:04Z [web] 
+2025-07-03T20:14:04Z [web] > nextn@0.1.0 dev
+2025-07-03T20:14:04Z [web] > next dev --turbopack -p 9002 --port 9002 --hostname 0.0.0.0
+2025-07-03T20:14:04Z [web] 
+2025-07-03T20:14:05Z [web] <Firebase Studio> ▶️ Preview running
+2025-07-03T20:14:06Z [web]    ▲ Next.js 15.3.3 (Turbopack)
+2025-07-03T20:14:06Z [web]    - Local:        http://localhost:9002
+2025-07-03T20:14:06Z [web]    - Network:      http://0.0.0.0:9002
+2025-07-03T20:14:06Z [web]    - Environments: .env.local, .env
+2025-07-03T20:14:06Z [web] 
+2025-07-03T20:14:06Z [web]  ✓ Starting...
+2025-07-03T20:14:07Z [web]  ✓ Ready in 1936ms
+2025-07-03T20:14:08Z [web]  ○ Compiling / ...
+2025-07-03T20:14:20Z [web]  ✓ Compiled / in 12.3s
+2025-07-03T20:14:20Z [web]  GET /?monospaceUid=866590 200 in 13024ms
+2025-07-03T20:14:21Z [web] Error:  ⚠ Cross origin request detected from 9000-firebase-studio-1751489770040.cluster-pgviq6mvsncnqxx6kr7pbz65v6.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+2025-07-03T20:14:21Z [web] Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+2025-07-03T20:14:21Z [web] 
