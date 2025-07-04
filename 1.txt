@@ -1,75 +1,50 @@
-2025-07-04T21:10:04Z [web]  GET /?monospaceUid=910413 200 in 761ms
-2025-07-04T21:10:05Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 363ms
-2025-07-04T21:11:26Z [web]  GET /?monospaceUid=910413 200 in 179ms
-2025-07-04T21:11:28Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 543ms
-2025-07-04T21:11:33Z [web]  GET /?monospaceUid=910413 200 in 178ms
-2025-07-04T21:11:34Z [web]  GET /?monospaceUid=910413 200 in 193ms
-2025-07-04T21:11:34Z [web]  GET /?monospaceUid=910413 200 in 823ms
-2025-07-04T21:11:35Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 1185ms
-2025-07-04T21:11:36Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 603ms
-2025-07-04T21:12:48Z [web]  GET /?monospaceUid=910413 200 in 263ms
-2025-07-04T21:12:48Z [web]  GET /?monospaceUid=910413 200 in 339ms
-2025-07-04T21:12:49Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 315ms
-2025-07-04T21:13:01Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
-2025-07-04T21:13:01Z [web] 
-2025-07-04T21:13:01Z [web] Error: Warning: Environment variable DEEPSEEK_API_KEY is not set.
-2025-07-04T21:13:01Z [web] Warning: Environment variable QWEN_API_KEY is not set.
-2025-07-04T21:13:01Z [web] Warning: Environment variable NEBIUS_API_KEY is not set.
-2025-07-04T21:13:01Z [web] Warning: Environment variable KIMI_API_KEY is not set.
-2025-07-04T21:13:01Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
-2025-07-04T21:13:01Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
-2025-07-04T21:13:01Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
-2025-07-04T21:13:01Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
-2025-07-04T21:13:01Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
-2025-07-04T21:13:01Z [web] 
-2025-07-04T21:13:01Z [web] [HuddleAI] firebaseAdmin.ts: Module top level.
-2025-07-04T21:13:01Z [web] [HuddleAI] firebaseAdmin.ts: Firebase Admin SDK already initialized. Using existing app: [DEFAULT]
-2025-07-04T21:13:01Z [web] [HuddleAI] firebaseAdmin.ts: Firestore and Auth services obtained successfully from app.
-2025-07-04T21:13:01Z [web] Huddle configuration for context 'Outline' loaded successfully from outline.default.json
-2025-07-04T21:13:01Z [web] Initial HuddleSession c0cf35c5-1346-44f3-9a3b-f0346bc29cff created in Firestore.
-2025-07-04T21:13:01Z [web] Persona for gemini-1-5-pro-moderator loaded successfully from gemini-1-5-pro-moderator.persona.json
-2025-07-04T21:13:01Z [web] Error: executeChatPrompt: Client for mentor gemini-1-5-pro-moderator is null after getClient() call. This provider may not be fully configured (e.g., missing endpoint for Grok).
-2025-07-04T21:13:01Z [web] Moderator AI failed to return a rewritten prompt.
-2025-07-04T21:13:01Z [web] 
-2025-07-04T21:13:01Z [web] Persona for grok-3 loaded successfully from grok-3.persona.json
-2025-07-04T21:13:01Z [web] HuddleSession c0cf35c5-1346-44f3-9a3b-f0346bc29cff updated before first AI question. Next actor: grok-3
-2025-07-04T21:13:01Z [web] Persona for grok-3 loaded successfully from grok-3.persona.json
-2025-07-04T21:13:01Z [web] Executing chat prompt for Elara (Grok 3) using model Grok 3
-2025-07-04T21:13:01Z [web] Error: Error executing chat prompt for Grok 3: Error: 404 "The model Grok 3 does not exist or your team db7efafb-9493-4e1e-bf9b-d3401576d458 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
-2025-07-04T21:13:01Z [web]     at async Object.executeChatCompletion (src/lib/aiProviderManager.ts:182:25)
-2025-07-04T21:13:01Z [web]     at async executeChatPrompt (src/lib/aiProviderManager.ts:317:11)
-2025-07-04T21:13:01Z [web]     at async handler (src/pages/api/huddles/index.ts:234:32)
-2025-07-04T21:13:01Z [web]   180 |         return null;
-2025-07-04T21:13:01Z [web]   181 |       }
-2025-07-04T21:13:01Z [web] > 182 |       const completion = await (client as OpenAI).chat.completions.create(payload);
-2025-07-04T21:13:01Z [web]       |                         ^
-2025-07-04T21:13:01Z [web]   183 |       return completion.choices[0]?.message?.content || null;
-2025-07-04T21:13:01Z [web]   184 |     }
-2025-07-04T21:13:01Z [web]   185 |   } {
-2025-07-04T21:13:01Z [web]   status: 404,
-2025-07-04T21:13:01Z [web]   headers: Headers {
-2025-07-04T21:13:01Z [web]     date: 'Fri, 04 Jul 2025 21:13:01 GMT',
-2025-07-04T21:13:01Z [web]     'content-type': 'application/json',
-2025-07-04T21:13:01Z [web]     'transfer-encoding': 'chunked',
-2025-07-04T21:13:01Z [web]     connection: 'keep-alive',
-2025-07-04T21:13:01Z [web]     vary: 'origin, access-control-request-method, access-control-request-headers',
-2025-07-04T21:13:01Z [web]     'access-control-allow-origin': '*',
-2025-07-04T21:13:01Z [web]     'access-control-expose-headers': '*',
-2025-07-04T21:13:01Z [web]     'cf-cache-status': 'DYNAMIC',
-2025-07-04T21:13:01Z [web]     'set-cookie': '__cf_bm=IvHrm.vxh1kT.oiCA7c_MqCscORFJwySqUFoCgoLOrA-1751663581-1.0.1.1-8.kmxbQKlg7r2CkdFa6AnqoPIBzdU9VBez0dKCIJ6sqCar4d58eYn1fHb9wuuh_R6oxPns1ZJMfEm1Hy03h01MHiFdSdCFOFuioqbnp232Q; path=/; expires=Fri, 04-Jul-25 21:43:01 GMT; domain=.x.ai; HttpOnly; Secure; SameSite=None',
-2025-07-04T21:13:01Z [web]     'strict-transport-security': 'max-age=31536000',
-2025-07-04T21:13:01Z [web]     server: 'cloudflare',
-2025-07-04T21:13:01Z [web]     'cf-ray': '95a19fc87e9dc94e-IAD',
-2025-07-04T21:13:01Z [web]     'content-encoding': 'gzip'
-2025-07-04T21:13:01Z [web]   },
-2025-07-04T21:13:01Z [web]   requestID: null,
-2025-07-04T21:13:01Z [web]   error: "The model Grok 3 does not exist or your team db7efafb-9493-4e1e-bf9b-d3401576d458 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name.",
-2025-07-04T21:13:01Z [web]   code: undefined,
-2025-07-04T21:13:01Z [web]   param: undefined,
-2025-07-04T21:13:01Z [web]   type: undefined
-2025-07-04T21:13:01Z [web] }
-2025-07-04T21:13:01Z [web] 
-2025-07-04T21:13:01Z [web] Error: First AI (grok-3) failed to generate a question.
-2025-07-04T21:13:01Z [web] 
-2025-07-04T21:13:01Z [web] HuddleSession c0cf35c5-1346-44f3-9a3b-f0346bc29cff updated. Status: failed. Next actor: grok-3
-2025-07-04T21:13:01Z [web]  POST /api/huddles 500 in 918ms
+2025-07-04T21:38:42Z [web]  GET /?monospaceUid=910413 200 in 150ms
+2025-07-04T21:38:43Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 292ms
+2025-07-04T21:38:50Z [web] Huddle configuration for context 'Outline' loaded successfully from outline.default.json
+2025-07-04T21:38:50Z [web] Initial HuddleSession 6b304eed-71f0-427f-9f99-56c4729685aa created in Firestore.
+2025-07-04T21:38:50Z [web] Persona for gemini-1-5-pro-moderator loaded successfully from gemini-1-5-pro-moderator.persona.json
+2025-07-04T21:38:50Z [web] Error: executeChatPrompt: Failed to get client for non-Google mentor gemini-1-5-pro-moderator. Provider may not be fully configured.
+2025-07-04T21:38:50Z [web] Moderator AI failed to return a rewritten prompt.
+2025-07-04T21:38:50Z [web] 
+2025-07-04T21:38:50Z [web] Persona for grok-3 loaded successfully from grok-3.persona.json
+2025-07-04T21:38:50Z [web] HuddleSession 6b304eed-71f0-427f-9f99-56c4729685aa updated before first AI question. Next actor: grok-3
+2025-07-04T21:38:50Z [web] Persona for grok-3 loaded successfully from grok-3.persona.json
+2025-07-04T21:38:50Z [web] Executing chat prompt for Elara (Grok 3) using model Grok 3
+2025-07-04T21:38:51Z [web] Error: Error executing chat prompt for Grok 3: Error: 404 "The model Grok 3 does not exist or your team db7efafb-9493-4e1e-bf9b-d3401576d458 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+2025-07-04T21:38:51Z [web]     at async Object.executeChatCompletion (src/lib/aiProviderManager.ts:182:25)
+2025-07-04T21:38:51Z [web]     at async executeChatPrompt (src/lib/aiProviderManager.ts:312:11)
+2025-07-04T21:38:51Z [web]     at async handler (src/pages/api/huddles/index.ts:234:32)
+2025-07-04T21:38:51Z [web]   180 |         return null;
+2025-07-04T21:38:51Z [web]   181 |       }
+2025-07-04T21:38:51Z [web] > 182 |       const completion = await (client as OpenAI).chat.completions.create(payload);
+2025-07-04T21:38:51Z [web]       |                         ^
+2025-07-04T21:38:51Z [web]   183 |       return completion.choices[0]?.message?.content || null;
+2025-07-04T21:38:51Z [web]   184 |     }
+2025-07-04T21:38:51Z [web]   185 |   } {
+2025-07-04T21:38:51Z [web]   status: 404,
+2025-07-04T21:38:51Z [web]   headers: Headers {
+2025-07-04T21:38:51Z [web]     date: 'Fri, 04 Jul 2025 21:38:51 GMT',
+2025-07-04T21:38:51Z [web]     'content-type': 'application/json',
+2025-07-04T21:38:51Z [web]     'transfer-encoding': 'chunked',
+2025-07-04T21:38:51Z [web]     connection: 'keep-alive',
+2025-07-04T21:38:51Z [web]     vary: 'origin, access-control-request-method, access-control-request-headers',
+2025-07-04T21:38:51Z [web]     'access-control-allow-origin': '*',
+2025-07-04T21:38:51Z [web]     'access-control-expose-headers': '*',
+2025-07-04T21:38:51Z [web]     'cf-cache-status': 'DYNAMIC',
+2025-07-04T21:38:51Z [web]     'set-cookie': '__cf_bm=Ja4qKP0fyX2Pg9F3aWveS2J.VUYegpaAwshpyfcUCio-1751665131-1.0.1.1-0AM4stFr3JKrrLc9v7yox1pvR2mZVlC79p1_jVA10X_XHZcRyEErIqXUhBMYaRSBGf6hmdjbThtsso6mUZ7wnZpGqM6qP4MeyUplawf60wA; path=/; expires=Fri, 04-Jul-25 22:08:51 GMT; domain=.x.ai; HttpOnly; Secure; SameSite=None',
+2025-07-04T21:38:51Z [web]     'strict-transport-security': 'max-age=31536000',
+2025-07-04T21:38:51Z [web]     server: 'cloudflare',
+2025-07-04T21:38:51Z [web]     'cf-ray': '95a1c59c4b7fc94e-IAD',
+2025-07-04T21:38:51Z [web]     'content-encoding': 'gzip'
+2025-07-04T21:38:51Z [web]   },
+2025-07-04T21:38:51Z [web]   requestID: null,
+2025-07-04T21:38:51Z [web]   error: "The model Grok 3 does not exist or your team db7efafb-9493-4e1e-bf9b-d3401576d458 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name.",
+2025-07-04T21:38:51Z [web]   code: undefined,
+2025-07-04T21:38:51Z [web]   param: undefined,
+2025-07-04T21:38:51Z [web]   type: undefined
+2025-07-04T21:38:51Z [web] }
+2025-07-04T21:38:51Z [web] 
+2025-07-04T21:38:51Z [web] Error: First AI (grok-3) failed to generate a question.
+2025-07-04T21:38:51Z [web] 
+2025-07-04T21:38:51Z [web] HuddleSession 6b304eed-71f0-427f-9f99-56c4729685aa updated. Status: failed. Next actor: grok-3
+2025-07-04T21:38:51Z [web]  POST /api/huddles 500 in 596ms
