@@ -1,38 +1,38 @@
-2025-07-04T22:17:42Z [web]  GET /?monospaceUid=910413 200 in 242ms
-2025-07-04T22:17:43Z [web]  ○ Compiling /favicon.ico ...
-2025-07-04T22:17:44Z [web]  ✓ Compiled /favicon.ico in 1805ms
-2025-07-04T22:17:45Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 2153ms
-2025-07-04T22:17:56Z [web]  ✓ Compiled /api/huddles in 380ms
-2025-07-04T22:17:57Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
-2025-07-04T22:17:57Z [web] 
-2025-07-04T22:17:57Z [web] Error: Warning: Environment variable DEEPSEEK_API_KEY is not set.
-2025-07-04T22:17:57Z [web] Warning: Environment variable QWEN_API_KEY is not set.
-2025-07-04T22:17:57Z [web] Warning: Environment variable NEBIUS_API_KEY is not set.
-2025-07-04T22:17:57Z [web] Warning: Environment variable KIMI_API_KEY is not set.
-2025-07-04T22:17:57Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
-2025-07-04T22:17:57Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
-2025-07-04T22:17:57Z [web] 
-2025-07-04T22:17:57Z [web] Error: Warning: Environment variable LLAMA_API_ENDPOINT is not set.
-2025-07-04T22:17:57Z [web] 
-2025-07-04T22:17:57Z [web] Error: Warning: Environment variable MISTRAL_API_KEY is not set.
-2025-07-04T22:17:57Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
-2025-07-04T22:17:57Z [web] 
-2025-07-04T22:17:57Z [web] [HuddleAI] firebaseAdmin.ts: Module top level.
-2025-07-04T22:17:57Z [web] [HuddleAI] firebaseAdmin.ts: No Firebase apps initialized. Attempting initialization...
-2025-07-04T22:17:57Z [web] [HuddleAI] firebaseAdmin.ts: Attempting to read service account key from resolved absolute path: /home/user/studio/.secure/huddle-ai-development.firebase-service-account-key-2.json
-2025-07-04T22:17:57Z [web] [HuddleAI] firebaseAdmin.ts: Service account key file read and parsed successfully. Project ID from key: huddle-ai-development
-2025-07-04T22:17:57Z [web] [HuddleAI] firebaseAdmin.ts: Firebase Admin SDK initialized successfully. App name: [DEFAULT]
-2025-07-04T22:17:57Z [web] [HuddleAI] firebaseAdmin.ts: Firestore and Auth services obtained successfully from app.
-2025-07-04T22:17:57Z [web] Huddle configuration for context 'Outline' loaded successfully from outline.default.json
-2025-07-04T22:17:58Z [web] Initial HuddleSession a82cd06a-0582-455d-88c6-4b3fe8fd07f3 created in Firestore.
-2025-07-04T22:17:58Z [web] Persona for gemini-1-5-pro-moderator loaded successfully from gemini-1-5-pro-moderator.persona.json
-2025-07-04T22:17:58Z [web] Error: executeChatPrompt: Failed to get client for mentor gemini-1-5-pro-moderator. Provider may not be fully configured or getClient failed.
-2025-07-04T22:17:58Z [web] Moderator AI failed to return a rewritten prompt.
-2025-07-04T22:17:58Z [web] 
-2025-07-04T22:17:58Z [web] Persona for grok-3 loaded successfully from grok-3.persona.json
-2025-07-04T22:17:58Z [web] HuddleSession a82cd06a-0582-455d-88c6-4b3fe8fd07f3 updated before first AI question. Next actor: grok-3
-2025-07-04T22:17:58Z [web] Persona for grok-3 loaded successfully from grok-3.persona.json
-2025-07-04T22:17:58Z [web] Executing chat prompt for Elara (Grok 3) using model grok-3
-2025-07-04T22:17:59Z [web] First AI (grok-3) asked: What specific challenges or unique goals does your start-up face in using 3D printing for shoemaking that you’d like us to address in our outline?
-2025-07-04T22:17:59Z [web] HuddleSession a82cd06a-0582-455d-88c6-4b3fe8fd07f3 updated. Status: clarifying. Next actor: user
-2025-07-04T22:17:59Z [web]  POST /api/huddles 201 in 2549ms
+2025-07-04T22:51:52Z [web]  GET /?monospaceUid=910413 200 in 202ms
+2025-07-04T22:51:53Z [web]  ○ Compiling /favicon.ico ...
+2025-07-04T22:51:55Z [web]  ✓ Compiled /favicon.ico in 1760ms
+2025-07-04T22:51:55Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 2129ms
+2025-07-04T22:52:00Z [web]  ✓ Compiled /api/huddles in 448ms
+2025-07-04T22:52:00Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
+2025-07-04T22:52:00Z [web] 
+2025-07-04T22:52:00Z [web] Error: Warning: Environment variable DEEPSEEK_API_KEY is not set.
+2025-07-04T22:52:00Z [web] Warning: Environment variable QWEN_API_KEY is not set.
+2025-07-04T22:52:00Z [web] Warning: Environment variable NEBIUS_API_KEY is not set.
+2025-07-04T22:52:00Z [web] Warning: Environment variable KIMI_API_KEY is not set.
+2025-07-04T22:52:00Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
+2025-07-04T22:52:00Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
+2025-07-04T22:52:00Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
+2025-07-04T22:52:00Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
+2025-07-04T22:52:00Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
+2025-07-04T22:52:00Z [web] 
+2025-07-04T22:52:01Z [web] [HuddleAI] firebaseAdmin.ts: Module top level.
+2025-07-04T22:52:01Z [web] [HuddleAI] firebaseAdmin.ts: No Firebase apps initialized. Attempting initialization...
+2025-07-04T22:52:01Z [web] [HuddleAI] firebaseAdmin.ts: Attempting to read service account key from resolved absolute path: /home/user/studio/.secure/huddle-ai-development.firebase-service-account-key-2.json
+2025-07-04T22:52:01Z [web] [HuddleAI] firebaseAdmin.ts: Service account key file read and parsed successfully. Project ID from key: huddle-ai-development
+2025-07-04T22:52:01Z [web] [HuddleAI] firebaseAdmin.ts: Firebase Admin SDK initialized successfully. App name: [DEFAULT]
+2025-07-04T22:52:01Z [web] [HuddleAI] firebaseAdmin.ts: Firestore and Auth services obtained successfully from app.
+2025-07-04T22:52:01Z [web] Huddle configuration for context 'Outline' loaded successfully from outline.default.json
+2025-07-04T22:52:02Z [web] Initial HuddleSession 5883ccd9-7eaa-4112-8343-fabe60742430 created in Firestore.
+2025-07-04T22:52:02Z [web] Persona for gemini-1-5-pro-moderator loaded successfully from gemini-1-5-pro-moderator.persona.json
+2025-07-04T22:52:02Z [web] Error: Error initiating huddle session (outer catch): ReferenceError: lowerProviderKey is not defined
+2025-07-04T22:52:02Z [web]     at executeChatPrompt (src/lib/aiProviderManager.ts:303:2)
+2025-07-04T22:52:02Z [web]     at handler (src/pages/api/huddles/index.ts:149:10)
+2025-07-04T22:52:02Z [web]   301 |
+2025-07-04T22:52:02Z [web]   302 |   // Force correct model for Grok, overriding any inference if 'model' wasn't explicitly passed
+2025-07-04T22:52:02Z [web] > 303 |   if (lowerProviderKey.startsWith('grok')) {
+2025-07-04T22:52:02Z [web]       |  ^
+2025-07-04T22:52:02Z [web]   304 |     finalModelId = 'grok-3';
+2025-07-04T22:52:02Z [web]   305 |   }
+2025-07-04T22:52:02Z [web]   306 |
+2025-07-04T22:52:02Z [web] 
+2025-07-04T22:52:02Z [web]  POST /api/huddles 500 in 1994ms
