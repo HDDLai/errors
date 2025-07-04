@@ -1,18 +1,50 @@
-2025-07-04T19:56:06Z [web]  GET /?monospaceUid=910413 200 in 172ms
-2025-07-04T19:56:07Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 289ms
-2025-07-04T19:56:14Z [web] Huddle configuration for context 'Outline' loaded successfully from outline.default.json
-2025-07-04T19:56:14Z [web] Initial HuddleSession bb2084ad-6d7d-4b15-a2bf-bce6508c361b created in Firestore.
-2025-07-04T19:56:14Z [web] Persona for gemini-1-5-pro-moderator loaded successfully from gemini-1-5-pro-moderator.persona.json
-2025-07-04T19:56:14Z [web] Error: Failed to get client for AI Provider mentor gemini-1-5-pro-moderator.
-2025-07-04T19:56:14Z [web] 
-2025-07-04T19:56:14Z [web] Error: Moderator AI failed to return a rewritten prompt.
-2025-07-04T19:56:14Z [web] 
-2025-07-04T19:56:14Z [web] Persona for grok-3 loaded successfully from grok-3.persona.json
-2025-07-04T19:56:14Z [web] HuddleSession bb2084ad-6d7d-4b15-a2bf-bce6508c361b updated before first AI question. Next actor: grok-3
-2025-07-04T19:56:14Z [web] Persona for grok-3 loaded successfully from grok-3.persona.json
-2025-07-04T19:56:14Z [web] Error: Grok client requires GROK_API_KEY and GROK_API_ENDPOINT to be set for OpenAI-compatible mode.
-2025-07-04T19:56:14Z [web] Failed to get client for AI Provider mentor Grok 3.
-2025-07-04T19:56:14Z [web] First AI (grok-3) failed to generate a question.
-2025-07-04T19:56:14Z [web] 
-2025-07-04T19:56:15Z [web] HuddleSession bb2084ad-6d7d-4b15-a2bf-bce6508c361b updated. Status: failed. Next actor: grok-3
-2025-07-04T19:56:15Z [web]  POST /api/huddles 500 in 389ms
+2025-07-04T20:49:31Z [web]  GET /?monospaceUid=910413 200 in 199ms
+2025-07-04T20:49:32Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 325ms
+2025-07-04T20:49:35Z [web] Huddle configuration for context 'Outline' loaded successfully from outline.default.json
+2025-07-04T20:49:35Z [web] Initial HuddleSession ddcacd8e-eca5-44d2-a449-1a3d9390f19e created in Firestore.
+2025-07-04T20:49:35Z [web] Persona for gemini-1-5-pro-moderator loaded successfully from gemini-1-5-pro-moderator.persona.json
+2025-07-04T20:49:35Z [web] Error: executeChatPrompt: Client for mentor gemini-1-5-pro-moderator is null after getClient() call. This provider may not be fully configured (e.g., missing endpoint for Grok).
+2025-07-04T20:49:35Z [web] Moderator AI failed to return a rewritten prompt.
+2025-07-04T20:49:35Z [web] 
+2025-07-04T20:49:35Z [web] Persona for grok-3 loaded successfully from grok-3.persona.json
+2025-07-04T20:49:35Z [web] HuddleSession ddcacd8e-eca5-44d2-a449-1a3d9390f19e updated before first AI question. Next actor: grok-3
+2025-07-04T20:49:35Z [web] Persona for grok-3 loaded successfully from grok-3.persona.json
+2025-07-04T20:49:35Z [web] Executing chat prompt for Elara (Grok 3) using model Grok 3
+2025-07-04T20:49:35Z [web] Error: Error executing chat prompt for Grok 3: Error: 404 "No handler found on route. Please double check your URL and consult https://api.x.ai/docs for more information."
+2025-07-04T20:49:35Z [web]     at async Object.executeChatCompletion (src/lib/aiProviderManager.ts:182:25)
+2025-07-04T20:49:35Z [web]     at async executeChatPrompt (src/lib/aiProviderManager.ts:303:11)
+2025-07-04T20:49:35Z [web]     at async handler (src/pages/api/huddles/index.ts:234:32)
+2025-07-04T20:49:35Z [web]   180 |         return null;
+2025-07-04T20:49:35Z [web]   181 |       }
+2025-07-04T20:49:35Z [web] > 182 |       const completion = await (client as OpenAI).chat.completions.create(payload);
+2025-07-04T20:49:35Z [web]       |                         ^
+2025-07-04T20:49:35Z [web]   183 |       return completion.choices[0]?.message?.content || null;
+2025-07-04T20:49:35Z [web]   184 |     }
+2025-07-04T20:49:35Z [web]   185 |   } {
+2025-07-04T20:49:35Z [web]   status: 404,
+2025-07-04T20:49:35Z [web]   headers: Headers {
+2025-07-04T20:49:35Z [web]     date: 'Fri, 04 Jul 2025 20:49:35 GMT',
+2025-07-04T20:49:35Z [web]     'content-type': 'application/json',
+2025-07-04T20:49:35Z [web]     'transfer-encoding': 'chunked',
+2025-07-04T20:49:35Z [web]     connection: 'keep-alive',
+2025-07-04T20:49:35Z [web]     vary: 'origin, access-control-request-method, access-control-request-headers',
+2025-07-04T20:49:35Z [web]     'access-control-allow-origin': '*',
+2025-07-04T20:49:35Z [web]     'access-control-expose-headers': '*',
+2025-07-04T20:49:35Z [web]     'cf-cache-status': 'DYNAMIC',
+2025-07-04T20:49:35Z [web]     'set-cookie': '__cf_bm=3unsGH3sWnbxAywrnhCdLhvyqIxIlMqwrLtDH6S1KWg-1751662175-1.0.1.1-RM4sORCKFIk6FY4wfpsb5O62YNrB.4nJMcOrRaNB4moToB0OSaJbaute8PltYXOQV2WtM3oto85g0UcCPabX_XtxmShicc1Oxix_QYk62Yw; path=/; expires=Fri, 04-Jul-25 21:19:35 GMT; domain=.x.ai; HttpOnly; Secure; SameSite=None',
+2025-07-04T20:49:35Z [web]     'strict-transport-security': 'max-age=31536000',
+2025-07-04T20:49:35Z [web]     server: 'cloudflare',
+2025-07-04T20:49:35Z [web]     'cf-ray': '95a17d760c71c9bb-IAD',
+2025-07-04T20:49:35Z [web]     'content-encoding': 'gzip'
+2025-07-04T20:49:35Z [web]   },
+2025-07-04T20:49:35Z [web]   requestID: null,
+2025-07-04T20:49:35Z [web]   error: 'No handler found on route. Please double check your URL and consult https://api.x.ai/docs for more information.',
+2025-07-04T20:49:35Z [web]   code: undefined,
+2025-07-04T20:49:35Z [web]   param: undefined,
+2025-07-04T20:49:35Z [web]   type: undefined
+2025-07-04T20:49:35Z [web] }
+2025-07-04T20:49:35Z [web] 
+2025-07-04T20:49:35Z [web] Error: First AI (grok-3) failed to generate a question.
+2025-07-04T20:49:35Z [web] 
+2025-07-04T20:49:35Z [web] HuddleSession ddcacd8e-eca5-44d2-a449-1a3d9390f19e updated. Status: failed. Next actor: grok-3
+2025-07-04T20:49:35Z [web]  POST /api/huddles 500 in 512ms
