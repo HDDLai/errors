@@ -1,113 +1,34 @@
-2025-07-04T01:35:09Z [web] <Firebase Studio> Starting preview...
-2025-07-04T01:35:09Z [web] Waiting for your web server to start serving
-2025-07-04T01:35:09Z [web] 
-2025-07-04T01:35:09Z [web] > nextn@0.1.0 dev
-2025-07-04T01:35:09Z [web] > next dev --turbopack -p 9002 --port 9002 --hostname 0.0.0.0
-2025-07-04T01:35:09Z [web] 
-2025-07-04T01:35:11Z [web] <Firebase Studio> ▶️ Preview running
-2025-07-04T01:35:11Z [web]    ▲ Next.js 15.3.3 (Turbopack)
-2025-07-04T01:35:11Z [web]    - Local:        http://localhost:9002
-2025-07-04T01:35:11Z [web]    - Network:      http://0.0.0.0:9002
-2025-07-04T01:35:11Z [web]    - Environments: .env.local, .env
-2025-07-04T01:35:11Z [web] 
-2025-07-04T01:35:11Z [web]  ✓ Starting...
-2025-07-04T01:35:12Z [web]  ✓ Ready in 1739ms
-2025-07-04T01:35:13Z [web]  ○ Compiling / ...
-2025-07-04T01:35:22Z [web]  ✓ Compiled / in 10.1s
-2025-07-04T01:35:23Z [web]  GET /?monospaceUid=884092 200 in 10815ms
-2025-07-04T01:35:24Z [web] Error:  ⚠ Cross origin request detected from 9000-firebase-studio-1751489770040.cluster-pgviq6mvsncnqxx6kr7pbz65v6.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-2025-07-04T01:35:24Z [web] Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-2025-07-04T01:35:24Z [web] 
-2025-07-04T01:35:35Z [web]  ✓ Compiled /api/huddles in 384ms
-2025-07-04T01:35:35Z [web] [Next.js Context] firebaseAdmin.ts: No apps initialized. Attempting initialization...
-2025-07-04T01:35:35Z [web] [Next.js Context] Attempting to initialize with service account key from resolved path: /home/user/studio/.secure/huddle-ai-development.firebase-service-account-key-2.json
-2025-07-04T01:35:35Z [web] Error: [Next.js Context] Initialization with service account path FAILED. Error: Cannot read properties of undefined (reading 'INTERNAL')
-2025-07-04T01:35:35Z [web] 
-2025-07-04T01:35:35Z [web] [Next.js Context] Attempting FALLBACK: Reading SA file content and initializing with object...
-2025-07-04T01:35:35Z [web] [Next.js Context - Fallback] Reading file content from: /home/user/studio/.secure/huddle-ai-development.firebase-service-account-key-2.json
-2025-07-04T01:35:35Z [web] [Next.js Context - Fallback] Service account key file read and parsed. Project ID: huddle-ai-development
-2025-07-04T01:35:35Z [web] Error: [Next.js Context - Fallback] CRITICAL: Firebase Admin SDK FALLBACK initialization FAILED.
-2025-07-04T01:35:35Z [web] 
-2025-07-04T01:35:35Z [web] Error: [Next.js Context - Fallback] Message: Cannot read properties of undefined (reading 'INTERNAL')
-2025-07-04T01:35:35Z [web] 
-2025-07-04T01:35:35Z [web] Error: [Next.js Context - Fallback] Stack: TypeError: Cannot read properties of undefined (reading 'INTERNAL')
-2025-07-04T01:35:35Z [web]     at initializeApp (/home/user/studio/node_modules/firebase-admin/lib/app/firebase-namespace.js:246:21)
-2025-07-04T01:35:35Z [web]     at [project]/src/lib/firebaseAdmin.ts [api] (ecmascript) <locals> (/home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:90:164)
-2025-07-04T01:35:35Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
-2025-07-04T01:35:35Z [web]     at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)
-2025-07-04T01:35:35Z [web]     at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)
-2025-07-04T01:35:35Z [web]     at [project]/src/lib/firebaseAdmin.ts [api] (ecmascript) <module evaluation> (/home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:133:162)
-2025-07-04T01:35:35Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
-2025-07-04T01:35:35Z [web]     at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)
-2025-07-04T01:35:35Z [web]     at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)
-2025-07-04T01:35:35Z [web]     at /home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:1596:174
-2025-07-04T01:35:35Z [web]     at asyncModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:299:5)
-2025-07-04T01:35:35Z [web]     at [project]/src/pages/api/huddles/index.ts [api] (ecmascript) (/home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:1590:1)
-2025-07-04T01:35:35Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
-2025-07-04T01:35:35Z [web]     at getOrInstantiateModuleFromParent (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:653:12)
-2025-07-04T01:35:35Z [web]     at esmImport (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:132:20)
-2025-07-04T01:35:35Z [web]     at /home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:1911:158
-2025-07-04T01:35:35Z [web]     at asyncModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:299:5)
-2025-07-04T01:35:35Z [web]     at [project]/node_modules/next/dist/esm/build/templates/pages-api.js { INNER_PAGE => "[project]/src/pages/api/huddles/index.ts [api] (ecmascript)" } [api] (ecmascript) (/home/user/studio/.next/server/chunks/[root-of-the-server]__239c23e3._.js:1901:1)
-2025-07-04T01:35:35Z [web]     at instantiateModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:594:23)
-2025-07-04T01:35:35Z [web]     at instantiateRuntimeModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:661:12)
-2025-07-04T01:35:35Z [web]     at Object.getOrInstantiateRuntimeModule (/home/user/studio/.next/server/chunks/[turbopack]_runtime.js:677:12)
-2025-07-04T01:35:35Z [web]     at Object.<anonymous> (/home/user/studio/.next/server/pages/api/huddles.js:4:9)
-2025-07-04T01:35:35Z [web]     at Module._compile (node:internal/modules/cjs/loader:1529:14)
-2025-07-04T01:35:35Z [web]     at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
-2025-07-04T01:35:35Z [web]     at Module.load (node:internal/modules/cjs/loader:1275:32)
-2025-07-04T01:35:35Z [web]     at Module._load (node:internal/modules/cjs/loader:1096:12)
-2025-07-04T01:35:35Z [web]     at Module.require (node:internal/modules/cjs/loader:1298:19)
-2025-07-04T01:35:35Z [web]     at mod.require (/home/user/studio/node_modules/next/dist/server/require-hook.js:65:28)
-2025-07-04T01:35:35Z [web]     at require (node:internal/modules/helpers:182:18)
-2025-07-04T01:35:35Z [web]     at NodeModuleLoader.load (/home/user/studio/node_modules/next/dist/server/lib/module-loader/node-module-loader.js:15:84)
-2025-07-04T01:35:35Z [web]     at RouteModuleLoader.load (/home/user/studio/node_modules/next/dist/server/lib/module-loader/route-module-loader.js:14:37)
-2025-07-04T01:35:35Z [web]     at DevServer.runApi (/home/user/studio/node_modules/next/dist/server/next-server.js:671:67)
-2025-07-04T01:35:35Z [web]     at DevServer.handleApiRequest (/home/user/studio/node_modules/next/dist/server/next-server.js:875:21)
-2025-07-04T01:35:35Z [web]     at NextNodeServer.handleCatchallRenderRequest (/home/user/studio/node_modules/next/dist/server/next-server.js:302:48)
-2025-07-04T01:35:35Z [web]     at async DevServer.handleRequestImpl (/home/user/studio/node_modules/next/dist/server/base-server.js:900:17)
-2025-07-04T01:35:35Z [web]     at async /home/user/studio/node_modules/next/dist/server/dev/next-dev-server.js:371:20
-2025-07-04T01:35:35Z [web]     at async Span.traceAsyncFn (/home/user/studio/node_modules/next/dist/trace/trace.js:157:20)
-2025-07-04T01:35:35Z [web]     at async DevServer.handleRequest (/home/user/studio/node_modules/next/dist/server/dev/next-dev-server.js:368:24)
-2025-07-04T01:35:35Z [web]     at async invokeRender (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:237:21)
-2025-07-04T01:35:35Z [web]     at async handleRequest (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:428:24)
-2025-07-04T01:35:35Z [web]     at async requestHandlerImpl (/home/user/studio/node_modules/next/dist/server/lib/router-server.js:452:13)
-2025-07-04T01:35:35Z [web]     at async Server.requestListener (/home/user/studio/node_modules/next/dist/server/lib/start-server.js:158:13)
-2025-07-04T01:35:35Z [web] [Next.js Context - Fallback] Original path error was: Cannot read properties of undefined (reading 'INTERNAL')
-2025-07-04T01:35:35Z [web] [Next.js Context] Firebase app instance is undefined after all attempts. DB/Auth will be unavailable.
-2025-07-04T01:35:35Z [web] 
-2025-07-04T01:35:35Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
-2025-07-04T01:35:35Z [web] 
-2025-07-04T01:35:35Z [web] Error: Warning: Environment variable DEEPSEEK_API_KEY is not set.
-2025-07-04T01:35:35Z [web] Warning: Environment variable QWEN_API_KEY is not set.
-2025-07-04T01:35:35Z [web] Warning: Environment variable NEBIUS_API_KEY is not set.
-2025-07-04T01:35:35Z [web] Warning: Environment variable KIMI_API_KEY is not set.
-2025-07-04T01:35:35Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
-2025-07-04T01:35:35Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
-2025-07-04T01:35:35Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
-2025-07-04T01:35:35Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
-2025-07-04T01:35:35Z [web] 
-2025-07-04T01:35:35Z [web] Error: Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
-2025-07-04T01:35:35Z [web] 
-2025-07-04T01:35:36Z [web] Huddle configuration for context 'Outline' loaded successfully from outline.default.json
-2025-07-04T01:35:36Z [web] Error: Error initiating huddle session: TypeError: Cannot read properties of undefined (reading 'collection')
-2025-07-04T01:35:36Z [web]     at handler (src/pages/api/huddles/index.ts:126:13)
-2025-07-04T01:35:36Z [web]   124 |
-2025-07-04T01:35:36Z [web]   125 |     // 5. Firestore Interaction (1st Write): Save initial session
-2025-07-04T01:35:36Z [web] > 126 |     await db.collection('huddleSessions').doc(sessionId).set(huddleSession);
-2025-07-04T01:35:36Z [web]       |             ^
-2025-07-04T01:35:36Z [web]   127 |     console.log(`Initial HuddleSession ${sessionId} created in Firestore.`);
-2025-07-04T01:35:36Z [web]   128 |
-2025-07-04T01:35:36Z [web]   129 |     // 6. Invoke Moderator AI for Prompt Rewrite
-2025-07-04T01:35:36Z [web] 
-2025-07-04T01:35:36Z [web] Error: Failed to update session 2baf51a2-e0b2-4534-b940-40b2c5b64370 to failed status: TypeError: Cannot read properties of undefined (reading 'collection')
-2025-07-04T01:35:36Z [web]     at handler (src/pages/api/huddles/index.ts:217:21)
-2025-07-04T01:35:36Z [web]   215 |     if (sessionId) {
-2025-07-04T01:35:36Z [web]   216 |         try {
-2025-07-04T01:35:36Z [web] > 217 |             await db.collection('huddleSessions').doc(sessionId).update({
-2025-07-04T01:35:36Z [web]       |                     ^
-2025-07-04T01:35:36Z [web]   218 |                 status: 'failed',
-2025-07-04T01:35:36Z [web]   219 |                 errorDetails: { message: error.message || 'Unknown error', phase: 'initialization', timestamp: Date.now() },
-2025-07-04T01:35:36Z [web]   220 |                 updatedAt: Date.now(),
-2025-07-04T01:35:36Z [web] 
-2025-07-04T01:35:36Z [web]  POST /api/huddles 500 in 852ms
+IDX TERMINAL:
+
+studio-4980275041:~/studio{master}$ curl -X POST \
+  http://localhost:9002/api/huddles \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "userId": "test-user-008",
+    "contextName": "Outline",
+    "initialPrompt": "Test after firebase-admin init strategy update."
+}'
+{"sessionId":"95f6d134-b824-4fec-b59a-a4c316725864","status":"clarifying","nextStep":{"phase":"clarification","actor":"grok-3","messageForUser":"Huddle initialized. Elara will now ask a clarifying question."},"moderatorRewrittenPrompt":"Develop a comprehensive test plan outline for validating the functionality and stability of an application following a Firebase Admin SDK initialization strategy update.  The outline should encompass unit tests, integration tests, and end-to-end tests, covering authentication, database interactions, cloud functions, and any other relevant Firebase services impacted by the update.  Consider edge cases, error handling, performance, and security implications.  Include sections for test environment setup, test data management, and expected results for each test case.  Specify the metrics for measuring success and failure.\n"}
+
+IDX CONSOLE:
+
+2025-07-04 16:50:58.608 [info] > git config --get commit.template [13ms]
+2025-07-04 16:50:58.611 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2025-07-04 16:50:58.637 [info] > git status -z -uall [15ms]
+2025-07-04 16:50:58.640 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-07-04 16:51:19.715 [info] > git config --get commit.template [18ms]
+2025-07-04 16:51:19.721 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [7ms]
+2025-07-04 16:51:19.795 [info] > git status -z -uall [35ms]
+2025-07-04 16:51:19.801 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+2025-07-04 16:51:27.296 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [23ms]
+2025-07-04 16:51:27.298 [info] > git config --get commit.template [48ms]
+2025-07-04 16:51:27.364 [info] > git status -z -uall [41ms]
+2025-07-04 16:51:27.368 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [12ms]
+2025-07-04 16:51:33.203 [info] > git config --get commit.template [43ms]
+2025-07-04 16:51:33.209 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [11ms]
+2025-07-04 16:51:33.307 [info] > git status -z -uall [51ms]
+2025-07-04 16:51:33.307 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [24ms]
+2025-07-04 16:52:29.198 [info] > git config --get commit.template [22ms]
+2025-07-04 16:52:29.202 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2025-07-04 16:52:29.244 [info] > git status -z -uall [25ms]
+2025-07-04 16:52:29.253 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [10ms]
