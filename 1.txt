@@ -1,35 +1,435 @@
-2025-07-04T23:20:11Z [web]  GET /?monospaceUid=910413 200 in 205ms
-2025-07-04T23:20:12Z [web]  ○ Compiling /favicon.ico ...
-2025-07-04T23:20:14Z [web]  ✓ Compiled /favicon.ico in 1772ms
-2025-07-04T23:20:14Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 2132ms
-2025-07-04T23:20:15Z [web]  ✓ Compiled /api/huddles in 445ms
-2025-07-04T23:20:15Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
-2025-07-04T23:20:15Z [web] 
-2025-07-04T23:20:15Z [web] Error: Warning: Environment variable DEEPSEEK_API_KEY is not set.
-2025-07-04T23:20:15Z [web] Warning: Environment variable QWEN_API_KEY is not set.
-2025-07-04T23:20:15Z [web] Warning: Environment variable NEBIUS_API_KEY is not set.
-2025-07-04T23:20:15Z [web] Warning: Environment variable KIMI_API_KEY is not set.
-2025-07-04T23:20:15Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
-2025-07-04T23:20:15Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
-2025-07-04T23:20:15Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
-2025-07-04T23:20:15Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
-2025-07-04T23:20:15Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
-2025-07-04T23:20:15Z [web] 
-2025-07-04T23:20:16Z [web] [HuddleAI] firebaseAdmin.ts: Module top level.
-2025-07-04T23:20:16Z [web] [HuddleAI] firebaseAdmin.ts: No Firebase apps initialized. Attempting initialization...
-2025-07-04T23:20:16Z [web] [HuddleAI] firebaseAdmin.ts: Attempting to read service account key from resolved absolute path: /home/user/studio/.secure/huddle-ai-development.firebase-service-account-key-2.json
-2025-07-04T23:20:16Z [web] [HuddleAI] firebaseAdmin.ts: Service account key file read and parsed successfully. Project ID from key: huddle-ai-development
-2025-07-04T23:20:16Z [web] [HuddleAI] firebaseAdmin.ts: Firebase Admin SDK initialized successfully. App name: [DEFAULT]
-2025-07-04T23:20:16Z [web] [HuddleAI] firebaseAdmin.ts: Firestore and Auth services obtained successfully from app.
-2025-07-04T23:20:16Z [web] Huddle configuration for context 'Outline' loaded successfully from outline.default.json
-2025-07-04T23:20:17Z [web] Initial HuddleSession 30a8442b-af68-414b-a301-3feb085a8c99 created in Firestore.
-2025-07-04T23:20:17Z [web] Persona for gemini-1-5-pro-moderator loaded successfully from gemini-1-5-pro-moderator.persona.json
-2025-07-04T23:20:17Z [web] Executing chat prompt for System (gemini-1-5-pro-moderator) using model gemini-1.5-flash-latest
-2025-07-04T23:20:17Z [web] Google AI (Gemini) client initialized successfully.
-2025-07-04T23:20:18Z [web] Persona for grok-3 loaded successfully from grok-3.persona.json
-2025-07-04T23:20:18Z [web] HuddleSession 30a8442b-af68-414b-a301-3feb085a8c99 updated before first AI question. Next actor: grok-3
-2025-07-04T23:20:18Z [web] Persona for grok-3 loaded successfully from grok-3.persona.json
-2025-07-04T23:20:18Z [web] Executing chat prompt for Elara (Grok 3) using model grok-3
-2025-07-04T23:20:19Z [web] First AI (grok-3) asked: What specific geographic markets or customer segments are you aiming to target with your 3D-printed shoe start-up, and how do you envision leveraging this focus to differentiate from competitors?
-2025-07-04T23:20:19Z [web] HuddleSession 30a8442b-af68-414b-a301-3feb085a8c99 updated. Status: clarifying. Next actor: user
-2025-07-04T23:20:19Z [web]  POST /api/huddles 201 in 3915ms
+2025-07-05T20:07:54Z [web]  GET /favicon.ico 500 in 5606ms
+2025-07-05T20:08:11Z [web] Error:  ⨯ ./node_modules/google-auth-library/build/src/auth/googleauth.js:29:25
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'child_process'
+2025-07-05T20:08:11Z [web]   27 | Object.defineProperty(exports, "__esModule", { value: true });
+2025-07-05T20:08:11Z [web]   28 | exports.GoogleAuth = exports.GoogleAuthExceptionMessages = exports.CLOUD_SDK_CLIENT_ID = void 0;
+2025-07-05T20:08:11Z [web] > 29 | const child_process_1 = require("child_process");
+2025-07-05T20:08:11Z [web]      |                         ^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   30 | const fs = require("fs");
+2025-07-05T20:08:11Z [web]   31 | const gcpMetadata = require("gcp-metadata");
+2025-07-05T20:08:11Z [web]   32 | const os = require("os");
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/google-auth-library/build/src/auth/pluggable-auth-handler.js:19:22
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'child_process'
+2025-07-05T20:08:11Z [web]   17 | const pluggable_auth_client_1 = require("./pluggable-auth-client");
+2025-07-05T20:08:11Z [web]   18 | const executable_response_1 = require("./executable-response");
+2025-07-05T20:08:11Z [web] > 19 | const childProcess = require("child_process");
+2025-07-05T20:08:11Z [web]      |                      ^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   20 | const fs = require("fs");
+2025-07-05T20:08:11Z [web]   21 | /**
+2025-07-05T20:08:11Z [web]   22 |  * A handler used to retrieve 3rd party token responses from user defined
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/@google-cloud/storage/build/cjs/src/bucket.js:56:25
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs'
+2025-07-05T20:08:11Z [web]   54 | const paginator_1 = require("@google-cloud/paginator");
+2025-07-05T20:08:11Z [web]   55 | const promisify_1 = require("@google-cloud/promisify");
+2025-07-05T20:08:11Z [web] > 56 | const fs = __importStar(require("fs"));
+2025-07-05T20:08:11Z [web]      |                         ^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   57 | const mime_1 = __importDefault(require("mime"));
+2025-07-05T20:08:11Z [web]   58 | const path = __importStar(require("path"));
+2025-07-05T20:08:11Z [web]   59 | const p_limit_1 = __importDefault(require("p-limit"));
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/@google-cloud/storage/build/cjs/src/crc32c.js:29:14
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs'
+2025-07-05T20:08:11Z [web]   27 | Object.defineProperty(exports, "__esModule", { value: true });
+2025-07-05T20:08:11Z [web]   28 | exports.CRC32C_EXTENSION_TABLE = exports.CRC32C_EXTENSIONS = exports.CRC32C_EXCEPTION_MESSAGES = exports.CRC32C_DEFAULT_VALIDATOR_GENERATOR = exports.CRC32C = void 0;
+2025-07-05T20:08:11Z [web] > 29 | const fs_1 = require("fs");
+2025-07-05T20:08:11Z [web]      |              ^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   30 | /**
+2025-07-05T20:08:11Z [web]   31 |  * Ported from {@link https://github.com/google/crc32c/blob/21fc8ef30415a635e7351ffa0e5d5367943d4a94/src/crc32c_portable.cc#L16-L59 github.com/google/crc32c}
+2025-07-05T20:08:11Z [web]   32 |  */
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/@google-cloud/storage/build/cjs/src/file.js:62:25
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs'
+2025-07-05T20:08:11Z [web]   60 | const promisify_1 = require("@google-cloud/promisify");
+2025-07-05T20:08:11Z [web]   61 | const crypto = __importStar(require("crypto"));
+2025-07-05T20:08:11Z [web] > 62 | const fs = __importStar(require("fs"));
+2025-07-05T20:08:11Z [web]      |                         ^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   63 | const mime_1 = __importDefault(require("mime"));
+2025-07-05T20:08:11Z [web]   64 | const resumableUpload = __importStar(require("./resumable-upload.js"));
+2025-07-05T20:08:11Z [web]   65 | const stream_1 = require("stream");
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/@google-cloud/storage/build/cjs/src/transfer-manager.js:64:14
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs'
+2025-07-05T20:08:11Z [web]   62 | const p_limit_1 = __importDefault(require("p-limit"));
+2025-07-05T20:08:11Z [web]   63 | const path = __importStar(require("path"));
+2025-07-05T20:08:11Z [web] > 64 | const fs_1 = require("fs");
+2025-07-05T20:08:11Z [web]      |              ^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   65 | const crc32c_js_1 = require("./crc32c.js");
+2025-07-05T20:08:11Z [web]   66 | const google_auth_library_1 = require("google-auth-library");
+2025-07-05T20:08:11Z [web]   67 | const fast_xml_parser_1 = require("fast-xml-parser");
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/firebase-admin/lib/app/credential-internal.js:23:12
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs'
+2025-07-05T20:08:11Z [web]   21 | exports.isApplicationDefault = isApplicationDefault;
+2025-07-05T20:08:11Z [web]   22 | exports.getApplicationDefault = getApplicationDefault;
+2025-07-05T20:08:11Z [web] > 23 | const fs = require("fs");
+2025-07-05T20:08:11Z [web]      |            ^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   24 | const google_auth_library_1 = require("google-auth-library");
+2025-07-05T20:08:11Z [web]   25 | const error_1 = require("../utils/error");
+2025-07-05T20:08:11Z [web]   26 | const util = require("../utils/validator");
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/firebase-admin/lib/app/lifecycle.js:25:12
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs'
+2025-07-05T20:08:11Z [web]   23 | exports.getApps = getApps;
+2025-07-05T20:08:11Z [web]   24 | exports.deleteApp = deleteApp;
+2025-07-05T20:08:11Z [web] > 25 | const fs = require("fs");
+2025-07-05T20:08:11Z [web]      |            ^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   26 | const validator = require("../utils/validator");
+2025-07-05T20:08:11Z [web]   27 | const error_1 = require("../utils/error");
+2025-07-05T20:08:11Z [web]   28 | const credential_internal_1 = require("./credential-internal");
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/gcp-metadata/build/src/gcp-residency.js:24:14
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs'
+2025-07-05T20:08:11Z [web]   22 | exports.isGoogleComputeEngine = isGoogleComputeEngine;
+2025-07-05T20:08:11Z [web]   23 | exports.detectGCPResidency = detectGCPResidency;
+2025-07-05T20:08:11Z [web] > 24 | const fs_1 = require("fs");
+2025-07-05T20:08:11Z [web]      |              ^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   25 | const os_1 = require("os");
+2025-07-05T20:08:11Z [web]   26 | /**
+2025-07-05T20:08:11Z [web]   27 |  * Known paths unique to Google Compute Engine Linux instances
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/google-auth-library/build/src/auth/filesubjecttokensupplier.js:19:12
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs'
+2025-07-05T20:08:11Z [web]   17 | exports.FileSubjectTokenSupplier = void 0;
+2025-07-05T20:08:11Z [web]   18 | const util_1 = require("util");
+2025-07-05T20:08:11Z [web] > 19 | const fs = require("fs");
+2025-07-05T20:08:11Z [web]      |            ^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   20 | // fs.readfile is undefined in browser karma tests causing
+2025-07-05T20:08:11Z [web]   21 | // `npm run browser-test` to fail as test.oauth2.ts imports this file via
+2025-07-05T20:08:11Z [web]   22 | // src/index.ts.
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/google-auth-library/build/src/auth/googleauth.js:30:12
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs'
+2025-07-05T20:08:11Z [web]   28 | exports.GoogleAuth = exports.GoogleAuthExceptionMessages = exports.CLOUD_SDK_CLIENT_ID = void 0;
+2025-07-05T20:08:11Z [web]   29 | const child_process_1 = require("child_process");
+2025-07-05T20:08:11Z [web] > 30 | const fs = require("fs");
+2025-07-05T20:08:11Z [web]      |            ^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   31 | const gcpMetadata = require("gcp-metadata");
+2025-07-05T20:08:11Z [web]   32 | const os = require("os");
+2025-07-05T20:08:11Z [web]   33 | const path = require("path");
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/google-auth-library/build/src/auth/pluggable-auth-handler.js:20:12
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs'
+2025-07-05T20:08:11Z [web]   18 | const executable_response_1 = require("./executable-response");
+2025-07-05T20:08:11Z [web]   19 | const childProcess = require("child_process");
+2025-07-05T20:08:11Z [web] > 20 | const fs = require("fs");
+2025-07-05T20:08:11Z [web]      |            ^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   21 | /**
+2025-07-05T20:08:11Z [web]   22 |  * A handler used to retrieve 3rd party token responses from user defined
+2025-07-05T20:08:11Z [web]   23 |  * executables and cached file output for the PluggableAuthClient class.
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/gtoken/build/src/index.js:22:12
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs'
+2025-07-05T20:08:11Z [web]   20 | Object.defineProperty(exports, "__esModule", { value: true });
+2025-07-05T20:08:11Z [web]   21 | exports.GoogleToken = void 0;
+2025-07-05T20:08:11Z [web] > 22 | const fs = require("fs");
+2025-07-05T20:08:11Z [web]      |            ^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   23 | const gaxios_1 = require("gaxios");
+2025-07-05T20:08:11Z [web]   24 | const jws = require("jws");
+2025-07-05T20:08:11Z [web]   25 | const path = require("path");
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./src/lib/firebaseAdmin.ts:5:1
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs'
+2025-07-05T20:08:11Z [web]   3 | import { getFirestore as adminGetFirestore, Firestore } from 'firebase-admin/firestore';
+2025-07-05T20:08:11Z [web]   4 | import { getAuth as adminGetAuth, Auth } from 'firebase-admin/auth'; // Import getAuth and Auth type
+2025-07-05T20:08:11Z [web] > 5 | import fs from 'fs';
+2025-07-05T20:08:11Z [web]     | ^^^^^^^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   6 | import path from 'path';
+2025-07-05T20:08:11Z [web]   7 |
+2025-07-05T20:08:11Z [web]   8 | let app: AdminApp | undefined = undefined;
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./src/lib/personaManager.ts:3:1
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'fs/promises'
+2025-07-05T20:08:11Z [web]   1 | // src/lib/personaManager.ts
+2025-07-05T20:08:11Z [web]   2 |
+2025-07-05T20:08:11Z [web] > 3 | import fs from 'fs/promises';
+2025-07-05T20:08:11Z [web]     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   4 | import path from 'path';
+2025-07-05T20:08:11Z [web]   5 | import { Persona } from '@/types/persona'; // Assuming your Persona type is defined here
+2025-07-05T20:08:11Z [web]   6 |
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/firebase-admin/lib/utils/api-request.js:27:15
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'http2'
+2025-07-05T20:08:11Z [web]   25 | const http = require("http");
+2025-07-05T20:08:11Z [web]   26 | const https = require("https");
+2025-07-05T20:08:11Z [web] > 27 | const http2 = require("http2");
+2025-07-05T20:08:11Z [web]      |               ^^^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   28 | const url = require("url");
+2025-07-05T20:08:11Z [web]   29 | const events_1 = require("events");
+2025-07-05T20:08:11Z [web]   30 | const credential_internal_1 = require("../app/credential-internal");
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/@firebase/database-compat/dist/index.standalone.js:11:20
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'net'
+2025-07-05T20:08:11Z [web]    9 | var require$$1$1 = require('crypto');
+2025-07-05T20:08:11Z [web]   10 | var require$$2$1 = require('url');
+2025-07-05T20:08:11Z [web] > 11 | var require$$1$2 = require('net');
+2025-07-05T20:08:11Z [web]      |                    ^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   12 | var require$$2$2 = require('tls');
+2025-07-05T20:08:11Z [web]   13 | var require$$2$3 = require('@firebase/util');
+2025-07-05T20:08:11Z [web]   14 | var require$$1$3 = require('@firebase/logger');
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/agent-base/dist/index.js:30:26
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'net'
+2025-07-05T20:08:11Z [web]   28 | Object.defineProperty(exports, "__esModule", { value: true });
+2025-07-05T20:08:11Z [web]   29 | exports.Agent = void 0;
+2025-07-05T20:08:11Z [web] > 30 | const net = __importStar(require("net"));
+2025-07-05T20:08:11Z [web]      |                          ^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   31 | const http = __importStar(require("http"));
+2025-07-05T20:08:11Z [web]   32 | const https_1 = require("https");
+2025-07-05T20:08:11Z [web]   33 | __exportStar(require("./helpers"), exports);
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/http-proxy-agent/dist/agent.js:15:31
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'net'
+2025-07-05T20:08:11Z [web]   13 | };
+2025-07-05T20:08:11Z [web]   14 | Object.defineProperty(exports, "__esModule", { value: true });
+2025-07-05T20:08:11Z [web] > 15 | const net_1 = __importDefault(require("net"));
+2025-07-05T20:08:11Z [web]      |                               ^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   16 | const tls_1 = __importDefault(require("tls"));
+2025-07-05T20:08:11Z [web]   17 | const url_1 = __importDefault(require("url"));
+2025-07-05T20:08:11Z [web]   18 | const debug_1 = __importDefault(require("debug"));
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/https-proxy-agent/dist/index.js:30:26
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'net'
+2025-07-05T20:08:11Z [web]   28 | Object.defineProperty(exports, "__esModule", { value: true });
+2025-07-05T20:08:11Z [web]   29 | exports.HttpsProxyAgent = void 0;
+2025-07-05T20:08:11Z [web] > 30 | const net = __importStar(require("net"));
+2025-07-05T20:08:11Z [web]      |                          ^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   31 | const tls = __importStar(require("tls"));
+2025-07-05T20:08:11Z [web]   32 | const assert_1 = __importDefault(require("assert"));
+2025-07-05T20:08:11Z [web]   33 | const debug_1 = __importDefault(require("debug"));
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/teeny-request/node_modules/https-proxy-agent/dist/agent.js:15:31
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'net'
+2025-07-05T20:08:11Z [web]   13 | };
+2025-07-05T20:08:11Z [web]   14 | Object.defineProperty(exports, "__esModule", { value: true });
+2025-07-05T20:08:11Z [web] > 15 | const net_1 = __importDefault(require("net"));
+2025-07-05T20:08:11Z [web]      |                               ^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   16 | const tls_1 = __importDefault(require("tls"));
+2025-07-05T20:08:11Z [web]   17 | const url_1 = __importDefault(require("url"));
+2025-07-05T20:08:11Z [web]   18 | const assert_1 = __importDefault(require("assert"));
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/@firebase/database-compat/dist/index.standalone.js:12:20
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'tls'
+2025-07-05T20:08:11Z [web]   10 | var require$$2$1 = require('url');
+2025-07-05T20:08:11Z [web]   11 | var require$$1$2 = require('net');
+2025-07-05T20:08:11Z [web] > 12 | var require$$2$2 = require('tls');
+2025-07-05T20:08:11Z [web]      |                    ^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   13 | var require$$2$3 = require('@firebase/util');
+2025-07-05T20:08:11Z [web]   14 | var require$$1$3 = require('@firebase/logger');
+2025-07-05T20:08:11Z [web]   15 | var require$$0$2 = require('@firebase/component');
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/http-proxy-agent/dist/agent.js:16:31
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'tls'
+2025-07-05T20:08:11Z [web]   14 | Object.defineProperty(exports, "__esModule", { value: true });
+2025-07-05T20:08:11Z [web]   15 | const net_1 = __importDefault(require("net"));
+2025-07-05T20:08:11Z [web] > 16 | const tls_1 = __importDefault(require("tls"));
+2025-07-05T20:08:11Z [web]      |                               ^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   17 | const url_1 = __importDefault(require("url"));
+2025-07-05T20:08:11Z [web]   18 | const debug_1 = __importDefault(require("debug"));
+2025-07-05T20:08:11Z [web]   19 | const once_1 = __importDefault(require("@tootallnate/once"));
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/https-proxy-agent/dist/index.js:31:26
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'tls'
+2025-07-05T20:08:11Z [web]   29 | exports.HttpsProxyAgent = void 0;
+2025-07-05T20:08:11Z [web]   30 | const net = __importStar(require("net"));
+2025-07-05T20:08:11Z [web] > 31 | const tls = __importStar(require("tls"));
+2025-07-05T20:08:11Z [web]      |                          ^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   32 | const assert_1 = __importDefault(require("assert"));
+2025-07-05T20:08:11Z [web]   33 | const debug_1 = __importDefault(require("debug"));
+2025-07-05T20:08:11Z [web]   34 | const agent_base_1 = require("agent-base");
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./node_modules/teeny-request/node_modules/https-proxy-agent/dist/agent.js:16:31
+2025-07-05T20:08:11Z [web] Module not found: Can't resolve 'tls'
+2025-07-05T20:08:11Z [web]   14 | Object.defineProperty(exports, "__esModule", { value: true });
+2025-07-05T20:08:11Z [web]   15 | const net_1 = __importDefault(require("net"));
+2025-07-05T20:08:11Z [web] > 16 | const tls_1 = __importDefault(require("tls"));
+2025-07-05T20:08:11Z [web]      |                               ^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   17 | const url_1 = __importDefault(require("url"));
+2025-07-05T20:08:11Z [web]   18 | const assert_1 = __importDefault(require("assert"));
+2025-07-05T20:08:11Z [web]   19 | const debug_1 = __importDefault(require("debug"));
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] https://nextjs.org/docs/messages/module-not-found
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./src/lib/adminConfigManager.ts:9:1
+2025-07-05T20:08:11Z [web] Export adminDb doesn't exist in target module
+2025-07-05T20:08:11Z [web]    7 |  */
+2025-07-05T20:08:11Z [web]    8 |
+2025-07-05T20:08:11Z [web] >  9 | import { adminDb } from './firebaseAdmin';
+2025-07-05T20:08:11Z [web]      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   10 | import { ModelDefinition, PersonaDefinition, ProcessConfigDirective } from '@/types/adminConfig';
+2025-07-05T20:08:11Z [web]   11 |
+2025-07-05T20:08:11Z [web]   12 | // Placeholder caches - consider more sophisticated caching if needed
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] The export adminDb was not found in module [project]/src/lib/firebaseAdmin.ts [app-client] (ecmascript) <exports>.
+2025-07-05T20:08:11Z [web] Did you mean to import admin?
+2025-07-05T20:08:11Z [web] All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] ./src/lib/adminConfigManager.ts:9:1
+2025-07-05T20:08:11Z [web] Export adminDb doesn't exist in target module
+2025-07-05T20:08:11Z [web]    7 |  */
+2025-07-05T20:08:11Z [web]    8 |
+2025-07-05T20:08:11Z [web] >  9 | import { adminDb } from './firebaseAdmin';
+2025-07-05T20:08:11Z [web]      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-05T20:08:11Z [web]   10 | import { ModelDefinition, PersonaDefinition, ProcessConfigDirective } from '@/types/adminConfig';
+2025-07-05T20:08:11Z [web]   11 |
+2025-07-05T20:08:11Z [web]   12 | // Placeholder caches - consider more sophisticated caching if needed
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] The export adminDb was not found in module [project]/src/lib/firebaseAdmin.ts [app-ssr] (ecmascript) <exports>.
+2025-07-05T20:08:11Z [web] Did you mean to import admin?
+2025-07-05T20:08:11Z [web] All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:11Z [web] 
+2025-07-05T20:08:12Z [web]  GET /?monospaceUid=910413 500 in 3549ms
+2025-07-05T20:08:18Z [web]  GET /favicon.ico 500 in 4737ms
