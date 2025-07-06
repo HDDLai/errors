@@ -1,19 +1,44 @@
-Build Error
-
-
-Export getProcessConfigDirective doesn't exist in target module
-
-./src/pages/api/onboarding/initial-data.ts (7:1)
-
-Export getProcessConfigDirective doesn't exist in target module
-   5 | import { HuddleSession, ChatMessage }
-   6 | from '@/types/huddle';
->  7 | import { getPersonaDefinition, getProcessConfigDirective, getRoleAssignment } from '@/lib/adminConfigManager';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 | import { callAiProviderWithHistory } from '@/lib/aiProviderManager';
-   9 | import { SYSTEM_MODERATOR_ROLE_KEY } from '@/config/constants';
-  10 | import { v4 as uuidv4 } from 'uuid';
-
-The export getProcessConfigDirective was not found in module [project]/src/lib/adminConfigManager.ts [api] (ecmascript).
-Did you mean to import getProcessConfig?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+2025-07-06T21:22:40Z [web]  ✓ Compiled / in 26.3s
+2025-07-06T21:22:41Z [web]  GET /?monospaceUid=901700 200 in 27859ms
+2025-07-06T21:22:41Z [web]  GET /?monospaceUid=0 200 in 28008ms
+2025-07-06T21:22:43Z [web] Error:  ⚠ Cross origin request detected from 9000-firebase-studio-1751489770040.cluster-pgviq6mvsncnqxx6kr7pbz65v6.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+2025-07-06T21:22:43Z [web] Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+2025-07-06T21:22:43Z [web] 
+2025-07-06T21:22:43Z [web]  ○ Compiling /api/onboarding/initial-data ...
+2025-07-06T21:22:44Z [web]  ✓ Compiled /api/onboarding/initial-data in 1091ms
+2025-07-06T21:22:44Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
+2025-07-06T21:22:44Z [web] Warning: Environment variable DEEPSEEK_API_KEY is not set.
+2025-07-06T21:22:44Z [web] Warning: Environment variable QWEN_API_KEY is not set.
+2025-07-06T21:22:44Z [web] Warning: Environment variable NEBIUS_API_KEY is not set.
+2025-07-06T21:22:44Z [web] Warning: Environment variable KIMI_API_KEY is not set.
+2025-07-06T21:22:44Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
+2025-07-06T21:22:44Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
+2025-07-06T21:22:44Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
+2025-07-06T21:22:44Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
+2025-07-06T21:22:44Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
+2025-07-06T21:22:44Z [web] 
+2025-07-06T21:22:45Z [web] [HuddleAI] firebaseAdmin.ts: Module top level.
+2025-07-06T21:22:45Z [web] [HuddleAI] firebaseAdmin.ts: No Firebase apps initialized. Attempting initialization...
+2025-07-06T21:22:45Z [web] [HuddleAI] firebaseAdmin.ts: Attempting to read service account key from resolved absolute path: /home/user/studio/.secure/huddle-ai-development.firebase-service-account-key-2.json
+2025-07-06T21:22:45Z [web] [HuddleAI] firebaseAdmin.ts: Service account key file read and parsed successfully. Project ID from key: huddle-ai-development
+2025-07-06T21:22:46Z [web] [HuddleAI] firebaseAdmin.ts: Firebase Admin SDK initialized successfully. App name: [DEFAULT]
+2025-07-06T21:22:46Z [web] [HuddleAI] firebaseAdmin.ts: Firestore and Auth services obtained successfully from app.
+2025-07-06T21:22:46Z [web] [adminConfigManager] Attempting to load RoleAssignment 'SystemModerator_Default' from Firestore.
+2025-07-06T21:22:47Z [web] [adminConfigManager] RoleAssignment 'SystemModerator_Default' loaded and cached.
+2025-07-06T21:22:47Z [web] [adminConfigManager] Attempting to load PersonaDefinition 'persona_andrew-good' from Firestore.
+2025-07-06T21:22:47Z [web] [adminConfigManager] PersonaDefinition 'persona_andrew-good' loaded and cached.
+2025-07-06T21:22:47Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Context_Outline' from Firestore.
+2025-07-06T21:22:47Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Context_Outline' not found in Firestore.
+2025-07-06T21:22:47Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Default' from Firestore.
+2025-07-06T21:22:47Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Default' not found in Firestore.
+2025-07-06T21:22:47Z [web] Error: [API /onboarding/initial-data] Error: Error: ProcessConfigDirective 'InitialIntroduction_Context_Outline' or fallback 'InitialIntroduction_Default' not found or not assigned to persona_andrew-good.
+2025-07-06T21:22:47Z [web]     at handler (src/pages/api/onboarding/initial-data.ts:54:14)
+2025-07-06T21:22:47Z [web]   52 |       const fallbackConfig = await getProcessConfigDirective(fallbackConfigKey);
+2025-07-06T21:22:47Z [web]   53 |       if (!fallbackConfig || fallbackConfig.assignedPersonaId !== roleAssignment.assignedPersonaId) {
+2025-07-06T21:22:47Z [web] > 54 |         throw new Error(`ProcessConfigDirective '${introConfigKey}' or fallback '${fallbackConfigKey}' not found or not assigned to ${andrewPersonaDef.personaId}.`);
+2025-07-06T21:22:47Z [web]      |              ^
+2025-07-06T21:22:47Z [web]   55 |       }
+2025-07-06T21:22:47Z [web]   56 |       // Use fallback if primary is missing
+2025-07-06T21:22:47Z [web]   57 |       Object.assign(processConfig || {}, fallbackConfig);
+2025-07-06T21:22:47Z [web] 
+2025-07-06T21:22:47Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 3764ms
