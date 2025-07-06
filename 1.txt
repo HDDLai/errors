@@ -1,18 +1,12 @@
-2025-07-05T21:55:21Z [web] <Firebase Studio> Reloading preview...
-2025-07-05T21:55:21Z [web] <Firebase Studio> ▶️ Preview running
-2025-07-05T21:55:21Z [web]  GET /?monospaceUid=27586 200 in 217ms
-2025-07-05T21:55:22Z [web] [personaManager] Attempting to load persona 'gemini-1-5-pro-moderator' from Firestore via adminConfigManager...
-2025-07-05T21:55:22Z [web] [adminConfigManager] Attempting to load PersonaDefinition 'gemini-1-5-pro-moderator' from Firestore.
-2025-07-05T21:55:22Z [web] [adminConfigManager] PersonaDefinition 'gemini-1-5-pro-moderator' not found in Firestore.
-2025-07-05T21:55:22Z [web] [personaManager] PersonaDefinition 'gemini-1-5-pro-moderator' not found in Firestore.
-2025-07-05T21:55:22Z [web] [personaManager] Persona 'gemini-1-5-pro-moderator' not found in DB (or DB load stubbed), falling back to file system.
-2025-07-05T21:55:22Z [web] Persona for gemini-1-5-pro-moderator loaded successfully from gemini-1-5-pro-moderator.persona.json
-2025-07-05T21:55:22Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Outline_v1' from Firestore.
-2025-07-05T21:55:22Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Outline_v1' not found in Firestore.
-2025-07-05T21:55:22Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_General_v1' from Firestore.
-2025-07-05T21:55:22Z [web] Error: [API /initial-data] ProcessConfig 'InitialIntroduction_Outline_v1' not found, trying general fallback 'InitialIntroduction_General_v1'.
-2025-07-05T21:55:22Z [web] 
-2025-07-05T21:55:22Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_General_v1' not found in Firestore.
-2025-07-05T21:55:22Z [web] Error: [API /initial-data] InitialIntroduction ProcessConfig ('InitialIntroduction_General_v1' or general fallback) not found.
-2025-07-05T21:55:22Z [web] 
-2025-07-05T21:55:22Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 419ms
+2025-07-06T01:10:25Z [web]  GET /?monospaceUid=910413 200 in 323ms
+2025-07-06T01:10:26Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
+2025-07-06T01:10:26Z [web] [personaManager] Returning cached DB persona for 'persona_andrew_01'.
+2025-07-06T01:10:26Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Outline_v1' from Firestore.
+2025-07-06T01:10:27Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Outline_v1' not found in Firestore.
+2025-07-06T01:10:27Z [web] Error: [API /initial-data] ProcessConfig 'InitialIntroduction_Outline_v1' not found, trying general fallback 'InitialIntroduction_General_v1'.
+2025-07-06T01:10:27Z [web] 
+2025-07-06T01:10:27Z [web] [adminConfigManager] Returning cached ProcessConfigDirective for 'InitialIntroduction_General_v1'.
+2025-07-06T01:10:27Z [web] Error: [API /initial-data] No modelId found for persona 'persona_andrew_01'. Cannot call AI.
+2025-07-06T01:10:27Z [web] 
+2025-07-06T01:10:27Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 429ms
+2025-07-06T01:10:27Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 558ms
