@@ -1,209 +1,67 @@
-2025-07-06T19:09:15Z [web] <Firebase Studio> Starting preview...
-2025-07-06T19:09:15Z [web] Waiting for your web server to start serving
-2025-07-06T19:09:18Z [web] 
-2025-07-06T19:09:18Z [web] > nextn@0.1.0 dev
-2025-07-06T19:09:18Z [web] > next dev --turbopack -p 9002 --port 9002 --hostname 0.0.0.0
-2025-07-06T19:09:18Z [web] 
-2025-07-06T19:09:22Z [web] <Firebase Studio> ▶️ Preview running
-2025-07-06T19:09:22Z [web]    ▲ Next.js 15.3.3 (Turbopack)
-2025-07-06T19:09:22Z [web]    - Local:        http://localhost:9002
-2025-07-06T19:09:22Z [web]    - Network:      http://0.0.0.0:9002
-2025-07-06T19:09:22Z [web]    - Environments: .env.local, .env
-2025-07-06T19:09:22Z [web] 
-2025-07-06T19:09:22Z [web]  ✓ Starting...
-2025-07-06T19:09:27Z [web]  ✓ Ready in 5.2s
-2025-07-06T19:57:19Z [web]  ○ Compiling / ...
-2025-07-06T19:57:29Z [web]  ✓ Compiled / in 10.8s
-2025-07-06T19:57:30Z [web]  GET / 200 in 11537ms
-2025-07-06T19:57:31Z [web] Error:  ⚠ Cross origin request detected from 6000-firebase-studio-1751489770040.cluster-pgviq6mvsncnqxx6kr7pbz65v6.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-2025-07-06T19:57:31Z [web] Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-2025-07-06T19:57:31Z [web] 
-2025-07-06T19:57:31Z [web]  ○ Compiling /api/onboarding/initial-data ...
-2025-07-06T19:57:35Z [web]  ✓ Compiled /api/onboarding/initial-data in 4.2s
-2025-07-06T19:57:35Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
-2025-07-06T19:57:35Z [web] 
-2025-07-06T19:57:35Z [web] Error: Warning: Environment variable DEEPSEEK_API_KEY is not set.
-2025-07-06T19:57:35Z [web] Warning: Environment variable QWEN_API_KEY is not set.
-2025-07-06T19:57:35Z [web] Warning: Environment variable NEBIUS_API_KEY is not set.
-2025-07-06T19:57:35Z [web] Warning: Environment variable KIMI_API_KEY is not set.
-2025-07-06T19:57:35Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
-2025-07-06T19:57:35Z [web] 
-2025-07-06T19:57:35Z [web] Error: Warning: Environment variable LLAMA_API_KEY is not set.
-2025-07-06T19:57:35Z [web] 
-2025-07-06T19:57:35Z [web] Error: Warning: Environment variable LLAMA_API_ENDPOINT is not set.
-2025-07-06T19:57:35Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
-2025-07-06T19:57:35Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
-2025-07-06T19:57:35Z [web] 
-2025-07-06T19:57:36Z [web] [HuddleAI] firebaseAdmin.ts: Module top level.
-2025-07-06T19:57:36Z [web] [HuddleAI] firebaseAdmin.ts: No Firebase apps initialized. Attempting initialization...
-2025-07-06T19:57:36Z [web] [HuddleAI] firebaseAdmin.ts: Attempting to read service account key from resolved absolute path: /home/user/studio/.secure/huddle-ai-development.firebase-service-account-key-2.json
-2025-07-06T19:57:36Z [web] [HuddleAI] firebaseAdmin.ts: Service account key file read and parsed successfully. Project ID from key: huddle-ai-development
-2025-07-06T19:57:36Z [web] [HuddleAI] firebaseAdmin.ts: Firebase Admin SDK initialized successfully. App name: [DEFAULT]
-2025-07-06T19:57:36Z [web] [HuddleAI] firebaseAdmin.ts: Firestore and Auth services obtained successfully from app.
-2025-07-06T19:57:36Z [web] [adminConfigManager] Attempting to load RoleAssignment 'SystemModerator_Default' from Firestore.
-2025-07-06T19:57:37Z [web] [adminConfigManager] RoleAssignment 'SystemModerator_Default' loaded and cached.
-2025-07-06T19:57:37Z [web] [adminConfigManager] Attempting to load PersonaDefinition 'persona_andrew-good' from Firestore.
-2025-07-06T19:57:37Z [web] [adminConfigManager] PersonaDefinition 'persona_andrew-good' loaded and cached.
-2025-07-06T19:57:37Z [web] [API /initial-data] Fetched PersonaDefinition for AI call: {
-2025-07-06T19:57:37Z [web]   "personaType": "system",
-2025-07-06T19:57:37Z [web]   "personaId": "persona_andrew-good",
-2025-07-06T19:57:37Z [web]   "interactionStyle": {
-2025-07-06T19:57:37Z [web]     "greetingStyle": "Warm and direct",
-2025-07-06T19:57:37Z [web]     "preferredTone": "Helpful, clear, and professional"
-2025-07-06T19:57:37Z [web]   },
-2025-07-06T19:57:37Z [web]   "description": "Andrew Good is the primary system moderator...",
-2025-07-06T19:57:37Z [web]   "notes": "Primary persona for the SystemModerator_Default role. Uses 'persona_andrew-good' as ID.",
-2025-07-06T19:57:37Z [web]   "coreIdentity": {
-2025-07-06T19:57:37Z [web]     "personaName": "Andrew Good (AI Moderator)",
-2025-07-06T19:57:37Z [web]     "shortBio": "Your friendly AI assistant to help start and guide your huddle.",
-2025-07-06T19:57:37Z [web]     "archetype": "The Guide / Facilitator",
-2025-07-06T19:57:37Z [web]     "mentorName": "gemini-1-5-pro-moderator",
-2025-07-06T19:57:37Z [web]     "name": {
-2025-07-06T19:57:37Z [web]       "firstName": "Andrew",
-2025-07-06T19:57:37Z [web]       "lastName": "Good"
-2025-07-06T19:57:37Z [web]     },
-2025-07-06T19:57:37Z [web]     "role": "System Moderator"
-2025-07-06T19:57:37Z [web]   },
-2025-07-06T19:57:37Z [web]   "createdAt": "2025-07-06T06:36:13.931229Z",
-2025-07-06T19:57:37Z [web]   "status": "active",
-2025-07-06T19:57:37Z [web]   "updatedAt": "2025-07-06T06:36:13.931229Z",
-2025-07-06T19:57:37Z [web]   "modelIdUsed": "gemini-1.5-flash-latest",
-2025-07-06T19:57:37Z [web]   "skillsAndExpertise": [
-2025-07-06T19:57:37Z [web]     {
-2025-07-06T19:57:37Z [web]       "skillName": "User Onboarding",
-2025-07-06T19:57:37Z [web]       "description": "Guiding users.",
-2025-07-06T19:57:37Z [web]       "proficiency": "expert"
-2025-07-06T19:57:37Z [web]     },
-2025-07-06T19:57:37Z [web]     {
-2025-07-06T19:57:37Z [web]       "skillName": "Conversation Management",
-2025-07-06T19:57:37Z [web]       "description": "Keeping chat on track.",
-2025-07-06T19:57:37Z [web]       "proficiency": "advanced"
-2025-07-06T19:57:37Z [web]     }
-2025-07-06T19:57:37Z [web]   ]
-2025-07-06T19:57:37Z [web] }
-2025-07-06T19:57:37Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Outline_v1' from Firestore.
-2025-07-06T19:57:37Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Outline_v1' not found in Firestore.
-2025-07-06T19:57:37Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_General_v1' from Firestore.
-2025-07-06T19:57:37Z [web] Error: [API /initial-data] ProcessConfig 'InitialIntroduction_Outline_v1' not found, trying general fallback 'InitialIntroduction_General_v1'.
-2025-07-06T19:57:37Z [web] 
-2025-07-06T19:57:37Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_General_v1' loaded and cached.
-2025-07-06T19:57:37Z [web] [API /initial-data] Attempting to use modelId: 'gemini-1.5-flash-latest', mentorNameForRouting: 'gemini-1-5-pro-moderator' for personaId: 'persona_andrew-good'
-2025-07-06T19:57:37Z [web] Calling AI Provider for gemini-1-5-pro-moderator with model gemini-1.5-flash-latest. History length: 1
-2025-07-06T19:57:37Z [web] Google AI (Gemini) client initialized successfully.
-2025-07-06T19:57:37Z [web] [aiProviderManager Google] No explicit user message found, but system instruction is present. Sending empty prompt to Gemini to initiate based on system instruction.
-2025-07-06T19:57:38Z [web]  GET /api/onboarding/initial-data?contextName=Outline 200 in 6950ms
-2025-07-06T19:59:54Z [web]  GET / 200 in 166ms
-2025-07-06T19:59:55Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
-2025-07-06T19:59:55Z [web] [adminConfigManager] Returning cached PersonaDefinition for 'persona_andrew-good'.
-2025-07-06T19:59:55Z [web] [API /initial-data] Fetched PersonaDefinition for AI call: {
-2025-07-06T19:59:55Z [web]   "personaType": "system",
-2025-07-06T19:59:55Z [web]   "personaId": "persona_andrew-good",
-2025-07-06T19:59:55Z [web]   "interactionStyle": {
-2025-07-06T19:59:55Z [web]     "greetingStyle": "Warm and direct",
-2025-07-06T19:59:55Z [web]     "preferredTone": "Helpful, clear, and professional"
-2025-07-06T19:59:55Z [web]   },
-2025-07-06T19:59:55Z [web]   "description": "Andrew Good is the primary system moderator...",
-2025-07-06T19:59:55Z [web]   "notes": "Primary persona for the SystemModerator_Default role. Uses 'persona_andrew-good' as ID.",
-2025-07-06T19:59:55Z [web]   "coreIdentity": {
-2025-07-06T19:59:55Z [web]     "personaName": "Andrew Good (AI Moderator)",
-2025-07-06T19:59:55Z [web]     "shortBio": "Your friendly AI assistant to help start and guide your huddle.",
-2025-07-06T19:59:55Z [web]     "archetype": "The Guide / Facilitator",
-2025-07-06T19:59:55Z [web]     "mentorName": "gemini-1-5-pro-moderator",
-2025-07-06T19:59:55Z [web]     "name": {
-2025-07-06T19:59:55Z [web]       "firstName": "Andrew",
-2025-07-06T19:59:55Z [web]       "lastName": "Good"
-2025-07-06T19:59:55Z [web]     },
-2025-07-06T19:59:55Z [web]     "role": "System Moderator"
-2025-07-06T19:59:55Z [web]   },
-2025-07-06T19:59:55Z [web]   "createdAt": "2025-07-06T06:36:13.931229Z",
-2025-07-06T19:59:55Z [web]   "status": "active",
-2025-07-06T19:59:55Z [web]   "updatedAt": "2025-07-06T06:36:13.931229Z",
-2025-07-06T19:59:55Z [web]   "modelIdUsed": "gemini-1.5-flash-latest",
-2025-07-06T19:59:55Z [web]   "skillsAndExpertise": [
-2025-07-06T19:59:55Z [web]     {
-2025-07-06T19:59:55Z [web]       "skillName": "User Onboarding",
-2025-07-06T19:59:55Z [web]       "description": "Guiding users.",
-2025-07-06T19:59:55Z [web]       "proficiency": "expert"
-2025-07-06T19:59:55Z [web]     },
-2025-07-06T19:59:55Z [web]     {
-2025-07-06T19:59:55Z [web]       "skillName": "Conversation Management",
-2025-07-06T19:59:55Z [web]       "description": "Keeping chat on track.",
-2025-07-06T19:59:55Z [web]       "proficiency": "advanced"
-2025-07-06T19:59:55Z [web]     }
-2025-07-06T19:59:55Z [web]   ]
-2025-07-06T19:59:55Z [web] }
-2025-07-06T19:59:55Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Outline_v1' from Firestore.
-2025-07-06T19:59:55Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Outline_v1' not found in Firestore.
-2025-07-06T19:59:55Z [web] [adminConfigManager] Returning cached ProcessConfigDirective for 'InitialIntroduction_General_v1'.
-2025-07-06T19:59:55Z [web] [API /initial-data] Attempting to use modelId: 'gemini-1.5-flash-latest', mentorNameForRouting: 'gemini-1-5-pro-moderator' for personaId: 'persona_andrew-good'
-2025-07-06T19:59:55Z [web] Calling AI Provider for gemini-1-5-pro-moderator with model gemini-1.5-flash-latest. History length: 1
-2025-07-06T19:59:55Z [web] [aiProviderManager Google] No explicit user message found, but system instruction is present. Sending empty prompt to Gemini to initiate based on system instruction.
-2025-07-06T19:59:55Z [web] Error: [API /initial-data] ProcessConfig 'InitialIntroduction_Outline_v1' not found, trying general fallback 'InitialIntroduction_General_v1'.
-2025-07-06T19:59:55Z [web] 
-2025-07-06T19:59:56Z [web]  GET /api/onboarding/initial-data?contextName=Outline 200 in 902ms
-2025-07-06T20:00:14Z [web]  GET /?monospaceUid=0 200 in 1368ms
-2025-07-06T20:00:15Z [web]  GET /?monospaceUid=699929 200 in 1871ms
-2025-07-06T20:00:16Z [web] Error:  ⚠ Cross origin request detected from 9000-firebase-studio-1751489770040.cluster-pgviq6mvsncnqxx6kr7pbz65v6.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-2025-07-06T20:00:16Z [web] Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-2025-07-06T20:00:16Z [web] 
-2025-07-06T20:00:17Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
-2025-07-06T20:00:17Z [web] [adminConfigManager] Returning cached PersonaDefinition for 'persona_andrew-good'.
-2025-07-06T20:00:17Z [web] [API /initial-data] Fetched PersonaDefinition for AI call: {
-2025-07-06T20:00:17Z [web]   "personaType": "system",
-2025-07-06T20:00:17Z [web]   "personaId": "persona_andrew-good",
-2025-07-06T20:00:17Z [web]   "interactionStyle": {
-2025-07-06T20:00:17Z [web]     "greetingStyle": "Warm and direct",
-2025-07-06T20:00:17Z [web]     "preferredTone": "Helpful, clear, and professional"
-2025-07-06T20:00:17Z [web]   },
-2025-07-06T20:00:17Z [web]   "description": "Andrew Good is the primary system moderator...",
-2025-07-06T20:00:17Z [web]   "notes": "Primary persona for the SystemModerator_Default role. Uses 'persona_andrew-good' as ID.",
-2025-07-06T20:00:17Z [web]   "coreIdentity": {
-2025-07-06T20:00:17Z [web]     "personaName": "Andrew Good (AI Moderator)",
-2025-07-06T20:00:17Z [web]     "shortBio": "Your friendly AI assistant to help start and guide your huddle.",
-2025-07-06T20:00:17Z [web]     "archetype": "The Guide / Facilitator",
-2025-07-06T20:00:17Z [web]     "mentorName": "gemini-1-5-pro-moderator",
-2025-07-06T20:00:17Z [web]     "name": {
-2025-07-06T20:00:17Z [web]       "firstName": "Andrew",
-2025-07-06T20:00:17Z [web]       "lastName": "Good"
-2025-07-06T20:00:17Z [web]     },
-2025-07-06T20:00:17Z [web]     "role": "System Moderator"
-2025-07-06T20:00:17Z [web]   },
-2025-07-06T20:00:17Z [web]   "createdAt": "2025-07-06T06:36:13.931229Z",
-2025-07-06T20:00:17Z [web]   "status": "active",
-2025-07-06T20:00:17Z [web]   "updatedAt": "2025-07-06T06:36:13.931229Z",
-2025-07-06T20:00:17Z [web]   "modelIdUsed": "gemini-1.5-flash-latest",
-2025-07-06T20:00:17Z [web]   "skillsAndExpertise": [
-2025-07-06T20:00:17Z [web]     {
-2025-07-06T20:00:17Z [web]       "skillName": "User Onboarding",
-2025-07-06T20:00:17Z [web]       "description": "Guiding users.",
-2025-07-06T20:00:17Z [web]       "proficiency": "expert"
-2025-07-06T20:00:17Z [web]     },
-2025-07-06T20:00:17Z [web]     {
-2025-07-06T20:00:17Z [web]       "skillName": "Conversation Management",
-2025-07-06T20:00:17Z [web]       "description": "Keeping chat on track.",
-2025-07-06T20:00:17Z [web]       "proficiency": "advanced"
-2025-07-06T20:00:17Z [web]     }
-2025-07-06T20:00:17Z [web]   ]
-2025-07-06T20:00:17Z [web] }
-2025-07-06T20:00:17Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Outline_v1' from Firestore.
-2025-07-06T20:00:17Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Outline_v1' not found in Firestore.
-2025-07-06T20:00:17Z [web] [adminConfigManager] Returning cached ProcessConfigDirective for 'InitialIntroduction_General_v1'.
-2025-07-06T20:00:17Z [web] [API /initial-data] Attempting to use modelId: 'gemini-1.5-flash-latest', mentorNameForRouting: 'gemini-1-5-pro-moderator' for personaId: 'persona_andrew-good'
-2025-07-06T20:00:17Z [web] Calling AI Provider for gemini-1-5-pro-moderator with model gemini-1.5-flash-latest. History length: 1
-2025-07-06T20:00:17Z [web] [aiProviderManager Google] No explicit user message found, but system instruction is present. Sending empty prompt to Gemini to initiate based on system instruction.
-2025-07-06T20:00:17Z [web] Error: [API /initial-data] ProcessConfig 'InitialIntroduction_Outline_v1' not found, trying general fallback 'InitialIntroduction_General_v1'.
-2025-07-06T20:00:17Z [web] 
-2025-07-06T20:00:18Z [web]  GET /api/onboarding/initial-data?contextName=Outline 200 in 1735ms
-2025-07-06T20:00:40Z [web]    skipping /api/huddles/[sessionId]/answer (conflict)
-2025-07-06T20:00:40Z [web]    skipping /api/onboarding/initial-data (conflict)
-2025-07-06T20:00:40Z [web]    skipping /api/onboarding/welcome-message (conflict)
-2025-07-06T20:00:40Z [web] Error:  ⚠ Duplicate page detected. src/pages/api/onboarding/initial-data.ts and src/app/api/onboarding/initial-data/route.ts resolve to /api/onboarding/initial-data
-2025-07-06T20:00:40Z [web]  ⚠ Duplicate page detected. src/pages/api/onboarding/welcome-message.ts and src/app/api/onboarding/welcome-message/route.ts resolve to /api/onboarding/welcome-message
-2025-07-06T20:00:40Z [web]  ⚠ Duplicate page detected. src/pages/api/huddles/[sessionId]/answer.ts and src/app/api/huddles/[sessionId]/answer/route.ts resolve to /api/huddles/[sessionId]/answer
-2025-07-06T20:00:40Z [web] 
-2025-07-06T20:00:41Z [web]  ○ Compiling /_not-found/page ...
-2025-07-06T20:00:56Z [web]  ✓ Compiled in 14.8s
-2025-07-06T20:00:56Z [web]  ✓ Compiled /_not-found/page in 14.9s
-2025-07-06T20:00:57Z [web]  GET /?monospaceUid=699929 500 in 16969ms
-2025-07-06T20:00:57Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 15884ms
-2025-07-06T20:00:57Z [web]  GET /?monospaceUid=699929 500 in 196ms
+2025-07-06T20:27:18Z [web]  GET /?monospaceUid=910413 500 in 271ms
+2025-07-06T20:27:18Z [web]  GET /favicon.ico 500 in 202ms
+2025-07-06T20:27:39Z [web]  GET /?monospaceUid=910413 500 in 486ms
+2025-07-06T20:27:39Z [web]  GET /?monospaceUid=910413 500 in 680ms
+2025-07-06T20:27:39Z [web]  GET /?monospaceUid=910413 500 in 780ms
+2025-07-06T20:27:39Z [web]  GET /?monospaceUid=910413 500 in 751ms
+2025-07-06T20:27:39Z [web]  GET /?monospaceUid=910413 500 in 628ms
+2025-07-06T20:27:40Z [web]  GET /favicon.ico 500 in 198ms
+2025-07-06T20:28:32Z [web] <Firebase Studio> Starting preview...
+2025-07-06T20:28:32Z [web] Waiting for your web server to start serving
+2025-07-06T20:28:32Z [web] [?25h
+2025-07-06T20:28:35Z [web] 
+2025-07-06T20:28:35Z [web] > nextn@0.1.0 dev
+2025-07-06T20:28:35Z [web] > next dev --turbopack -p 9002 --port 9002 --hostname 0.0.0.0
+2025-07-06T20:28:35Z [web] 
+2025-07-06T20:28:38Z [web] <Firebase Studio> ▶️ Preview running
+2025-07-06T20:28:39Z [web]    ▲ Next.js 15.3.3 (Turbopack)
+2025-07-06T20:28:39Z [web]    - Local:        http://localhost:9002
+2025-07-06T20:28:39Z [web]    - Network:      http://0.0.0.0:9002
+2025-07-06T20:28:39Z [web]    - Environments: .env.local, .env
+2025-07-06T20:28:39Z [web] 
+2025-07-06T20:28:39Z [web]  ✓ Starting...
+2025-07-06T20:28:42Z [web]  ✓ Ready in 3.6s
+2025-07-06T20:28:42Z [web] Error:  ⚠ Cross origin request detected from 9000-firebase-studio-1751489770040.cluster-pgviq6mvsncnqxx6kr7pbz65v6.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+2025-07-06T20:28:42Z [web] Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+2025-07-06T20:28:42Z [web] 
+2025-07-06T20:28:42Z [web]  ○ Compiling / ...
+2025-07-06T20:29:03Z [web]  ✓ Compiled / in 21.6s
+2025-07-06T20:29:05Z [web]  GET /?monospaceUid=131016 200 in 23059ms
+2025-07-06T20:29:05Z [web]  GET /?monospaceUid=910413 200 in 22940ms
+2025-07-06T20:29:06Z [web]  ○ Compiling /api/onboarding/initial-data ...
+2025-07-06T20:29:08Z [web] Error:  ⨯ ./src/pages/api/onboarding/initial-data.ts:7:1
+2025-07-06T20:29:08Z [web] Export getProcessConfigDirective doesn't exist in target module
+2025-07-06T20:29:08Z [web]    5 | import { HuddleSession, ChatMessage }
+2025-07-06T20:29:08Z [web]    6 | from '@/types/huddle';
+2025-07-06T20:29:08Z [web] >  7 | import { getPersonaDefinition, getProcessConfigDirective, getRoleAssignment } from '@/lib/adminConfigManager';
+2025-07-06T20:29:08Z [web]      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-06T20:29:08Z [web]    8 | import { callAiProviderWithHistory } from '@/lib/aiProviderManager';
+2025-07-06T20:29:08Z [web]    9 | import { SYSTEM_MODERATOR_ROLE_KEY } from '@/config/constants';
+2025-07-06T20:29:08Z [web]   10 | import { v4 as uuidv4 } from 'uuid';
+2025-07-06T20:29:08Z [web] 
+2025-07-06T20:29:08Z [web] The export getProcessConfigDirective was not found in module [project]/src/lib/adminConfigManager.ts [api] (ecmascript).
+2025-07-06T20:29:08Z [web] Did you mean to import getProcessConfig?
+2025-07-06T20:29:08Z [web] All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+2025-07-06T20:29:08Z [web] 
+2025-07-06T20:29:08Z [web] 
+2025-07-06T20:29:08Z [web] 
+2025-07-06T20:29:08Z [web] Error:  ⨯ ./src/pages/api/onboarding/initial-data.ts:7:1
+2025-07-06T20:29:08Z [web] Export getProcessConfigDirective doesn't exist in target module
+2025-07-06T20:29:08Z [web]    5 | import { HuddleSession, ChatMessage }
+2025-07-06T20:29:08Z [web]    6 | from '@/types/huddle';
+2025-07-06T20:29:08Z [web] >  7 | import { getPersonaDefinition, getProcessConfigDirective, getRoleAssignment } from '@/lib/adminConfigManager';
+2025-07-06T20:29:08Z [web]      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-06T20:29:08Z [web]    8 | import { callAiProviderWithHistory } from '@/lib/aiProviderManager';
+2025-07-06T20:29:08Z [web]    9 | import { SYSTEM_MODERATOR_ROLE_KEY } from '@/config/constants';
+2025-07-06T20:29:08Z [web]   10 | import { v4 as uuidv4 } from 'uuid';
+2025-07-06T20:29:08Z [web] 
+2025-07-06T20:29:08Z [web] The export getProcessConfigDirective was not found in module [project]/src/lib/adminConfigManager.ts [api] (ecmascript).
+2025-07-06T20:29:08Z [web] Did you mean to import getProcessConfig?
+2025-07-06T20:29:08Z [web] All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+2025-07-06T20:29:08Z [web] 
+2025-07-06T20:29:08Z [web] 
+2025-07-06T20:29:08Z [web] 
+2025-07-06T20:29:13Z [web]  GET /favicon.ico?favicon.56766c03.ico 500 in 7004ms
+2025-07-06T20:29:19Z [web]  ✓ Compiled /api/onboarding/initial-data in 13.2s
+2025-07-06T20:29:20Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 11761ms
+2025-07-06T20:29:20Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 11731ms
