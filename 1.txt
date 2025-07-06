@@ -1,45 +1,55 @@
-2025-07-06T03:55:39Z [web]  GET /?monospaceUid=910413 200 in 277ms
-2025-07-06T03:55:42Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
-2025-07-06T03:55:42Z [web] 
-2025-07-06T03:55:42Z [web] Error: Warning: Environment variable DEEPSEEK_API_KEY is not set.
-2025-07-06T03:55:42Z [web] Warning: Environment variable QWEN_API_KEY is not set.
-2025-07-06T03:55:42Z [web] Warning: Environment variable NEBIUS_API_KEY is not set.
-2025-07-06T03:55:42Z [web] Warning: Environment variable KIMI_API_KEY is not set.
-2025-07-06T03:55:42Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
-2025-07-06T03:55:42Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
-2025-07-06T03:55:42Z [web] 
-2025-07-06T03:55:42Z [web] Error: Warning: Environment variable LLAMA_API_ENDPOINT is not set.
-2025-07-06T03:55:42Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
-2025-07-06T03:55:42Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
-2025-07-06T03:55:42Z [web] 
-2025-07-06T03:55:42Z [web] [HuddleAI] firebaseAdmin.ts: Module top level.
-2025-07-06T03:55:42Z [web] [HuddleAI] firebaseAdmin.ts: Firebase Admin SDK already initialized. Using existing app: [DEFAULT]
-2025-07-06T03:55:42Z [web] [HuddleAI] firebaseAdmin.ts: Firestore and Auth services obtained successfully from app.
-2025-07-06T03:55:42Z [web] [adminConfigManager] Attempting to load RoleAssignment 'SystemModerator_Default' from Firestore.
-2025-07-06T03:55:42Z [web]  ○ Compiling /favicon.ico ...
-2025-07-06T03:55:42Z [web] [adminConfigManager] RoleAssignment 'SystemModerator_Default' loaded and cached.
-2025-07-06T03:55:42Z [web] [personaManager] getPersona called for ID: 'persona_andrew-good'. Attempting DB load.
-2025-07-06T03:55:42Z [web] [personaManager] Attempting to load PersonaDefinition 'persona_andrew-good' from Firestore via adminConfigManager...
-2025-07-06T03:55:42Z [web] [adminConfigManager] Attempting to load PersonaDefinition 'persona_andrew-good' from Firestore.
-2025-07-06T03:55:42Z [web] [adminConfigManager] PersonaDefinition 'persona_andrew-good' loaded and cached.
-2025-07-06T03:55:42Z [web] [personaManager] PersonaDefinition 'persona_andrew-good' found in Firestore. Adapting to legacy Persona type.
-2025-07-06T03:55:42Z [web] [personaManager] Persona 'persona_andrew-good' loaded from Firestore and adapted.
-2025-07-06T03:55:42Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Outline_v1' from Firestore.
-2025-07-06T03:55:42Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Outline_v1' not found in Firestore.
-2025-07-06T03:55:42Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_General_v1' from Firestore.
-2025-07-06T03:55:42Z [web] Error: [API /initial-data] ProcessConfig 'InitialIntroduction_Outline_v1' not found, trying general fallback 'InitialIntroduction_General_v1'.
-2025-07-06T03:55:42Z [web] 
-2025-07-06T03:55:42Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_General_v1' loaded and cached.
-2025-07-06T03:55:44Z [web] Error: [API /initial-data] Error fetching initial onboarding data: ReferenceError: getPersonaDefinition is not defined
-2025-07-06T03:55:44Z [web]     at GET (src/app/api/onboarding/initial-data/route.ts:56:23)
-2025-07-06T03:55:44Z [web]   54 |
-2025-07-06T03:55:44Z [web]   55 |     // Directly use fields from personaDef
-2025-07-06T03:55:44Z [web] > 56 |     const personaDef = await getPersonaDefinition(moderatorPersonaId); // moderatorPersonaId is assignedPersonaId from RoleAssignment
-2025-07-06T03:55:44Z [web]      |                       ^
-2025-07-06T03:55:44Z [web]   57 |     console.log('[API /initial-data] Fetched PersonaDefinition for AI call:', JSON.stringify(personaDef, null, 2));
-2025-07-06T03:55:44Z [web]   58 |
-2025-07-06T03:55:44Z [web]   59 |     if (!personaDef) {
-2025-07-06T03:55:44Z [web] 
-2025-07-06T03:55:44Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 3490ms
-2025-07-06T03:55:45Z [web]  ✓ Compiled /favicon.ico in 4.3s
-2025-07-06T03:55:45Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 4724ms
+2025-07-06T04:16:30Z [web] <Firebase Studio> Starting preview...
+2025-07-06T04:16:31Z [web] Waiting for your web server to start serving
+2025-07-06T04:16:38Z [web] 
+2025-07-06T04:16:38Z [web] > nextn@0.1.0 dev
+2025-07-06T04:16:38Z [web] > next dev --turbopack -p 9002 --port 9002 --hostname 0.0.0.0
+2025-07-06T04:16:38Z [web] 
+2025-07-06T04:16:48Z [web] <Firebase Studio> ▶️ Preview running
+2025-07-06T04:16:50Z [web]    ▲ Next.js 15.3.3 (Turbopack)
+2025-07-06T04:16:50Z [web]    - Local:        http://localhost:9002
+2025-07-06T04:16:50Z [web]    - Network:      http://0.0.0.0:9002
+2025-07-06T04:16:50Z [web]    - Environments: .env.local, .env
+2025-07-06T04:16:50Z [web] 
+2025-07-06T04:16:50Z [web]  ✓ Starting...
+2025-07-06T04:16:58Z [web]  ✓ Ready in 10.6s
+2025-07-06T04:16:59Z [web]  ○ Compiling / ...
+2025-07-06T04:17:39Z [web]  ✓ Compiled / in 40.4s
+2025-07-06T04:17:41Z [web]  GET /?monospaceUid=0 200 in 42897ms
+2025-07-06T04:17:41Z [web]  GET /?monospaceUid=166280 200 in 42870ms
+2025-07-06T04:17:43Z [web] Error:  ⚠ Cross origin request detected from 9000-firebase-studio-1751489770040.cluster-pgviq6mvsncnqxx6kr7pbz65v6.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+2025-07-06T04:17:43Z [web] Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+2025-07-06T04:17:43Z [web] 
+2025-07-06T04:17:43Z [web]  ○ Compiling /api/onboarding/initial-data ...
+2025-07-06T04:17:54Z [web]  ✓ Compiled /api/onboarding/initial-data in 11.6s
+2025-07-06T04:17:56Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
+2025-07-06T04:17:56Z [web] 
+2025-07-06T04:17:56Z [web] Error: Warning: Environment variable DEEPSEEK_API_KEY is not set.
+2025-07-06T04:17:56Z [web] Warning: Environment variable QWEN_API_KEY is not set.
+2025-07-06T04:17:56Z [web] 
+2025-07-06T04:17:56Z [web] Error: Warning: Environment variable NEBIUS_API_KEY is not set.
+2025-07-06T04:17:56Z [web] Warning: Environment variable KIMI_API_KEY is not set.
+2025-07-06T04:17:56Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
+2025-07-06T04:17:56Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
+2025-07-06T04:17:56Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
+2025-07-06T04:17:56Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
+2025-07-06T04:17:56Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
+2025-07-06T04:17:56Z [web] 
+2025-07-06T04:17:59Z [web] [HuddleAI] firebaseAdmin.ts: Module top level.
+2025-07-06T04:17:59Z [web] [HuddleAI] firebaseAdmin.ts: No Firebase apps initialized. Attempting initialization...
+2025-07-06T04:17:59Z [web] [HuddleAI] firebaseAdmin.ts: Attempting to read service account key from resolved absolute path: /home/user/studio/.secure/huddle-ai-development.firebase-service-account-key-2.json
+2025-07-06T04:17:59Z [web] [HuddleAI] firebaseAdmin.ts: Service account key file read and parsed successfully. Project ID from key: huddle-ai-development
+2025-07-06T04:17:59Z [web] [HuddleAI] firebaseAdmin.ts: Firebase Admin SDK initialized successfully. App name: [DEFAULT]
+2025-07-06T04:17:59Z [web] [HuddleAI] firebaseAdmin.ts: Firestore and Auth services obtained successfully from app.
+2025-07-06T04:17:59Z [web] [adminConfigManager] Attempting to load RoleAssignment 'SystemModerator_Default' from Firestore.
+2025-07-06T04:18:00Z [web] [adminConfigManager] RoleAssignment 'SystemModerator_Default' loaded and cached.
+2025-07-06T04:18:01Z [web] Error: [API /initial-data] Error fetching initial onboarding data: ReferenceError: getPersona is not defined
+2025-07-06T04:18:01Z [web]     at GET (src/app/api/onboarding/initial-data/route.ts:25:20)
+2025-07-06T04:18:01Z [web]   23 |
+2025-07-06T04:18:01Z [web]   24 |     // 2. Get the Persona object for the assigned moderator
+2025-07-06T04:18:01Z [web] > 25 |     const persona = await getPersona(moderatorPersonaId);
+2025-07-06T04:18:01Z [web]      |                    ^
+2025-07-06T04:18:01Z [web]   26 |     if (!persona) {
+2025-07-06T04:18:01Z [web]   27 |       console.error(`[API /initial-data] Assigned Moderator persona '${moderatorPersonaId}' not found.`);
+2025-07-06T04:18:01Z [web]   28 |       return NextResponse.json({ error: `Assigned Moderator persona '${moderatorPersonaId}' not found.` }, { status: 500 });
+2025-07-06T04:18:01Z [web] 
+2025-07-06T04:18:01Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 18097ms
