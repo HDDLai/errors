@@ -1,67 +1,19 @@
-2025-07-06T20:27:18Z [web]  GET /?monospaceUid=910413 500 in 271ms
-2025-07-06T20:27:18Z [web]  GET /favicon.ico 500 in 202ms
-2025-07-06T20:27:39Z [web]  GET /?monospaceUid=910413 500 in 486ms
-2025-07-06T20:27:39Z [web]  GET /?monospaceUid=910413 500 in 680ms
-2025-07-06T20:27:39Z [web]  GET /?monospaceUid=910413 500 in 780ms
-2025-07-06T20:27:39Z [web]  GET /?monospaceUid=910413 500 in 751ms
-2025-07-06T20:27:39Z [web]  GET /?monospaceUid=910413 500 in 628ms
-2025-07-06T20:27:40Z [web]  GET /favicon.ico 500 in 198ms
-2025-07-06T20:28:32Z [web] <Firebase Studio> Starting preview...
-2025-07-06T20:28:32Z [web] Waiting for your web server to start serving
-2025-07-06T20:28:32Z [web] [?25h
-2025-07-06T20:28:35Z [web] 
-2025-07-06T20:28:35Z [web] > nextn@0.1.0 dev
-2025-07-06T20:28:35Z [web] > next dev --turbopack -p 9002 --port 9002 --hostname 0.0.0.0
-2025-07-06T20:28:35Z [web] 
-2025-07-06T20:28:38Z [web] <Firebase Studio> ▶️ Preview running
-2025-07-06T20:28:39Z [web]    ▲ Next.js 15.3.3 (Turbopack)
-2025-07-06T20:28:39Z [web]    - Local:        http://localhost:9002
-2025-07-06T20:28:39Z [web]    - Network:      http://0.0.0.0:9002
-2025-07-06T20:28:39Z [web]    - Environments: .env.local, .env
-2025-07-06T20:28:39Z [web] 
-2025-07-06T20:28:39Z [web]  ✓ Starting...
-2025-07-06T20:28:42Z [web]  ✓ Ready in 3.6s
-2025-07-06T20:28:42Z [web] Error:  ⚠ Cross origin request detected from 9000-firebase-studio-1751489770040.cluster-pgviq6mvsncnqxx6kr7pbz65v6.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-2025-07-06T20:28:42Z [web] Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-2025-07-06T20:28:42Z [web] 
-2025-07-06T20:28:42Z [web]  ○ Compiling / ...
-2025-07-06T20:29:03Z [web]  ✓ Compiled / in 21.6s
-2025-07-06T20:29:05Z [web]  GET /?monospaceUid=131016 200 in 23059ms
-2025-07-06T20:29:05Z [web]  GET /?monospaceUid=910413 200 in 22940ms
-2025-07-06T20:29:06Z [web]  ○ Compiling /api/onboarding/initial-data ...
-2025-07-06T20:29:08Z [web] Error:  ⨯ ./src/pages/api/onboarding/initial-data.ts:7:1
-2025-07-06T20:29:08Z [web] Export getProcessConfigDirective doesn't exist in target module
-2025-07-06T20:29:08Z [web]    5 | import { HuddleSession, ChatMessage }
-2025-07-06T20:29:08Z [web]    6 | from '@/types/huddle';
-2025-07-06T20:29:08Z [web] >  7 | import { getPersonaDefinition, getProcessConfigDirective, getRoleAssignment } from '@/lib/adminConfigManager';
-2025-07-06T20:29:08Z [web]      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2025-07-06T20:29:08Z [web]    8 | import { callAiProviderWithHistory } from '@/lib/aiProviderManager';
-2025-07-06T20:29:08Z [web]    9 | import { SYSTEM_MODERATOR_ROLE_KEY } from '@/config/constants';
-2025-07-06T20:29:08Z [web]   10 | import { v4 as uuidv4 } from 'uuid';
-2025-07-06T20:29:08Z [web] 
-2025-07-06T20:29:08Z [web] The export getProcessConfigDirective was not found in module [project]/src/lib/adminConfigManager.ts [api] (ecmascript).
-2025-07-06T20:29:08Z [web] Did you mean to import getProcessConfig?
-2025-07-06T20:29:08Z [web] All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-2025-07-06T20:29:08Z [web] 
-2025-07-06T20:29:08Z [web] 
-2025-07-06T20:29:08Z [web] 
-2025-07-06T20:29:08Z [web] Error:  ⨯ ./src/pages/api/onboarding/initial-data.ts:7:1
-2025-07-06T20:29:08Z [web] Export getProcessConfigDirective doesn't exist in target module
-2025-07-06T20:29:08Z [web]    5 | import { HuddleSession, ChatMessage }
-2025-07-06T20:29:08Z [web]    6 | from '@/types/huddle';
-2025-07-06T20:29:08Z [web] >  7 | import { getPersonaDefinition, getProcessConfigDirective, getRoleAssignment } from '@/lib/adminConfigManager';
-2025-07-06T20:29:08Z [web]      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2025-07-06T20:29:08Z [web]    8 | import { callAiProviderWithHistory } from '@/lib/aiProviderManager';
-2025-07-06T20:29:08Z [web]    9 | import { SYSTEM_MODERATOR_ROLE_KEY } from '@/config/constants';
-2025-07-06T20:29:08Z [web]   10 | import { v4 as uuidv4 } from 'uuid';
-2025-07-06T20:29:08Z [web] 
-2025-07-06T20:29:08Z [web] The export getProcessConfigDirective was not found in module [project]/src/lib/adminConfigManager.ts [api] (ecmascript).
-2025-07-06T20:29:08Z [web] Did you mean to import getProcessConfig?
-2025-07-06T20:29:08Z [web] All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-2025-07-06T20:29:08Z [web] 
-2025-07-06T20:29:08Z [web] 
-2025-07-06T20:29:08Z [web] 
-2025-07-06T20:29:13Z [web]  GET /favicon.ico?favicon.56766c03.ico 500 in 7004ms
-2025-07-06T20:29:19Z [web]  ✓ Compiled /api/onboarding/initial-data in 13.2s
-2025-07-06T20:29:20Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 11761ms
-2025-07-06T20:29:20Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 11731ms
+Build Error
+
+
+Export getProcessConfigDirective doesn't exist in target module
+
+./src/pages/api/onboarding/initial-data.ts (7:1)
+
+Export getProcessConfigDirective doesn't exist in target module
+   5 | import { HuddleSession, ChatMessage }
+   6 | from '@/types/huddle';
+>  7 | import { getPersonaDefinition, getProcessConfigDirective, getRoleAssignment } from '@/lib/adminConfigManager';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { callAiProviderWithHistory } from '@/lib/aiProviderManager';
+   9 | import { SYSTEM_MODERATOR_ROLE_KEY } from '@/config/constants';
+  10 | import { v4 as uuidv4 } from 'uuid';
+
+The export getProcessConfigDirective was not found in module [project]/src/lib/adminConfigManager.ts [api] (ecmascript).
+Did you mean to import getProcessConfig?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
