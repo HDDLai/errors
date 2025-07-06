@@ -1,12 +1,12 @@
-2025-07-06T01:10:25Z [web]  GET /?monospaceUid=910413 200 in 323ms
-2025-07-06T01:10:26Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
-2025-07-06T01:10:26Z [web] [personaManager] Returning cached DB persona for 'persona_andrew_01'.
-2025-07-06T01:10:26Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Outline_v1' from Firestore.
-2025-07-06T01:10:27Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Outline_v1' not found in Firestore.
-2025-07-06T01:10:27Z [web] Error: [API /initial-data] ProcessConfig 'InitialIntroduction_Outline_v1' not found, trying general fallback 'InitialIntroduction_General_v1'.
-2025-07-06T01:10:27Z [web] 
-2025-07-06T01:10:27Z [web] [adminConfigManager] Returning cached ProcessConfigDirective for 'InitialIntroduction_General_v1'.
-2025-07-06T01:10:27Z [web] Error: [API /initial-data] No modelId found for persona 'persona_andrew_01'. Cannot call AI.
-2025-07-06T01:10:27Z [web] 
-2025-07-06T01:10:27Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 429ms
-2025-07-06T01:10:27Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 558ms
+2025-07-06T02:38:49Z [web]  GET /?monospaceUid=910413 200 in 646ms
+2025-07-06T02:38:50Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
+2025-07-06T02:38:50Z [web] [personaManager] getPersona called for ID: 'persona_andrew-good'. Attempting DB load.
+2025-07-06T02:38:50Z [web] [personaManager] Returning cached DB persona for 'persona_andrew-good'.
+2025-07-06T02:38:50Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Outline_v1' from Firestore.
+2025-07-06T02:38:50Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Outline_v1' not found in Firestore.
+2025-07-06T02:38:50Z [web] [adminConfigManager] Returning cached ProcessConfigDirective for 'InitialIntroduction_General_v1'.
+2025-07-06T02:38:50Z [web] Error: [API /initial-data] ProcessConfig 'InitialIntroduction_Outline_v1' not found, trying general fallback 'InitialIntroduction_General_v1'.
+2025-07-06T02:38:50Z [web] [API /initial-data] No modelId found for persona 'persona_andrew-good'. Cannot call AI.
+2025-07-06T02:38:50Z [web] 
+2025-07-06T02:38:50Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 490ms
+2025-07-06T02:38:50Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 662ms
