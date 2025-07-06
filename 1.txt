@@ -1,70 +1,69 @@
-2025-07-06T05:40:22Z [web]  GET /?monospaceUid=910413 200 in 161ms
-2025-07-06T05:40:23Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
-2025-07-06T05:40:23Z [web] [adminConfigManager] Returning cached PersonaDefinition for 'persona_andrew-good'.
-2025-07-06T05:40:23Z [web] [API /initial-data] Fetched PersonaDefinition for AI call: {
-2025-07-06T05:40:23Z [web]   "createdAt": "2025-07-06T02:38:09.981233Z",
-2025-07-06T05:40:23Z [web]   "updatedAt": "2025-07-06T02:38:09.981233Z",
-2025-07-06T05:40:23Z [web]   "personaType": "system",
-2025-07-06T05:40:23Z [web]   "status": "active",
-2025-07-06T05:40:23Z [web]   "coreIdentity": {
-2025-07-06T05:40:23Z [web]     "shortBio": "Your friendly AI assistant to help start and guide your huddle.",
-2025-07-06T05:40:23Z [web]     "role": "System Moderator",
-2025-07-06T05:40:23Z [web]     "mentorName": "gemini-1-5-pro-moderator",
-2025-07-06T05:40:23Z [web]     "personaName": "Andrew Good (AI Moderator)",
-2025-07-06T05:40:23Z [web]     "name": {
-2025-07-06T05:40:23Z [web]       "lastName": "Good",
-2025-07-06T05:40:23Z [web]       "firstName": "Andrew"
-2025-07-06T05:40:23Z [web]     },
-2025-07-06T05:40:23Z [web]     "archetype": "The Guide / Facilitator"
-2025-07-06T05:40:23Z [web]   },
-2025-07-06T05:40:23Z [web]   "interactionStyle": {
-2025-07-06T05:40:23Z [web]     "preferredTone": "Helpful, clear, and professional",
-2025-07-06T05:40:23Z [web]     "greetingStyle": "Warm and direct"
-2025-07-06T05:40:23Z [web]   },
-2025-07-06T05:40:23Z [web]   "modelIdUsed": "model_gemini_1_5_flash",
-2025-07-06T05:40:23Z [web]   "skillsAndExpertise": [
-2025-07-06T05:40:23Z [web]     {
-2025-07-06T05:40:23Z [web]       "proficiency": "expert",
-2025-07-06T05:40:23Z [web]       "skillName": "User Onboarding",
-2025-07-06T05:40:23Z [web]       "description": "Guiding users."
-2025-07-06T05:40:23Z [web]     },
-2025-07-06T05:40:23Z [web]     {
-2025-07-06T05:40:23Z [web]       "proficiency": "advanced",
-2025-07-06T05:40:23Z [web]       "skillName": "Conversation Management",
-2025-07-06T05:40:23Z [web]       "description": "Keeping chat on track."
-2025-07-06T05:40:23Z [web]     }
-2025-07-06T05:40:23Z [web]   ],
-2025-07-06T05:40:23Z [web]   "notes": "Primary persona for the SystemModerator_Default role. Uses 'persona_andrew-good' as ID.",
-2025-07-06T05:40:23Z [web]   "description": "Andrew Good is the primary system moderator...",
-2025-07-06T05:40:23Z [web]   "personaId": "persona_andrew-good"
-2025-07-06T05:40:23Z [web] }
-2025-07-06T05:40:23Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Outline_v1' from Firestore.
-2025-07-06T05:40:23Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Outline_v1' not found in Firestore.
-2025-07-06T05:40:23Z [web] [adminConfigManager] Returning cached ProcessConfigDirective for 'InitialIntroduction_General_v1'.
-2025-07-06T05:40:23Z [web] [API /initial-data] Attempting to use modelId: 'model_gemini_1_5_flash', mentorNameForRouting: 'gemini-1-5-pro-moderator' for personaId: 'persona_andrew-good'
-2025-07-06T05:40:23Z [web] Calling AI Provider for gemini-1-5-pro-moderator with model model_gemini_1_5_flash. History length: 1
-2025-07-06T05:40:23Z [web] [aiProviderManager Google] No explicit user message found, but system instruction is present. Sending empty prompt to Gemini to initiate based on system instruction.
-2025-07-06T05:40:23Z [web] Error: [API /initial-data] ProcessConfig 'InitialIntroduction_Outline_v1' not found, trying general fallback 'InitialIntroduction_General_v1'.
-2025-07-06T05:40:23Z [web] 
-2025-07-06T05:40:23Z [web]  ○ Compiling /favicon.ico ...
-2025-07-06T05:40:23Z [web] Error: Google AI (Gemini) API error for model model_gemini_1_5_flash (Persona: Andrew): Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/model_gemini_1_5_flash:generateContent: [404 Not Found] models/model_gemini_1_5_flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-07-06T05:40:23Z [web]     at async Object.executeChatCompletion (src/lib/aiProviderManager.ts:165:23)
-2025-07-06T05:40:23Z [web]     at async callAiProviderWithHistory (src/lib/aiProviderManager.ts:448:11)
-2025-07-06T05:40:23Z [web]     at async GET (src/app/api/onboarding/initial-data/route.ts:86:32)
-2025-07-06T05:40:23Z [web]   163 |         });
-2025-07-06T05:40:23Z [web]   164 |
-2025-07-06T05:40:23Z [web] > 165 |         const result = await chat.sendMessage(userMessageContent as string); // Ensure userMessageContent is a string
-2025-07-06T05:40:23Z [web]       |                       ^
-2025-07-06T05:40:23Z [web]   166 |         const response = result.response;
-2025-07-06T05:40:23Z [web]   167 |         return response.text();
-2025-07-06T05:40:23Z [web]   168 |       } catch (error) { {
-2025-07-06T05:40:23Z [web]   status: 404,
-2025-07-06T05:40:23Z [web]   statusText: 'Not Found',
-2025-07-06T05:40:23Z [web]   errorDetails: undefined
-2025-07-06T05:40:23Z [web] }
-2025-07-06T05:40:23Z [web] 
-2025-07-06T05:40:24Z [web] Error: [API /initial-data] AI (Andrew Good (AI Moderator)) failed to generate introductory messages.
-2025-07-06T05:40:24Z [web] 
-2025-07-06T05:40:24Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 935ms
-2025-07-06T05:40:25Z [web]  ✓ Compiled /favicon.ico in 2.4s
-2025-07-06T05:40:25Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 2766ms
+2025-07-06T06:07:34Z [web]  GET /?monospaceUid=910413 200 in 330ms
+2025-07-06T06:07:34Z [web]  GET /?monospaceUid=910413 200 in 564ms
+2025-07-06T06:07:35Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
+2025-07-06T06:07:35Z [web] [adminConfigManager] Returning cached PersonaDefinition for 'persona_andrew-good'.
+2025-07-06T06:07:35Z [web] [API /initial-data] Fetched PersonaDefinition for AI call: {
+2025-07-06T06:07:35Z [web]   "createdAt": "2025-07-06T02:38:09.981233Z",
+2025-07-06T06:07:35Z [web]   "updatedAt": "2025-07-06T02:38:09.981233Z",
+2025-07-06T06:07:35Z [web]   "personaType": "system",
+2025-07-06T06:07:35Z [web]   "status": "active",
+2025-07-06T06:07:35Z [web]   "coreIdentity": {
+2025-07-06T06:07:35Z [web]     "shortBio": "Your friendly AI assistant to help start and guide your huddle.",
+2025-07-06T06:07:35Z [web]     "role": "System Moderator",
+2025-07-06T06:07:35Z [web]     "mentorName": "gemini-1-5-pro-moderator",
+2025-07-06T06:07:35Z [web]     "personaName": "Andrew Good (AI Moderator)",
+2025-07-06T06:07:35Z [web]     "name": {
+2025-07-06T06:07:35Z [web]       "lastName": "Good",
+2025-07-06T06:07:35Z [web]       "firstName": "Andrew"
+2025-07-06T06:07:35Z [web]     },
+2025-07-06T06:07:35Z [web]     "archetype": "The Guide / Facilitator"
+2025-07-06T06:07:35Z [web]   },
+2025-07-06T06:07:35Z [web]   "interactionStyle": {
+2025-07-06T06:07:35Z [web]     "preferredTone": "Helpful, clear, and professional",
+2025-07-06T06:07:35Z [web]     "greetingStyle": "Warm and direct"
+2025-07-06T06:07:35Z [web]   },
+2025-07-06T06:07:35Z [web]   "modelIdUsed": "model_gemini_1_5_flash",
+2025-07-06T06:07:35Z [web]   "skillsAndExpertise": [
+2025-07-06T06:07:35Z [web]     {
+2025-07-06T06:07:35Z [web]       "proficiency": "expert",
+2025-07-06T06:07:35Z [web]       "skillName": "User Onboarding",
+2025-07-06T06:07:35Z [web]       "description": "Guiding users."
+2025-07-06T06:07:35Z [web]     },
+2025-07-06T06:07:35Z [web]     {
+2025-07-06T06:07:35Z [web]       "proficiency": "advanced",
+2025-07-06T06:07:35Z [web]       "skillName": "Conversation Management",
+2025-07-06T06:07:35Z [web]       "description": "Keeping chat on track."
+2025-07-06T06:07:35Z [web]     }
+2025-07-06T06:07:35Z [web]   ],
+2025-07-06T06:07:35Z [web]   "notes": "Primary persona for the SystemModerator_Default role. Uses 'persona_andrew-good' as ID.",
+2025-07-06T06:07:35Z [web]   "description": "Andrew Good is the primary system moderator...",
+2025-07-06T06:07:35Z [web]   "personaId": "persona_andrew-good"
+2025-07-06T06:07:35Z [web] }
+2025-07-06T06:07:35Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Outline_v1' from Firestore.
+2025-07-06T06:07:35Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Outline_v1' not found in Firestore.
+2025-07-06T06:07:35Z [web] Error: [API /initial-data] ProcessConfig 'InitialIntroduction_Outline_v1' not found, trying general fallback 'InitialIntroduction_General_v1'.
+2025-07-06T06:07:35Z [web] 
+2025-07-06T06:07:35Z [web] [adminConfigManager] Returning cached ProcessConfigDirective for 'InitialIntroduction_General_v1'.
+2025-07-06T06:07:35Z [web] [API /initial-data] Attempting to use modelId: 'model_gemini_1_5_flash', mentorNameForRouting: 'gemini-1-5-pro-moderator' for personaId: 'persona_andrew-good'
+2025-07-06T06:07:35Z [web] Calling AI Provider for gemini-1-5-pro-moderator with model model_gemini_1_5_flash. History length: 1
+2025-07-06T06:07:35Z [web] [aiProviderManager Google] No explicit user message found, but system instruction is present. Sending empty prompt to Gemini to initiate based on system instruction.
+2025-07-06T06:07:35Z [web]  GET /favicon.ico?favicon.56766c03.ico 200 in 516ms
+2025-07-06T06:07:36Z [web] Error: Google AI (Gemini) API error for model model_gemini_1_5_flash (Persona: Andrew): Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/model_gemini_1_5_flash:generateContent: [404 Not Found] models/model_gemini_1_5_flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-07-06T06:07:36Z [web]     at async Object.executeChatCompletion (src/lib/aiProviderManager.ts:165:23)
+2025-07-06T06:07:36Z [web]     at async callAiProviderWithHistory (src/lib/aiProviderManager.ts:448:11)
+2025-07-06T06:07:36Z [web]     at async GET (src/app/api/onboarding/initial-data/route.ts:86:32)
+2025-07-06T06:07:36Z [web]   163 |         });
+2025-07-06T06:07:36Z [web]   164 |
+2025-07-06T06:07:36Z [web] > 165 |         const result = await chat.sendMessage(userMessageContent as string); // Ensure userMessageContent is a string
+2025-07-06T06:07:36Z [web]       |                       ^
+2025-07-06T06:07:36Z [web]   166 |         const response = result.response;
+2025-07-06T06:07:36Z [web]   167 |         return response.text();
+2025-07-06T06:07:36Z [web]   168 |       } catch (error) { {
+2025-07-06T06:07:36Z [web]   status: 404,
+2025-07-06T06:07:36Z [web]   statusText: 'Not Found',
+2025-07-06T06:07:36Z [web]   errorDetails: undefined
+2025-07-06T06:07:36Z [web] }
+2025-07-06T06:07:36Z [web] 
+2025-07-06T06:07:36Z [web] Error: [API /initial-data] AI (Andrew Good (AI Moderator)) failed to generate introductory messages.
+2025-07-06T06:07:36Z [web] 
+2025-07-06T06:07:36Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 1038ms
