@@ -1,20 +1,20 @@
-2025-07-07T02:38:38Z [web] <Firebase Studio> Reloading preview...
-2025-07-07T02:38:38Z [web] <Firebase Studio> ▶️ Preview running
-2025-07-07T02:38:38Z [web]  GET /?monospaceUid=709754 200 in 184ms
-2025-07-07T02:38:38Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
-2025-07-07T02:38:38Z [web] [adminConfigManager] Returning cached PersonaDefinition for 'persona_andrew-good'.
-2025-07-07T02:38:38Z [web] [adminConfigManager] Returning cached ProcessConfigDirective for 'InitialIntroduction_Context_Outline'.
-2025-07-07T02:38:38Z [web] [initial-data] Creating new session 6e2ba7d1-5322-4473-bd2f-7d12c9394102.
-2025-07-07T02:38:39Z [web] Error: [API /onboarding/initial-data] Error: TypeError: mentorName.toLowerCase is not a function
-2025-07-07T02:38:39Z [web]     at getProviderForMentor (src/lib/aiProviderManager.ts:203:37)
-2025-07-07T02:38:39Z [web]     at callAiProviderWithHistory (src/lib/aiProviderManager.ts:360:19)
-2025-07-07T02:38:39Z [web]     at handler (src/pages/api/onboarding/initial-data.ts:108:6)
-2025-07-07T02:38:39Z [web]   201 |  */
-2025-07-07T02:38:39Z [web]   202 | export const getProviderForMentor = (mentorName: string): AIProvider | undefined => {
-2025-07-07T02:38:39Z [web] > 203 |   const lowerMentorName = mentorName.toLowerCase();
-2025-07-07T02:38:39Z [web]       |                                     ^
-2025-07-07T02:38:39Z [web]   204 |   if (lowerMentorName.startsWith('openai') || lowerMentorName.includes('gpt')) return providers.openai;
-2025-07-07T02:38:39Z [web]   205 |   if (lowerMentorName.startsWith('claude')) return providers.anthropic;
-2025-07-07T02:38:39Z [web]   206 |   if (lowerMentorName.startsWith('gemini')) return providers.google;
-2025-07-07T02:38:39Z [web] 
-2025-07-07T02:38:39Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 158ms
+2025-07-07T02:46:34Z [web] <Firebase Studio> Reloading preview...
+2025-07-07T02:46:34Z [web] <Firebase Studio> ▶️ Preview running
+2025-07-07T02:46:34Z [web]  GET /?monospaceUid=688966 200 in 213ms
+2025-07-07T02:46:35Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
+2025-07-07T02:46:35Z [web] [adminConfigManager] Returning cached PersonaDefinition for 'persona_andrew-good'.
+2025-07-07T02:46:35Z [web] [adminConfigManager] Returning cached ProcessConfigDirective for 'InitialIntroduction_Context_Outline'.
+2025-07-07T02:46:35Z [web] [initial-data] Creating new session ae3127bf-fef3-4670-af0f-f09f8c2c5ec4.
+2025-07-07T02:46:35Z [web] Error: [API /onboarding/initial-data] Error: TypeError: mentorName.toLowerCase is not a function
+2025-07-07T02:46:35Z [web]     at getProviderForMentor (src/lib/aiProviderManager.ts:203:37)
+2025-07-07T02:46:35Z [web]     at callAiProviderWithHistory (src/lib/aiProviderManager.ts:360:19)
+2025-07-07T02:46:35Z [web]     at handler (src/pages/api/onboarding/initial-data.ts:108:6)
+2025-07-07T02:46:35Z [web]   201 |  */
+2025-07-07T02:46:35Z [web]   202 | export const getProviderForMentor = (mentorName: string): AIProvider | undefined => {
+2025-07-07T02:46:35Z [web] > 203 |   const lowerMentorName = mentorName.toLowerCase();
+2025-07-07T02:46:35Z [web]       |                                     ^
+2025-07-07T02:46:35Z [web]   204 |   if (lowerMentorName.startsWith('openai') || lowerMentorName.includes('gpt')) return providers.openai;
+2025-07-07T02:46:35Z [web]   205 |   if (lowerMentorName.startsWith('claude')) return providers.anthropic;
+2025-07-07T02:46:35Z [web]   206 |   if (lowerMentorName.startsWith('gemini')) return providers.google;
+2025-07-07T02:46:35Z [web] 
+2025-07-07T02:46:35Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 270ms
