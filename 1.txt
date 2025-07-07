@@ -1,44 +1,20 @@
-2025-07-06T21:22:40Z [web]  ✓ Compiled / in 26.3s
-2025-07-06T21:22:41Z [web]  GET /?monospaceUid=901700 200 in 27859ms
-2025-07-06T21:22:41Z [web]  GET /?monospaceUid=0 200 in 28008ms
-2025-07-06T21:22:43Z [web] Error:  ⚠ Cross origin request detected from 9000-firebase-studio-1751489770040.cluster-pgviq6mvsncnqxx6kr7pbz65v6.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-2025-07-06T21:22:43Z [web] Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-2025-07-06T21:22:43Z [web] 
-2025-07-06T21:22:43Z [web]  ○ Compiling /api/onboarding/initial-data ...
-2025-07-06T21:22:44Z [web]  ✓ Compiled /api/onboarding/initial-data in 1091ms
-2025-07-06T21:22:44Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
-2025-07-06T21:22:44Z [web] Warning: Environment variable DEEPSEEK_API_KEY is not set.
-2025-07-06T21:22:44Z [web] Warning: Environment variable QWEN_API_KEY is not set.
-2025-07-06T21:22:44Z [web] Warning: Environment variable NEBIUS_API_KEY is not set.
-2025-07-06T21:22:44Z [web] Warning: Environment variable KIMI_API_KEY is not set.
-2025-07-06T21:22:44Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
-2025-07-06T21:22:44Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
-2025-07-06T21:22:44Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
-2025-07-06T21:22:44Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
-2025-07-06T21:22:44Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
-2025-07-06T21:22:44Z [web] 
-2025-07-06T21:22:45Z [web] [HuddleAI] firebaseAdmin.ts: Module top level.
-2025-07-06T21:22:45Z [web] [HuddleAI] firebaseAdmin.ts: No Firebase apps initialized. Attempting initialization...
-2025-07-06T21:22:45Z [web] [HuddleAI] firebaseAdmin.ts: Attempting to read service account key from resolved absolute path: /home/user/studio/.secure/huddle-ai-development.firebase-service-account-key-2.json
-2025-07-06T21:22:45Z [web] [HuddleAI] firebaseAdmin.ts: Service account key file read and parsed successfully. Project ID from key: huddle-ai-development
-2025-07-06T21:22:46Z [web] [HuddleAI] firebaseAdmin.ts: Firebase Admin SDK initialized successfully. App name: [DEFAULT]
-2025-07-06T21:22:46Z [web] [HuddleAI] firebaseAdmin.ts: Firestore and Auth services obtained successfully from app.
-2025-07-06T21:22:46Z [web] [adminConfigManager] Attempting to load RoleAssignment 'SystemModerator_Default' from Firestore.
-2025-07-06T21:22:47Z [web] [adminConfigManager] RoleAssignment 'SystemModerator_Default' loaded and cached.
-2025-07-06T21:22:47Z [web] [adminConfigManager] Attempting to load PersonaDefinition 'persona_andrew-good' from Firestore.
-2025-07-06T21:22:47Z [web] [adminConfigManager] PersonaDefinition 'persona_andrew-good' loaded and cached.
-2025-07-06T21:22:47Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Context_Outline' from Firestore.
-2025-07-06T21:22:47Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Context_Outline' not found in Firestore.
-2025-07-06T21:22:47Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'InitialIntroduction_Default' from Firestore.
-2025-07-06T21:22:47Z [web] [adminConfigManager] ProcessConfigDirective 'InitialIntroduction_Default' not found in Firestore.
-2025-07-06T21:22:47Z [web] Error: [API /onboarding/initial-data] Error: Error: ProcessConfigDirective 'InitialIntroduction_Context_Outline' or fallback 'InitialIntroduction_Default' not found or not assigned to persona_andrew-good.
-2025-07-06T21:22:47Z [web]     at handler (src/pages/api/onboarding/initial-data.ts:54:14)
-2025-07-06T21:22:47Z [web]   52 |       const fallbackConfig = await getProcessConfigDirective(fallbackConfigKey);
-2025-07-06T21:22:47Z [web]   53 |       if (!fallbackConfig || fallbackConfig.assignedPersonaId !== roleAssignment.assignedPersonaId) {
-2025-07-06T21:22:47Z [web] > 54 |         throw new Error(`ProcessConfigDirective '${introConfigKey}' or fallback '${fallbackConfigKey}' not found or not assigned to ${andrewPersonaDef.personaId}.`);
-2025-07-06T21:22:47Z [web]      |              ^
-2025-07-06T21:22:47Z [web]   55 |       }
-2025-07-06T21:22:47Z [web]   56 |       // Use fallback if primary is missing
-2025-07-06T21:22:47Z [web]   57 |       Object.assign(processConfig || {}, fallbackConfig);
-2025-07-06T21:22:47Z [web] 
-2025-07-06T21:22:47Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 3764ms
+2025-07-07T02:38:38Z [web] <Firebase Studio> Reloading preview...
+2025-07-07T02:38:38Z [web] <Firebase Studio> ▶️ Preview running
+2025-07-07T02:38:38Z [web]  GET /?monospaceUid=709754 200 in 184ms
+2025-07-07T02:38:38Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
+2025-07-07T02:38:38Z [web] [adminConfigManager] Returning cached PersonaDefinition for 'persona_andrew-good'.
+2025-07-07T02:38:38Z [web] [adminConfigManager] Returning cached ProcessConfigDirective for 'InitialIntroduction_Context_Outline'.
+2025-07-07T02:38:38Z [web] [initial-data] Creating new session 6e2ba7d1-5322-4473-bd2f-7d12c9394102.
+2025-07-07T02:38:39Z [web] Error: [API /onboarding/initial-data] Error: TypeError: mentorName.toLowerCase is not a function
+2025-07-07T02:38:39Z [web]     at getProviderForMentor (src/lib/aiProviderManager.ts:203:37)
+2025-07-07T02:38:39Z [web]     at callAiProviderWithHistory (src/lib/aiProviderManager.ts:360:19)
+2025-07-07T02:38:39Z [web]     at handler (src/pages/api/onboarding/initial-data.ts:108:6)
+2025-07-07T02:38:39Z [web]   201 |  */
+2025-07-07T02:38:39Z [web]   202 | export const getProviderForMentor = (mentorName: string): AIProvider | undefined => {
+2025-07-07T02:38:39Z [web] > 203 |   const lowerMentorName = mentorName.toLowerCase();
+2025-07-07T02:38:39Z [web]       |                                     ^
+2025-07-07T02:38:39Z [web]   204 |   if (lowerMentorName.startsWith('openai') || lowerMentorName.includes('gpt')) return providers.openai;
+2025-07-07T02:38:39Z [web]   205 |   if (lowerMentorName.startsWith('claude')) return providers.anthropic;
+2025-07-07T02:38:39Z [web]   206 |   if (lowerMentorName.startsWith('gemini')) return providers.google;
+2025-07-07T02:38:39Z [web] 
+2025-07-07T02:38:39Z [web]  GET /api/onboarding/initial-data?contextName=Outline 500 in 158ms
