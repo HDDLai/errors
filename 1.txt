@@ -1,69 +1,67 @@
-2025-07-08T16:33:20Z [web] <Firebase Studio> Reloading preview...
-2025-07-08T16:33:20Z [web] <Firebase Studio> ▶️ Preview running
-2025-07-08T16:33:20Z [web]  GET /?monospaceUid=92477 200 in 360ms
-2025-07-08T16:33:22Z [web] [GET /api/huddles/42a2c9be-5b24-4421-a45a-d80c5dfe5dc5] Successfully retrieved session. History items: 1
-2025-07-08T16:33:22Z [web]  GET /api/huddles/42a2c9be-5b24-4421-a45a-d80c5dfe5dc5 304 in 244ms
-2025-07-08T16:33:32Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
-2025-07-08T16:33:32Z [web] Warning: Environment variable DEEPSEEK_API_KEY is not set.
-2025-07-08T16:33:32Z [web] Warning: Environment variable QWEN_API_KEY is not set.
-2025-07-08T16:33:32Z [web] 
-2025-07-08T16:33:32Z [web] Error: Warning: Environment variable NEBIUS_API_KEY is not set.
-2025-07-08T16:33:32Z [web] Warning: Environment variable KIMI_API_KEY is not set.
-2025-07-08T16:33:32Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
-2025-07-08T16:33:32Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
-2025-07-08T16:33:32Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
-2025-07-08T16:33:32Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
-2025-07-08T16:33:32Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
-2025-07-08T16:33:32Z [web] 
-2025-07-08T16:33:32Z [web] [HuddleAI] firebaseAdmin.ts: Module top level.
-2025-07-08T16:33:32Z [web] [HuddleAI] firebaseAdmin.ts: Firebase Admin SDK already initialized. Using existing app: [DEFAULT]
-2025-07-08T16:33:32Z [web] [HuddleAI] firebaseAdmin.ts: Firestore and Auth services obtained successfully from app.
-2025-07-08T16:33:33Z [web] [adminConfigManager] Attempting to load RoleAssignment 'SystemModerator_Default' from Firestore.
-2025-07-08T16:33:33Z [web] [adminConfigManager] RoleAssignment 'SystemModerator_Default' loaded and cached.
-2025-07-08T16:33:33Z [web] [adminConfigManager] Attempting to load PersonaDefinition 'persona_andrew-good' from Firestore.
-2025-07-08T16:33:33Z [web] [adminConfigManager] PersonaDefinition 'persona_andrew-good' loaded and cached.
-2025-07-08T16:33:33Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Context_Outline' from Firestore.
-2025-07-08T16:33:33Z [web] [adminConfigManager] ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Context_Outline' not found in Firestore.
-2025-07-08T16:33:33Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Default' from Firestore.
-2025-07-08T16:33:33Z [web] [adminConfigManager] ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Default' loaded and cached.
-2025-07-08T16:33:33Z [web] [aiProviderManager] callAiProviderWithHistory received personaInput.coreIdentity: {
-2025-07-08T16:33:33Z [web]   mentorName: 'gemini',
-2025-07-08T16:33:33Z [web]   personaName: 'Andrew Good (AI Moderator)',
-2025-07-08T16:33:33Z [web]   archetype: 'The Guide / Facilitator',
-2025-07-08T16:33:33Z [web]   name: { firstName: 'Andrew', lastName: 'Good' },
-2025-07-08T16:33:33Z [web]   shortBio: 'Your friendly AI assistant to help start and guide your huddle.',
-2025-07-08T16:33:33Z [web]   role: 'System Moderator'
-2025-07-08T16:33:33Z [web] }
-2025-07-08T16:33:33Z [web] [aiProviderManager] callAiProviderWithHistory received personaInput.coreIdentity.mentorName: gemini
-2025-07-08T16:33:33Z [web] [aiProviderManager] Calling AI Provider for mentor: gemini, with model: gemini-1.5-flash-latest. History length: 3
-2025-07-08T16:33:33Z [web] Google AI (Gemini) client initialized successfully.
-2025-07-08T16:33:33Z [web] [aiProviderManager Google] FINAL PRE-CALL - systemInstruction content: Acknowledge the user's provided identifier: Bob.
-2025-07-08T16:33:33Z [web] Warmly welcome the user, incorporating their identifier naturally.
-2025-07-08T16:33:33Z [web] Transition smoothly to ask the user what idea, project, or topic they are thinking about pursuing for the huddle in the Outline context.
-2025-07-08T16:33:33Z [web] [aiProviderManager Google] FINAL PRE-CALL - historyForGeminiSDK: []
-2025-07-08T16:33:33Z [web] [aiProviderManager Google] FINAL PRE-CALL - currentUserMessageContent: Bob
-2025-07-08T16:33:33Z [web] Error: [aiProviderManager Google] Gemini history for startChat was about to start with 'model'. This is invalid. Clearing history for this call to prevent API error.
-2025-07-08T16:33:33Z [web] 
-2025-07-08T16:33:33Z [web] Error: Google AI (Gemini) API error for model gemini-1.5-flash-latest (Persona: Andrew): ReferenceError: userMessageContent is not defined
-2025-07-08T16:33:33Z [web]     at Object.executeChatCompletion (src/lib/aiProviderManager.ts:204:46)
-2025-07-08T16:33:33Z [web]     at callAiProviderWithHistory (src/lib/aiProviderManager.ts:506:40)
-2025-07-08T16:33:33Z [web]     at handler (src/pages/api/onboarding/welcome-message.ts:110:6)
-2025-07-08T16:33:33Z [web]   202 |         });
-2025-07-08T16:33:33Z [web]   203 |
-2025-07-08T16:33:33Z [web] > 204 |         const result = await chat.sendMessage(userMessageContent as string); // Ensure userMessageContent is a string
-2025-07-08T16:33:33Z [web]       |                                              ^
-2025-07-08T16:33:33Z [web]   205 |         const response = result.response;
-2025-07-08T16:33:33Z [web]   206 |         return response.text();
-2025-07-08T16:33:33Z [web]   207 |       } catch (error) {
-2025-07-08T16:33:33Z [web] 
-2025-07-08T16:33:33Z [web] Error: [API /onboarding/welcome-message] Error: Error: AI provider failed to return welcome/probe messages.
-2025-07-08T16:33:33Z [web]     at handler (src/pages/api/onboarding/welcome-message.ts:117:12)
-2025-07-08T16:33:33Z [web]   115 |
-2025-07-08T16:33:33Z [web]   116 |     if (!welcomeMessagesTexts || welcomeMessagesTexts.length === 0) {
-2025-07-08T16:33:33Z [web] > 117 |       throw new Error("AI provider failed to return welcome/probe messages.");
-2025-07-08T16:33:33Z [web]       |            ^
-2025-07-08T16:33:33Z [web]   118 |     }
-2025-07-08T16:33:33Z [web]   119 |
-2025-07-08T16:33:33Z [web]   120 |     // 7. Persist Andrew's new messages to HuddleSession
-2025-07-08T16:33:33Z [web] 
-2025-07-08T16:33:33Z [web]  POST /api/onboarding/welcome-message 500 in 930ms
+2025-07-08T16:42:54Z [web] <Firebase Studio> Reloading preview...
+2025-07-08T16:42:54Z [web] <Firebase Studio> ▶️ Preview running
+2025-07-08T16:42:54Z [web]  GET /?monospaceUid=699222 200 in 221ms
+2025-07-08T16:42:55Z [web] [GET /api/huddles/42a2c9be-5b24-4421-a45a-d80c5dfe5dc5] Successfully retrieved session. History items: 1
+2025-07-08T16:42:55Z [web]  GET /api/huddles/42a2c9be-5b24-4421-a45a-d80c5dfe5dc5 304 in 127ms
+2025-07-08T16:43:01Z [web]  ✓ Compiled /api/onboarding/welcome-message in 394ms
+2025-07-08T16:43:01Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
+2025-07-08T16:43:01Z [web] 
+2025-07-08T16:43:01Z [web] Error: Warning: Environment variable DEEPSEEK_API_KEY is not set.
+2025-07-08T16:43:01Z [web] Warning: Environment variable QWEN_API_KEY is not set.
+2025-07-08T16:43:01Z [web] Warning: Environment variable NEBIUS_API_KEY is not set.
+2025-07-08T16:43:01Z [web] Warning: Environment variable KIMI_API_KEY is not set.
+2025-07-08T16:43:01Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
+2025-07-08T16:43:01Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
+2025-07-08T16:43:01Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
+2025-07-08T16:43:01Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
+2025-07-08T16:43:01Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
+2025-07-08T16:43:01Z [web] 
+2025-07-08T16:43:01Z [web] [adminConfigManager] Attempting to load RoleAssignment 'SystemModerator_Default' from Firestore.
+2025-07-08T16:43:01Z [web] [adminConfigManager] RoleAssignment 'SystemModerator_Default' loaded and cached.
+2025-07-08T16:43:01Z [web] [adminConfigManager] Attempting to load PersonaDefinition 'persona_andrew-good' from Firestore.
+2025-07-08T16:43:01Z [web] [adminConfigManager] PersonaDefinition 'persona_andrew-good' loaded and cached.
+2025-07-08T16:43:01Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Context_Outline' from Firestore.
+2025-07-08T16:43:02Z [web] [adminConfigManager] ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Context_Outline' not found in Firestore.
+2025-07-08T16:43:02Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Default' from Firestore.
+2025-07-08T16:43:02Z [web] [adminConfigManager] ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Default' loaded and cached.
+2025-07-08T16:43:02Z [web] [aiProviderManager] callAiProviderWithHistory received personaInput.coreIdentity: {
+2025-07-08T16:43:02Z [web]   mentorName: 'gemini',
+2025-07-08T16:43:02Z [web]   personaName: 'Andrew Good (AI Moderator)',
+2025-07-08T16:43:02Z [web]   archetype: 'The Guide / Facilitator',
+2025-07-08T16:43:02Z [web]   name: { firstName: 'Andrew', lastName: 'Good' },
+2025-07-08T16:43:02Z [web]   shortBio: 'Your friendly AI assistant to help start and guide your huddle.',
+2025-07-08T16:43:02Z [web]   role: 'System Moderator'
+2025-07-08T16:43:02Z [web] }
+2025-07-08T16:43:02Z [web] [aiProviderManager] callAiProviderWithHistory received personaInput.coreIdentity.mentorName: gemini
+2025-07-08T16:43:02Z [web] [aiProviderManager] Calling AI Provider for mentor: gemini, with model: gemini-1.5-flash-latest. History length: 3
+2025-07-08T16:43:02Z [web] Google AI (Gemini) client initialized successfully.
+2025-07-08T16:43:02Z [web] Error: [aiProviderManager Google] Gemini history for startChat started with 'model'. This is invalid. Clearing history for this call.
+2025-07-08T16:43:02Z [web] 
+2025-07-08T16:43:02Z [web] [aiProviderManager Google] FINAL PRE-CALL - systemInstruction content: Acknowledge the user's provided identifier: Bob.
+2025-07-08T16:43:02Z [web] Warmly welcome the user, incorporating their identifier naturally.
+2025-07-08T16:43:02Z [web] Transition smoothly to ask the user what idea, project, or topic they are thinking about pursuing for the huddle in the Outline context.
+2025-07-08T16:43:02Z [web] [aiProviderManager Google] FINAL PRE-CALL - historyForGeminiSDK: []
+2025-07-08T16:43:02Z [web] [aiProviderManager Google] FINAL PRE-CALL - currentUserMessageContent: Bob
+2025-07-08T16:43:02Z [web] Error: Google AI (Gemini) API error for model gemini-1.5-flash-latest (Persona: Andrew): ReferenceError: userMessageContent is not defined
+2025-07-08T16:43:02Z [web]     at Object.executeChatCompletion (src/lib/aiProviderManager.ts:218:46)
+2025-07-08T16:43:02Z [web]     at callAiProviderWithHistory (src/lib/aiProviderManager.ts:520:40)
+2025-07-08T16:43:02Z [web]     at handler (src/pages/api/onboarding/welcome-message.ts:110:6)
+2025-07-08T16:43:02Z [web]   216 |         });
+2025-07-08T16:43:02Z [web]   217 |
+2025-07-08T16:43:02Z [web] > 218 |         const result = await chat.sendMessage(userMessageContent as string); // Ensure userMessageContent is a string
+2025-07-08T16:43:02Z [web]       |                                              ^
+2025-07-08T16:43:02Z [web]   219 |         const response = result.response;
+2025-07-08T16:43:02Z [web]   220 |         return response.text();
+2025-07-08T16:43:02Z [web]   221 |       } catch (error) {
+2025-07-08T16:43:02Z [web] 
+2025-07-08T16:43:02Z [web] Error: [API /onboarding/welcome-message] Error: Error: AI provider failed to return welcome/probe messages.
+2025-07-08T16:43:02Z [web]     at handler (src/pages/api/onboarding/welcome-message.ts:117:12)
+2025-07-08T16:43:02Z [web]   115 |
+2025-07-08T16:43:02Z [web]   116 |     if (!welcomeMessagesTexts || welcomeMessagesTexts.length === 0) {
+2025-07-08T16:43:02Z [web] > 117 |       throw new Error("AI provider failed to return welcome/probe messages.");
+2025-07-08T16:43:02Z [web]       |            ^
+2025-07-08T16:43:02Z [web]   118 |     }
+2025-07-08T16:43:02Z [web]   119 |
+2025-07-08T16:43:02Z [web]   120 |     // 7. Persist Andrew's new messages to HuddleSession
+2025-07-08T16:43:02Z [web] 
+2025-07-08T16:43:02Z [web]  POST /api/onboarding/welcome-message 500 in 1525ms
