@@ -1,48 +1,48 @@
-2025-07-08T17:30:11Z [web] <Firebase Studio> Reloading preview...
-2025-07-08T17:30:11Z [web] <Firebase Studio> ▶️ Preview running
-2025-07-08T17:30:11Z [web]  GET /?monospaceUid=209562 200 in 208ms
-2025-07-08T17:30:12Z [web] [GET /api/huddles/42a2c9be-5b24-4421-a45a-d80c5dfe5dc5] Successfully retrieved session. History items: 1
-2025-07-08T17:30:12Z [web]  GET /api/huddles/42a2c9be-5b24-4421-a45a-d80c5dfe5dc5 304 in 86ms
-2025-07-08T17:30:23Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
-2025-07-08T17:30:23Z [web] [adminConfigManager] Returning cached PersonaDefinition for 'persona_andrew-good'.
-2025-07-08T17:30:23Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Context_Outline' from Firestore.
-2025-07-08T17:30:24Z [web] [adminConfigManager] ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Context_Outline' not found in Firestore.
-2025-07-08T17:30:24Z [web] [adminConfigManager] Returning cached ProcessConfigDirective for 'AcknowledgeIdentifierAndProbe_Default'.
-2025-07-08T17:30:24Z [web] [aiProviderManager] callAiProviderWithHistory received personaInput.coreIdentity: {
-2025-07-08T17:30:24Z [web]   shortBio: 'Your friendly AI assistant to help start and guide your huddle.',
-2025-07-08T17:30:24Z [web]   archetype: 'The Guide / Facilitator',
-2025-07-08T17:30:24Z [web]   name: { firstName: 'Andrew', lastName: 'Good' },
-2025-07-08T17:30:24Z [web]   role: 'System Moderator',
-2025-07-08T17:30:24Z [web]   mentorName: 'gemini',
-2025-07-08T17:30:24Z [web]   personaName: 'Andrew Good'
-2025-07-08T17:30:24Z [web] }
-2025-07-08T17:30:24Z [web] [aiProviderManager] callAiProviderWithHistory received personaInput.coreIdentity.mentorName: gemini
-2025-07-08T17:30:24Z [web] [aiProviderManager] Calling AI Provider for mentor: gemini, with model: gemini-1.5-flash-latest. History length: 3
-2025-07-08T17:30:24Z [web] [aiProviderManager Google] Passing to Gemini - SystemInstruction: true
-2025-07-08T17:30:24Z [web] [aiProviderManager Google] Passing to Gemini - History: []
-2025-07-08T17:30:24Z [web] [aiProviderManager Google] Passing to Gemini - CurrentMessage: "Bob..."
-2025-07-08T17:30:24Z [web] Error: [aiProviderManager Google] Gemini history for startChat started with 'model' (or other invalid role). Invalid. Clearing history for this call.
-2025-07-08T17:30:24Z [web] 
-2025-07-08T17:30:24Z [web] Error: Google AI (Gemini) API error for model gemini-1.5-flash-latest (Persona: Andrew): ReferenceError: userMessageContent is not defined
-2025-07-08T17:30:24Z [web]     at Object.executeChatCompletion (src/lib/aiProviderManager.ts:213:46)
-2025-07-08T17:30:24Z [web]     at callAiProviderWithHistory (src/lib/aiProviderManager.ts:515:40)
-2025-07-08T17:30:24Z [web]     at handler (src/pages/api/onboarding/welcome-message.ts:115:6)
-2025-07-08T17:30:24Z [web]   211 |         });
-2025-07-08T17:30:24Z [web]   212 |
-2025-07-08T17:30:24Z [web] > 213 |         const result = await chat.sendMessage(userMessageContent as string); // Ensure userMessageContent is a string
-2025-07-08T17:30:24Z [web]       |                                              ^
-2025-07-08T17:30:24Z [web]   214 |         const response = result.response;
-2025-07-08T17:30:24Z [web]   215 |         return response.text();
-2025-07-08T17:30:24Z [web]   216 |       } catch (error) {
-2025-07-08T17:30:24Z [web] 
-2025-07-08T17:30:24Z [web] Error: [API /onboarding/welcome-message] Error: Error: AI provider failed to return welcome/probe messages.
-2025-07-08T17:30:24Z [web]     at handler (src/pages/api/onboarding/welcome-message.ts:122:12)
-2025-07-08T17:30:24Z [web]   120 |
-2025-07-08T17:30:24Z [web]   121 |     if (!welcomeMessagesTexts || welcomeMessagesTexts.length === 0) {
-2025-07-08T17:30:24Z [web] > 122 |       throw new Error("AI provider failed to return welcome/probe messages.");
-2025-07-08T17:30:24Z [web]       |            ^
-2025-07-08T17:30:24Z [web]   123 |     }
-2025-07-08T17:30:24Z [web]   124 |
-2025-07-08T17:30:24Z [web]   125 |     // 7. Persist Andrew's new messages to HuddleSession
-2025-07-08T17:30:24Z [web] 
-2025-07-08T17:30:24Z [web]  POST /api/onboarding/welcome-message 500 in 603ms
+2025-07-08T17:56:24Z [web] <Firebase Studio> Reloading preview...
+2025-07-08T17:56:24Z [web] <Firebase Studio> ▶️ Preview running
+2025-07-08T17:56:24Z [web]  GET /?monospaceUid=964051 200 in 225ms
+2025-07-08T17:56:25Z [web] [GET /api/huddles/42a2c9be-5b24-4421-a45a-d80c5dfe5dc5] Successfully retrieved session. History items: 1
+2025-07-08T17:56:25Z [web]  GET /api/huddles/42a2c9be-5b24-4421-a45a-d80c5dfe5dc5 304 in 190ms
+2025-07-08T17:56:30Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
+2025-07-08T17:56:30Z [web] [adminConfigManager] Returning cached PersonaDefinition for 'persona_andrew-good'.
+2025-07-08T17:56:30Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Context_Outline' from Firestore.
+2025-07-08T17:56:30Z [web] [adminConfigManager] ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Context_Outline' not found in Firestore.
+2025-07-08T17:56:30Z [web] [adminConfigManager] Returning cached ProcessConfigDirective for 'AcknowledgeIdentifierAndProbe_Default'.
+2025-07-08T17:56:30Z [web] [aiProviderManager] callAiProviderWithHistory received personaInput.coreIdentity: {
+2025-07-08T17:56:30Z [web]   shortBio: 'Your friendly AI assistant to help start and guide your huddle.',
+2025-07-08T17:56:30Z [web]   archetype: 'The Guide / Facilitator',
+2025-07-08T17:56:30Z [web]   name: { firstName: 'Andrew', lastName: 'Good' },
+2025-07-08T17:56:30Z [web]   role: 'System Moderator',
+2025-07-08T17:56:30Z [web]   mentorName: 'gemini',
+2025-07-08T17:56:30Z [web]   personaName: 'Andrew Good'
+2025-07-08T17:56:30Z [web] }
+2025-07-08T17:56:30Z [web] [aiProviderManager] callAiProviderWithHistory received personaInput.coreIdentity.mentorName: gemini
+2025-07-08T17:56:30Z [web] [aiProviderManager] Calling AI Provider for mentor: gemini, with model: gemini-1.5-flash-latest. History length: 3
+2025-07-08T17:56:30Z [web] [aiProviderManager Google] Passing to Gemini - SystemInstruction: true
+2025-07-08T17:56:30Z [web] [aiProviderManager Google] Passing to Gemini - History: []
+2025-07-08T17:56:30Z [web] [aiProviderManager Google] Passing to Gemini - CurrentMessage: "Bob..."
+2025-07-08T17:56:30Z [web] Error: [aiProviderManager Google] Gemini history for startChat started with 'model' (or other invalid role). Invalid. Clearing history for this call.
+2025-07-08T17:56:30Z [web] 
+2025-07-08T17:56:30Z [web] Error: Google AI (Gemini) API error for model gemini-1.5-flash-latest (Persona: Andrew): ReferenceError: userMessageContent is not defined
+2025-07-08T17:56:30Z [web]     at Object.executeChatCompletion (src/lib/aiProviderManager.ts:213:46)
+2025-07-08T17:56:30Z [web]     at callAiProviderWithHistory (src/lib/aiProviderManager.ts:515:40)
+2025-07-08T17:56:30Z [web]     at handler (src/pages/api/onboarding/welcome-message.ts:115:6)
+2025-07-08T17:56:30Z [web]   211 |         });
+2025-07-08T17:56:30Z [web]   212 |
+2025-07-08T17:56:30Z [web] > 213 |         const result = await chat.sendMessage(userMessageContent as string); // Ensure userMessageContent is a string
+2025-07-08T17:56:30Z [web]       |                                              ^
+2025-07-08T17:56:30Z [web]   214 |         const response = result.response;
+2025-07-08T17:56:30Z [web]   215 |         return response.text();
+2025-07-08T17:56:30Z [web]   216 |       } catch (error) {
+2025-07-08T17:56:30Z [web] 
+2025-07-08T17:56:30Z [web] Error: [API /onboarding/welcome-message] Error: Error: AI provider failed to return welcome/probe messages.
+2025-07-08T17:56:30Z [web]     at handler (src/pages/api/onboarding/welcome-message.ts:122:12)
+2025-07-08T17:56:30Z [web]   120 |
+2025-07-08T17:56:30Z [web]   121 |     if (!welcomeMessagesTexts || welcomeMessagesTexts.length === 0) {
+2025-07-08T17:56:30Z [web] > 122 |       throw new Error("AI provider failed to return welcome/probe messages.");
+2025-07-08T17:56:30Z [web]       |            ^
+2025-07-08T17:56:30Z [web]   123 |     }
+2025-07-08T17:56:30Z [web]   124 |
+2025-07-08T17:56:30Z [web]   125 |     // 7. Persist Andrew's new messages to HuddleSession
+2025-07-08T17:56:30Z [web] 
+2025-07-08T17:56:30Z [web]  POST /api/onboarding/welcome-message 500 in 608ms
