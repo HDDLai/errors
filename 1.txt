@@ -1,57 +1,45 @@
-2025-07-08T07:40:17Z [web]  ✓ Compiled /api/onboarding/welcome-message in 323ms
-2025-07-08T07:40:18Z [web] Error: Warning: Environment variable OPENAI_API_KEY is not set.
-2025-07-08T07:40:18Z [web] 
-2025-07-08T07:40:18Z [web] Error: Warning: Environment variable DEEPSEEK_API_KEY is not set.
-2025-07-08T07:40:18Z [web] 
-2025-07-08T07:40:18Z [web] Error: Warning: Environment variable QWEN_API_KEY is not set.
-2025-07-08T07:40:18Z [web] 
-2025-07-08T07:40:18Z [web] Error: Warning: Environment variable NEBIUS_API_KEY is not set.
-2025-07-08T07:40:18Z [web] Warning: Environment variable KIMI_API_KEY is not set.
-2025-07-08T07:40:18Z [web] Warning: Environment variable OPENROUTER_API_KEY is not set.
-2025-07-08T07:40:18Z [web] Warning: Environment variable LLAMA_API_KEY is not set.
-2025-07-08T07:40:18Z [web] Warning: Environment variable LLAMA_API_ENDPOINT is not set.
-2025-07-08T07:40:18Z [web] Warning: Environment variable MISTRAL_API_KEY is not set.
-2025-07-08T07:40:18Z [web] Warning: Environment variable MISTRAL_API_ENDPOINT is not set.
-2025-07-08T07:40:18Z [web] 
-2025-07-08T07:40:18Z [web] [adminConfigManager] Attempting to load RoleAssignment 'SystemModerator_Default' from Firestore.
-2025-07-08T07:40:18Z [web] [adminConfigManager] RoleAssignment 'SystemModerator_Default' loaded and cached.
-2025-07-08T07:40:18Z [web] [adminConfigManager] Attempting to load PersonaDefinition 'persona_andrew-good' from Firestore.
-2025-07-08T07:40:18Z [web] [adminConfigManager] PersonaDefinition 'persona_andrew-good' loaded and cached.
-2025-07-08T07:40:18Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Context_Outline' from Firestore.
-2025-07-08T07:40:18Z [web] [adminConfigManager] ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Context_Outline' not found in Firestore.
-2025-07-08T07:40:18Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Default' from Firestore.
-2025-07-08T07:40:18Z [web] [adminConfigManager] ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Default' loaded and cached.
-2025-07-08T07:40:18Z [web] [aiProviderManager] callAiProviderWithHistory received personaInput.coreIdentity: {
-2025-07-08T07:40:18Z [web]   role: 'System Moderator',
-2025-07-08T07:40:18Z [web]   shortBio: 'Your friendly AI assistant to help start and guide your huddle.',
-2025-07-08T07:40:18Z [web]   mentorName: 'gemini',
-2025-07-08T07:40:18Z [web]   name: { firstName: 'Andrew', lastName: 'Good' },
-2025-07-08T07:40:18Z [web]   archetype: 'The Guide / Facilitator',
-2025-07-08T07:40:18Z [web]   personaName: 'Andrew Good (AI Moderator)'
-2025-07-08T07:40:18Z [web] }
-2025-07-08T07:40:18Z [web] [aiProviderManager] callAiProviderWithHistory received personaInput.coreIdentity.mentorName: gemini
-2025-07-08T07:40:18Z [web] [aiProviderManager] Calling AI Provider for mentor: gemini, with model: gemini-1.5-flash-latest. History length: 3
-2025-07-08T07:40:18Z [web] Google AI (Gemini) client initialized successfully.
-2025-07-08T07:40:19Z [web] Error: Google AI (Gemini) API error for model gemini-1.5-flash-latest (Persona: Andrew): Error: [GoogleGenerativeAI Error]: First content should be with role 'user', got model
-2025-07-08T07:40:19Z [web]     at Object.executeChatCompletion (src/lib/aiProviderManager.ts:153:27)
-2025-07-08T07:40:19Z [web]     at callAiProviderWithHistory (src/lib/aiProviderManager.ts:467:40)
-2025-07-08T07:40:19Z [web]     at handler (src/pages/api/onboarding/welcome-message.ts:110:6)
-2025-07-08T07:40:19Z [web]   151 |         }
-2025-07-08T07:40:19Z [web]   152 |
-2025-07-08T07:40:19Z [web] > 153 |         const chat = model.startChat({
-2025-07-08T07:40:19Z [web]       |                           ^
-2025-07-08T07:40:19Z [web]   154 |             history: history.map(m => ({
-2025-07-08T07:40:19Z [web]   155 |                 role: m.role === 'assistant' ? 'model' : m.role, // map 'assistant' to 'model'
-2025-07-08T07:40:19Z [web]   156 |                 parts: [{ text: m.content as string }]
-2025-07-08T07:40:19Z [web] 
-2025-07-08T07:40:19Z [web] Error: [API /onboarding/welcome-message] Error: Error: AI provider failed to return welcome/probe messages.
-2025-07-08T07:40:19Z [web]     at handler (src/pages/api/onboarding/welcome-message.ts:117:12)
-2025-07-08T07:40:19Z [web]   115 |
-2025-07-08T07:40:19Z [web]   116 |     if (!welcomeMessagesTexts || welcomeMessagesTexts.length === 0) {
-2025-07-08T07:40:19Z [web] > 117 |       throw new Error("AI provider failed to return welcome/probe messages.");
-2025-07-08T07:40:19Z [web]       |            ^
-2025-07-08T07:40:19Z [web]   118 |     }
-2025-07-08T07:40:19Z [web]   119 |
-2025-07-08T07:40:19Z [web]   120 |     // 7. Persist Andrew's new messages to HuddleSession
-2025-07-08T07:40:19Z [web] 
-2025-07-08T07:40:19Z [web]  POST /api/onboarding/welcome-message 500 in 1813ms
+2025-07-08T08:07:21Z [web] <Firebase Studio> Reloading preview...
+2025-07-08T08:07:21Z [web] <Firebase Studio> ▶️ Preview running
+2025-07-08T08:07:22Z [web]  GET /?monospaceUid=881354 200 in 231ms
+2025-07-08T08:07:22Z [web] [GET /api/huddles/42a2c9be-5b24-4421-a45a-d80c5dfe5dc5] Successfully retrieved session. History items: 1
+2025-07-08T08:07:22Z [web]  GET /api/huddles/42a2c9be-5b24-4421-a45a-d80c5dfe5dc5 304 in 83ms
+2025-07-08T08:07:33Z [web] [adminConfigManager] Returning cached RoleAssignment for 'SystemModerator_Default'.
+2025-07-08T08:07:33Z [web] [adminConfigManager] Returning cached PersonaDefinition for 'persona_andrew-good'.
+2025-07-08T08:07:33Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Context_Outline' from Firestore.
+2025-07-08T08:07:33Z [web] [adminConfigManager] ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Context_Outline' not found in Firestore.
+2025-07-08T08:07:33Z [web] [adminConfigManager] DEBUG: Clearing cache for 'AcknowledgeIdentifierAndProbe_Default'.
+2025-07-08T08:07:33Z [web] [adminConfigManager] Attempting to load ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Default' from Firestore.
+2025-07-08T08:07:33Z [web] [adminConfigManager] ProcessConfigDirective 'AcknowledgeIdentifierAndProbe_Default' loaded and cached.
+2025-07-08T08:07:33Z [web] [aiProviderManager] callAiProviderWithHistory received personaInput.coreIdentity: {
+2025-07-08T08:07:33Z [web]   archetype: 'The Guide / Facilitator',
+2025-07-08T08:07:33Z [web]   role: 'System Moderator',
+2025-07-08T08:07:33Z [web]   mentorName: 'gemini',
+2025-07-08T08:07:33Z [web]   shortBio: 'Your friendly AI assistant to help start and guide your huddle.',
+2025-07-08T08:07:33Z [web]   personaName: 'Andrew Good (AI Moderator)',
+2025-07-08T08:07:33Z [web]   name: { lastName: 'Good', firstName: 'Andrew' }
+2025-07-08T08:07:33Z [web] }
+2025-07-08T08:07:33Z [web] [aiProviderManager] callAiProviderWithHistory received personaInput.coreIdentity.mentorName: gemini
+2025-07-08T08:07:33Z [web] [aiProviderManager] Calling AI Provider for mentor: gemini, with model: gemini-1.5-flash-latest. History length: 3
+2025-07-08T08:07:33Z [web] Error: Google AI (Gemini) API error for model gemini-1.5-flash-latest (Persona: Andrew): Error: [GoogleGenerativeAI Error]: First content should be with role 'user', got model
+2025-07-08T08:07:33Z [web]     at Object.executeChatCompletion (src/lib/aiProviderManager.ts:153:27)
+2025-07-08T08:07:33Z [web]     at callAiProviderWithHistory (src/lib/aiProviderManager.ts:467:40)
+2025-07-08T08:07:33Z [web]     at handler (src/pages/api/onboarding/welcome-message.ts:110:6)
+2025-07-08T08:07:33Z [web]   151 |         }
+2025-07-08T08:07:33Z [web]   152 |
+2025-07-08T08:07:33Z [web] > 153 |         const chat = model.startChat({
+2025-07-08T08:07:33Z [web]       |                           ^
+2025-07-08T08:07:33Z [web]   154 |             history: history.map(m => ({
+2025-07-08T08:07:33Z [web]   155 |                 role: m.role === 'assistant' ? 'model' : m.role, // map 'assistant' to 'model'
+2025-07-08T08:07:33Z [web]   156 |                 parts: [{ text: m.content as string }]
+2025-07-08T08:07:33Z [web] 
+2025-07-08T08:07:33Z [web] Error: [API /onboarding/welcome-message] Error: Error: AI provider failed to return welcome/probe messages.
+2025-07-08T08:07:33Z [web]     at handler (src/pages/api/onboarding/welcome-message.ts:117:12)
+2025-07-08T08:07:33Z [web]   115 |
+2025-07-08T08:07:33Z [web]   116 |     if (!welcomeMessagesTexts || welcomeMessagesTexts.length === 0) {
+2025-07-08T08:07:33Z [web] > 117 |       throw new Error("AI provider failed to return welcome/probe messages.");
+2025-07-08T08:07:33Z [web]       |            ^
+2025-07-08T08:07:33Z [web]   118 |     }
+2025-07-08T08:07:33Z [web]   119 |
+2025-07-08T08:07:33Z [web]   120 |     // 7. Persist Andrew's new messages to HuddleSession
+2025-07-08T08:07:33Z [web] 
+2025-07-08T08:07:33Z [web]  POST /api/onboarding/welcome-message 500 in 412ms
